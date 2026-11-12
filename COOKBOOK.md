@@ -14,7 +14,7 @@
 | Cấu hình camera P1 | [Đầu nối J2 và kiểm tra OV5640](output/pcb-review/NS-CHEST-MB/OV5640-camera-review.md) |
 | Triển khai phần mềm | [Firmware](firmware/) · [NovaApp](novaapp/) · [Công cụ](tools/) |
 
-Ưu tiên schematic và PCB hiện hành khi brief Alpha/Beta khác P1. Ví dụ camera ghi OV3660 trong brief, trong khi schematic P1 dùng cụm OV5640 FPC. Các thư mục `routing`, `review` ngoài `review/current`, `output/.pcb-fab-work`, các manifest thiết kế và script dựng PDF ghi lại các lần thiết kế trước. Hai ZIP có hậu tố `DFM-review` là CAM trước P1.
+Ưu tiên schematic và PCB hiện hành khi brief Alpha/Beta khác P1. Ví dụ camera ghi OV3660 trong brief, trong khi schematic P1 dùng cụm OV5640 FPC. Các thư mục `routing`, `review` ngoài `review/current`, các manifest thiết kế và script dựng PDF ghi lại các lần thiết kế trước. Hai ZIP có hậu tố `DFM-review` là CAM trước P1.
 
 ## 2. Kiến trúc và phạm vi triển khai
 
