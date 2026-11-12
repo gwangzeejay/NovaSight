@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "NovaSight_RevA")(type "KiCad")(uri "${KIPRJMOD}/../NovaSight_RevA.kicad_sym")(options "")(descr "NovaSight Rev A custom symbols"))
+  (lib (name "NS_Chest_Camera")(type "KiCad")(uri "${KIPRJMOD}/NS_Chest_Camera.kicad_sym")(options "")(descr "OV5640 power sequencing supervisors"))
+)

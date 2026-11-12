@@ -1,0 +1,4048 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-06T21:49:22",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "NS-CLIP-MB.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 8 [/3V3] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 71.25,
+                        "y": 70.65
+                    },
+                    "uuid": "7f176769-deba-41a0-b21c-103655e6c6ab"
+                },
+                {
+                    "description": "Điểm hàn 13 [/3V3] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 73.95,
+                        "y": 69.95
+                    },
+                    "uuid": "5e819581-473f-4dba-a597-fcaeb54433e8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 13 [/3V3] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 73.95,
+                        "y": 69.95
+                    },
+                    "uuid": "5e819581-473f-4dba-a597-fcaeb54433e8"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C19 trên F.Cu",
+                    "pos": {
+                        "x": 75.52,
+                        "y": 70.0
+                    },
+                    "uuid": "736c55a4-91b0-4eb1-b464-61617663ffdd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R33 trên F.Cu",
+                    "pos": {
+                        "x": 75.49,
+                        "y": 67.0
+                    },
+                    "uuid": "604cf577-0d2a-446b-acc2-025a11425782"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R32 trên F.Cu",
+                    "pos": {
+                        "x": 75.49,
+                        "y": 68.5
+                    },
+                    "uuid": "4d505ab5-8508-4014-bb00-9cd1ff4c98ae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C20 trên F.Cu",
+                    "pos": {
+                        "x": 75.52,
+                        "y": 65.5
+                    },
+                    "uuid": "806a3e2c-c5ab-4b36-8d3e-4c8d40229113"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R33 trên F.Cu",
+                    "pos": {
+                        "x": 75.49,
+                        "y": 67.0
+                    },
+                    "uuid": "604cf577-0d2a-446b-acc2-025a11425782"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C20 trên F.Cu",
+                    "pos": {
+                        "x": 75.52,
+                        "y": 65.5
+                    },
+                    "uuid": "806a3e2c-c5ab-4b36-8d3e-4c8d40229113"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của J5 trên F.Cu",
+                    "pos": {
+                        "x": 68.5,
+                        "y": 58.5
+                    },
+                    "uuid": "d0d8bc5c-b856-4a53-90c0-8ce177a1e744"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C19 trên F.Cu",
+                    "pos": {
+                        "x": 75.52,
+                        "y": 70.0
+                    },
+                    "uuid": "736c55a4-91b0-4eb1-b464-61617663ffdd"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R32 trên F.Cu",
+                    "pos": {
+                        "x": 75.49,
+                        "y": 68.5
+                    },
+                    "uuid": "4d505ab5-8508-4014-bb00-9cd1ff4c98ae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C19 trên F.Cu",
+                    "pos": {
+                        "x": 75.52,
+                        "y": 70.0
+                    },
+                    "uuid": "736c55a4-91b0-4eb1-b464-61617663ffdd"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R25 trên F.Cu",
+                    "pos": {
+                        "x": 81.49,
+                        "y": 73.0
+                    },
+                    "uuid": "16c48f7a-0736-43b5-a926-f07d9834b5fc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R24 trên F.Cu",
+                    "pos": {
+                        "x": 81.49,
+                        "y": 60.25
+                    },
+                    "uuid": "a23e8592-56c8-4f1a-94b9-2ddeb41abaf4"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C20 trên F.Cu",
+                    "pos": {
+                        "x": 75.52,
+                        "y": 65.5
+                    },
+                    "uuid": "806a3e2c-c5ab-4b36-8d3e-4c8d40229113"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R24 trên F.Cu",
+                    "pos": {
+                        "x": 81.49,
+                        "y": 60.25
+                    },
+                    "uuid": "a23e8592-56c8-4f1a-94b9-2ddeb41abaf4"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của TP5 trên F.Cu",
+                    "pos": {
+                        "x": 97.5,
+                        "y": 55.5
+                    },
+                    "uuid": "6bc12d47-9dcf-4905-8709-d9413b843731"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R26 trên F.Cu",
+                    "pos": {
+                        "x": 81.49,
+                        "y": 76.75
+                    },
+                    "uuid": "e2579e33-b2d7-4c4a-85e3-f2bb448f273b"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R25 trên F.Cu",
+                    "pos": {
+                        "x": 81.49,
+                        "y": 73.0
+                    },
+                    "uuid": "16c48f7a-0736-43b5-a926-f07d9834b5fc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R23 trên F.Cu",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 64.51
+                    },
+                    "uuid": "35287381-a609-4815-8aa8-53a943c4f125"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R21 trên F.Cu",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 64.51
+                    },
+                    "uuid": "8d655c55-8b2f-41ce-9788-5ed24aa17398"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C10 trên F.Cu",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 69.73
+                    },
+                    "uuid": "2be03af4-b75b-4bed-af27-59a3e23e7f09"
+                },
+                {
+                    "description": "Điểm hàn 5 [/3V3] của U4 trên F.Cu",
+                    "pos": {
+                        "x": 106.4375,
+                        "y": 67.25
+                    },
+                    "uuid": "a4fdbd58-6e82-4299-9767-9b1e4338c55f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R29 trên F.Cu",
+                    "pos": {
+                        "x": 102.49,
+                        "y": 61.75
+                    },
+                    "uuid": "5a9a63e4-7d2e-4789-ba19-64d3f1494aa9"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R23 trên F.Cu",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 64.51
+                    },
+                    "uuid": "35287381-a609-4815-8aa8-53a943c4f125"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C9 trên F.Cu",
+                    "pos": {
+                        "x": 102.975,
+                        "y": 71.5
+                    },
+                    "uuid": "f6de6d7c-9be4-4b46-8b23-3719322030b7"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C10 trên F.Cu",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 69.73
+                    },
+                    "uuid": "2be03af4-b75b-4bed-af27-59a3e23e7f09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C17 trên F.Cu",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 55.48
+                    },
+                    "uuid": "e8eef72d-d0c1-4a86-a468-1e777694956b"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C11 trên F.Cu",
+                    "pos": {
+                        "x": 105.25,
+                        "y": 52.95
+                    },
+                    "uuid": "8a13449f-a7a0-40dc-8d6e-6d9955a6a043"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C17 trên F.Cu",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 55.48
+                    },
+                    "uuid": "e8eef72d-d0c1-4a86-a468-1e777694956b"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của TP5 trên F.Cu",
+                    "pos": {
+                        "x": 97.5,
+                        "y": 55.5
+                    },
+                    "uuid": "6bc12d47-9dcf-4905-8709-d9413b843731"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R22 trên F.Cu",
+                    "pos": {
+                        "x": 104.74,
+                        "y": 61.75
+                    },
+                    "uuid": "e9a1b72c-c601-43e9-9d0a-f6d93a369074"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R29 trên F.Cu",
+                    "pos": {
+                        "x": 102.49,
+                        "y": 61.75
+                    },
+                    "uuid": "5a9a63e4-7d2e-4789-ba19-64d3f1494aa9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R22 trên F.Cu",
+                    "pos": {
+                        "x": 104.74,
+                        "y": 61.75
+                    },
+                    "uuid": "e9a1b72c-c601-43e9-9d0a-f6d93a369074"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C16 trên F.Cu",
+                    "pos": {
+                        "x": 105.25,
+                        "y": 56.525
+                    },
+                    "uuid": "f6546b29-3425-4a02-b206-d020574f91d2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C16 trên F.Cu",
+                    "pos": {
+                        "x": 105.25,
+                        "y": 56.525
+                    },
+                    "uuid": "f6546b29-3425-4a02-b206-d020574f91d2"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C17 trên F.Cu",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 55.48
+                    },
+                    "uuid": "e8eef72d-d0c1-4a86-a468-1e777694956b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 5 [/3V3] của U4 trên F.Cu",
+                    "pos": {
+                        "x": 106.4375,
+                        "y": 67.25
+                    },
+                    "uuid": "a4fdbd58-6e82-4299-9767-9b1e4338c55f"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của R21 trên F.Cu",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 64.51
+                    },
+                    "uuid": "8d655c55-8b2f-41ce-9788-5ed24aa17398"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 3 [/3V3] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 114.8,
+                        "y": 52.2
+                    },
+                    "uuid": "9a4f2410-f69c-4a83-ba00-00b0351bca24"
+                },
+                {
+                    "description": "Điểm hàn 1 [/3V3] của C11 trên F.Cu",
+                    "pos": {
+                        "x": 105.25,
+                        "y": 52.95
+                    },
+                    "uuid": "8a13449f-a7a0-40dc-8d6e-6d9955a6a043"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/LDO_EN] của SW1 trên F.Cu",
+                    "pos": {
+                        "x": 73.45,
+                        "y": 82.25
+                    },
+                    "uuid": "dfb9c8d2-8093-4409-827b-4884f56fa750"
+                },
+                {
+                    "description": "Điểm hàn 1 [/LDO_EN] của R20 trên F.Cu",
+                    "pos": {
+                        "x": 103.24,
+                        "y": 73.0
+                    },
+                    "uuid": "1ae3ecf3-547b-42c3-8050-da9804f5057e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/LDO_EN] của R20 trên F.Cu",
+                    "pos": {
+                        "x": 103.24,
+                        "y": 73.0
+                    },
+                    "uuid": "1ae3ecf3-547b-42c3-8050-da9804f5057e"
+                },
+                {
+                    "description": "Điểm hàn 3 [/LDO_EN] của U4 trên F.Cu",
+                    "pos": {
+                        "x": 104.1625,
+                        "y": 69.15
+                    },
+                    "uuid": "738e16b3-200c-4553-8453-7acf7ac41ac4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 16 [/BTN_MODE] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 56.5
+                    },
+                    "uuid": "784e5037-8178-4c54-8257-e3ca3d0bd24b"
+                },
+                {
+                    "description": "Đường mạch [/BTN_MODE] trên F.Cu, chiều dài 5.3245 mm",
+                    "pos": {
+                        "x": 82.51,
+                        "y": 59.115
+                    },
+                    "uuid": "6ef84094-ee61-4fd2-8eda-d5ee0fc2674b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_ROUTE] trên F.Cu, chiều dài 5.1500 mm",
+                    "pos": {
+                        "x": 81.125,
+                        "y": 67.85
+                    },
+                    "uuid": "16686170-8a23-4dbe-8977-a888318046d9"
+                },
+                {
+                    "description": "Đường mạch [/BTN_ROUTE] trên F.Cu, chiều dài 1.7972 mm",
+                    "pos": {
+                        "x": 82.51,
+                        "y": 73.0
+                    },
+                    "uuid": "9196f2a3-5636-42ab-8d90-a3b542f14fae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 5 [/BTN_ROUTE] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 52.2
+                    },
+                    "uuid": "7efdf5ec-32ec-4d10-ad69-4d14fb60ed0e"
+                },
+                {
+                    "description": "Đường mạch [/BTN_ROUTE] trên F.Cu, chiều dài 5.1500 mm",
+                    "pos": {
+                        "x": 81.125,
+                        "y": 67.85
+                    },
+                    "uuid": "16686170-8a23-4dbe-8977-a888318046d9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn PTH 1 [/BEACON_NEG] của D2",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 78.4
+                    },
+                    "uuid": "f3a3c997-8888-4101-9fbc-b5bad6edea3e"
+                },
+                {
+                    "description": "Điểm hàn 3 [/BEACON_NEG] của Q5 trên F.Cu",
+                    "pos": {
+                        "x": 95.9375,
+                        "y": 70.0
+                    },
+                    "uuid": "d735afa4-ecc8-4e96-8e55-8f9c8e4b13da"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 3 [/BEACON_NEG] của Q5 trên F.Cu",
+                    "pos": {
+                        "x": 95.9375,
+                        "y": 70.0
+                    },
+                    "uuid": "d735afa4-ecc8-4e96-8e55-8f9c8e4b13da"
+                },
+                {
+                    "description": "Điểm hàn PTH 1 [/BEACON_NEG] của D1",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 59.0
+                    },
+                    "uuid": "8276166d-9bd6-4843-8bbd-2b10f8d9d144"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn PTH 1 [/BEACON_NEG] của D3",
+                    "pos": {
+                        "x": 118.2,
+                        "y": 69.975
+                    },
+                    "uuid": "5ee0d144-dd21-49cb-a539-e803acf17286"
+                },
+                {
+                    "description": "Điểm hàn 3 [/BEACON_NEG] của Q5 trên F.Cu",
+                    "pos": {
+                        "x": 95.9375,
+                        "y": 70.0
+                    },
+                    "uuid": "d735afa4-ecc8-4e96-8e55-8f9c8e4b13da"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn PTH 2 [/D1_A] của D1",
+                    "pos": {
+                        "x": 92.965,
+                        "y": 59.0
+                    },
+                    "uuid": "3b50c415-e39e-4547-b994-04b1a8b0ed7e"
+                },
+                {
+                    "description": "Điểm hàn 2 [/D1_A] của R7 trên F.Cu",
+                    "pos": {
+                        "x": 95.575,
+                        "y": 67.0
+                    },
+                    "uuid": "d68175ba-e289-4772-87f6-002452ad05ee"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn PTH 1 [/VSYS] của J4",
+                    "pos": {
+                        "x": 56.2,
+                        "y": 84.9
+                    },
+                    "uuid": "7cca7a45-9d74-4a18-ad26-0482be41086f"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của D6 trên F.Cu",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 86.25
+                    },
+                    "uuid": "596d4fda-e8b4-4d88-a8ed-c18eda9cee29"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của C1 trên F.Cu",
+                    "pos": {
+                        "x": 63.52,
+                        "y": 55.0
+                    },
+                    "uuid": "bb7a3d6d-c2fa-467f-b629-714a599f421e"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của D5 trên F.Cu",
+                    "pos": {
+                        "x": 66.05,
+                        "y": 53.1
+                    },
+                    "uuid": "c9930ff6-26c5-44c4-a97b-8de4e9d4ecac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của C1 trên F.Cu",
+                    "pos": {
+                        "x": 63.52,
+                        "y": 55.0
+                    },
+                    "uuid": "bb7a3d6d-c2fa-467f-b629-714a599f421e"
+                },
+                {
+                    "description": "Điểm hàn PTH 1 [/VSYS] của J3",
+                    "pos": {
+                        "x": 56.2,
+                        "y": 52.5
+                    },
+                    "uuid": "9eed2baa-c27e-48a0-9444-0bb3b6c46988"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của D6 trên F.Cu",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 86.25
+                    },
+                    "uuid": "596d4fda-e8b4-4d88-a8ed-c18eda9cee29"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của SW1 trên F.Cu",
+                    "pos": {
+                        "x": 70.45,
+                        "y": 82.25
+                    },
+                    "uuid": "679545b3-7f2f-4fb2-af5f-4e66f8e02ecd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của C2 trên F.Cu",
+                    "pos": {
+                        "x": 66.52,
+                        "y": 76.75
+                    },
+                    "uuid": "8b7b012a-d05b-4b5c-9413-551d0229d142"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của C1 trên F.Cu",
+                    "pos": {
+                        "x": 63.52,
+                        "y": 55.0
+                    },
+                    "uuid": "bb7a3d6d-c2fa-467f-b629-714a599f421e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của SW1 trên F.Cu",
+                    "pos": {
+                        "x": 70.45,
+                        "y": 82.25
+                    },
+                    "uuid": "679545b3-7f2f-4fb2-af5f-4e66f8e02ecd"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của C2 trên F.Cu",
+                    "pos": {
+                        "x": 66.52,
+                        "y": 76.75
+                    },
+                    "uuid": "8b7b012a-d05b-4b5c-9413-551d0229d142"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của TP4 trên F.Cu",
+                    "pos": {
+                        "x": 76.5,
+                        "y": 55.5
+                    },
+                    "uuid": "4d7e96b8-e07c-4709-8dbe-65c1c3ed3051"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của D5 trên F.Cu",
+                    "pos": {
+                        "x": 66.05,
+                        "y": 53.1
+                    },
+                    "uuid": "c9930ff6-26c5-44c4-a97b-8de4e9d4ecac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của R8 trên F.Cu",
+                    "pos": {
+                        "x": 93.925,
+                        "y": 64.75
+                    },
+                    "uuid": "c69a2daf-a5ae-4052-b551-a9a4662208fc"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của R7 trên F.Cu",
+                    "pos": {
+                        "x": 93.925,
+                        "y": 67.0
+                    },
+                    "uuid": "8f7dd5c8-e7ca-443a-8f50-899e4eaa2828"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của R8 trên F.Cu",
+                    "pos": {
+                        "x": 93.925,
+                        "y": 64.75
+                    },
+                    "uuid": "c69a2daf-a5ae-4052-b551-a9a4662208fc"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của TP4 trên F.Cu",
+                    "pos": {
+                        "x": 76.5,
+                        "y": 55.5
+                    },
+                    "uuid": "4d7e96b8-e07c-4709-8dbe-65c1c3ed3051"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của R7 trên F.Cu",
+                    "pos": {
+                        "x": 93.925,
+                        "y": 67.0
+                    },
+                    "uuid": "8f7dd5c8-e7ca-443a-8f50-899e4eaa2828"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của R9 trên F.Cu",
+                    "pos": {
+                        "x": 97.75,
+                        "y": 67.075
+                    },
+                    "uuid": "60fd54f3-9dbf-449d-8f09-2da127c2455b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của C8 trên F.Cu",
+                    "pos": {
+                        "x": 99.25,
+                        "y": 79.775
+                    },
+                    "uuid": "9917495d-c77c-4696-a11a-bec82410e568"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của C4 trên F.Cu",
+                    "pos": {
+                        "x": 102.8,
+                        "y": 82.0
+                    },
+                    "uuid": "076ded62-2ffc-476f-ab7f-69c2899a430e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của C4 trên F.Cu",
+                    "pos": {
+                        "x": 102.8,
+                        "y": 82.0
+                    },
+                    "uuid": "076ded62-2ffc-476f-ab7f-69c2899a430e"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của D4 trên F.Cu",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 84.4
+                    },
+                    "uuid": "e3e0cb20-aa0f-4e25-b061-54cdaaa16474"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của C4 trên F.Cu",
+                    "pos": {
+                        "x": 102.8,
+                        "y": 82.0
+                    },
+                    "uuid": "076ded62-2ffc-476f-ab7f-69c2899a430e"
+                },
+                {
+                    "description": "Điểm hàn 2 [/VSYS] của Q2 trên F.Cu",
+                    "pos": {
+                        "x": 107.5625,
+                        "y": 73.35
+                    },
+                    "uuid": "73528855-1a6a-4571-96a7-debcfb99fbae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của U4 trên F.Cu",
+                    "pos": {
+                        "x": 104.1625,
+                        "y": 67.25
+                    },
+                    "uuid": "5378cf83-d5d5-43e4-9b1a-12cb3db76583"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của R9 trên F.Cu",
+                    "pos": {
+                        "x": 97.75,
+                        "y": 67.075
+                    },
+                    "uuid": "60fd54f3-9dbf-449d-8f09-2da127c2455b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/VSYS] của Q2 trên F.Cu",
+                    "pos": {
+                        "x": 107.5625,
+                        "y": 73.35
+                    },
+                    "uuid": "73528855-1a6a-4571-96a7-debcfb99fbae"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của U4 trên F.Cu",
+                    "pos": {
+                        "x": 104.1625,
+                        "y": 67.25
+                    },
+                    "uuid": "5378cf83-d5d5-43e4-9b1a-12cb3db76583"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/D3_A] của R9 trên F.Cu",
+                    "pos": {
+                        "x": 97.75,
+                        "y": 65.425
+                    },
+                    "uuid": "b0b16da4-4c96-43e0-9ab7-5966486ebb69"
+                },
+                {
+                    "description": "Điểm hàn PTH 2 [/D3_A] của D3",
+                    "pos": {
+                        "x": 118.2,
+                        "y": 67.435
+                    },
+                    "uuid": "aeacc56a-6f49-429d-88ef-b2b7464d8b33"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/BAT_PLUS] của R17 trên F.Cu",
+                    "pos": {
+                        "x": 55.24,
+                        "y": 66.25
+                    },
+                    "uuid": "65ab2a29-ac02-4ca2-99c1-6621b87b36e0"
+                },
+                {
+                    "description": "Điểm hàn PTH 1 [/BAT_PLUS] của J2",
+                    "pos": {
+                        "x": 52.8,
+                        "y": 71.0
+                    },
+                    "uuid": "d060bbcd-f01c-4bfb-a801-cab52622d40e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/BAT_PLUS] của TP2 trên F.Cu",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 55.5
+                    },
+                    "uuid": "46511a6d-aa04-4612-8b94-7d3f8c753509"
+                },
+                {
+                    "description": "Điểm hàn 1 [/BAT_PLUS] của R17 trên F.Cu",
+                    "pos": {
+                        "x": 55.24,
+                        "y": 66.25
+                    },
+                    "uuid": "65ab2a29-ac02-4ca2-99c1-6621b87b36e0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/BAT_PLUS] của R27 trên F.Cu",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 65.26
+                    },
+                    "uuid": "5431528b-5d9c-4fb9-812b-ebba37db0593"
+                },
+                {
+                    "description": "Điểm hàn 1 [/BAT_PLUS] của TP2 trên F.Cu",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 55.5
+                    },
+                    "uuid": "46511a6d-aa04-4612-8b94-7d3f8c753509"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 5 [/BAT_PLUS] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 106.85,
+                        "y": 79.705
+                    },
+                    "uuid": "5e2e2686-27ea-441f-9f5f-481588ed9ea2"
+                },
+                {
+                    "description": "Điểm hàn 3 [/BAT_PLUS] của Q2 trên F.Cu",
+                    "pos": {
+                        "x": 109.4375,
+                        "y": 72.4
+                    },
+                    "uuid": "f27ce911-d406-4fb3-8eca-f7cae673ca04"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/BAT_PLUS] của C7 trên F.Cu",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 81.275
+                    },
+                    "uuid": "b7fa4bcd-9b0f-4f57-8418-0d9211398fde"
+                },
+                {
+                    "description": "Điểm hàn 5 [/BAT_PLUS] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 106.85,
+                        "y": 79.705
+                    },
+                    "uuid": "5e2e2686-27ea-441f-9f5f-481588ed9ea2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 3 [/BAT_PLUS] của Q2 trên F.Cu",
+                    "pos": {
+                        "x": 109.4375,
+                        "y": 72.4
+                    },
+                    "uuid": "f27ce911-d406-4fb3-8eca-f7cae673ca04"
+                },
+                {
+                    "description": "Điểm hàn 1 [/BAT_PLUS] của R27 trên F.Cu",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 65.26
+                    },
+                    "uuid": "5431528b-5d9c-4fb9-812b-ebba37db0593"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/B_MINUS] trên F.Cu, chiều dài 3.4550 mm",
+                    "pos": {
+                        "x": 56.23,
+                        "y": 71.205
+                    },
+                    "uuid": "e7d2a148-0416-4c6a-8662-b3849ee59bd3"
+                },
+                {
+                    "description": "Điểm hàn PTH 2 [/B_MINUS] của J2",
+                    "pos": {
+                        "x": 52.8,
+                        "y": 66.4
+                    },
+                    "uuid": "742f903b-0fad-4ee1-8cae-d4bc70a17334"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/B_MINUS] trên F.Cu, chiều dài 3.4550 mm",
+                    "pos": {
+                        "x": 56.23,
+                        "y": 71.205
+                    },
+                    "uuid": "e7d2a148-0416-4c6a-8662-b3849ee59bd3"
+                },
+                {
+                    "description": "Điểm hàn 6 [/B_MINUS] của U5 trên F.Cu",
+                    "pos": {
+                        "x": 61.1375,
+                        "y": 66.35
+                    },
+                    "uuid": "e9510472-a8eb-4950-b95b-ec98e5c1ec89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/B_MINUS] của TP3 trên F.Cu",
+                    "pos": {
+                        "x": 73.5,
+                        "y": 55.5
+                    },
+                    "uuid": "68481fe8-81ab-4372-b5a2-ece6d5aa7b6a"
+                },
+                {
+                    "description": "Điểm hàn 6 [/B_MINUS] của U5 trên F.Cu",
+                    "pos": {
+                        "x": 61.1375,
+                        "y": 66.35
+                    },
+                    "uuid": "e9510472-a8eb-4950-b95b-ec98e5c1ec89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/MCU_EN] của TP8 trên F.Cu",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 58.5
+                    },
+                    "uuid": "56bcce7e-5604-40c5-873d-c49d7fa18ad3"
+                },
+                {
+                    "description": "Điểm hàn 1 [/MCU_EN] của C12 trên F.Cu",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 66.73
+                    },
+                    "uuid": "5afcd272-3b94-4d2b-969b-445f03fb6d05"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/MCU_EN] của C12 trên F.Cu",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 66.73
+                    },
+                    "uuid": "5afcd272-3b94-4d2b-969b-445f03fb6d05"
+                },
+                {
+                    "description": "Điểm hàn 2 [/MCU_EN] của R21 trên F.Cu",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 63.49
+                    },
+                    "uuid": "24c3aaad-b10d-4546-88b0-d43650ed8d2f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/MCU_EN] của R21 trên F.Cu",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 63.49
+                    },
+                    "uuid": "24c3aaad-b10d-4546-88b0-d43650ed8d2f"
+                },
+                {
+                    "description": "Điểm hàn 8 [/MCU_EN] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 110.8,
+                        "y": 52.2
+                    },
+                    "uuid": "71b55704-230a-41ef-8ef5-b191d4da46a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/CHG_PROG] của R16 trên F.Cu",
+                    "pos": {
+                        "x": 100.24,
+                        "y": 73.0
+                    },
+                    "uuid": "8e272722-5a3c-4f24-9cb4-6522f474215c"
+                },
+                {
+                    "description": "Điểm hàn 2 [/CHG_PROG] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 101.55,
+                        "y": 77.165
+                    },
+                    "uuid": "267174df-26f2-45ef-a07e-faed380e44b3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn PTH 2 [/D2_A] của D2",
+                    "pos": {
+                        "x": 92.965,
+                        "y": 78.4
+                    },
+                    "uuid": "d33b5513-a67e-42d2-a600-36496894a474"
+                },
+                {
+                    "description": "Điểm hàn 2 [/D2_A] của R8 trên F.Cu",
+                    "pos": {
+                        "x": 95.575,
+                        "y": 64.75
+                    },
+                    "uuid": "25643399-7fa0-44d7-b4fd-7ce6598f6be2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của C6 trên F.Cu",
+                    "pos": {
+                        "x": 97.77,
+                        "y": 85.75
+                    },
+                    "uuid": "6b95e5d4-0b72-4220-a793-693ae0c73fc9"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của R31 trên F.Cu",
+                    "pos": {
+                        "x": 100.99,
+                        "y": 85.75
+                    },
+                    "uuid": "fa690068-7434-430d-92db-8057bcc3e756"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của R31 trên F.Cu",
+                    "pos": {
+                        "x": 100.99,
+                        "y": 85.75
+                    },
+                    "uuid": "fa690068-7434-430d-92db-8057bcc3e756"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của R30 trên F.Cu",
+                    "pos": {
+                        "x": 103.24,
+                        "y": 85.75
+                    },
+                    "uuid": "83e953c9-2187-490a-bbc4-fddd93adefaa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 4 [/VBUS] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 101.55,
+                        "y": 79.705
+                    },
+                    "uuid": "f0f3ebea-9523-4bb4-9081-ed5b7e8a0d43"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của TP1 trên F.Cu",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 55.5
+                    },
+                    "uuid": "f80884a6-455c-4ea9-a1e0-c96258b439f3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của R30 trên F.Cu",
+                    "pos": {
+                        "x": 103.24,
+                        "y": 85.75
+                    },
+                    "uuid": "83e953c9-2187-490a-bbc4-fddd93adefaa"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của C5 trên F.Cu",
+                    "pos": {
+                        "x": 103.725,
+                        "y": 84.25
+                    },
+                    "uuid": "0996d868-9476-420c-9bda-cf71ed1a069b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của C5 trên F.Cu",
+                    "pos": {
+                        "x": 103.725,
+                        "y": 84.25
+                    },
+                    "uuid": "0996d868-9476-420c-9bda-cf71ed1a069b"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của R19 trên F.Cu",
+                    "pos": {
+                        "x": 106.24,
+                        "y": 82.0
+                    },
+                    "uuid": "6ab5e654-4782-4e5e-93a7-86a42d2eb105"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của C5 trên F.Cu",
+                    "pos": {
+                        "x": 103.725,
+                        "y": 84.25
+                    },
+                    "uuid": "0996d868-9476-420c-9bda-cf71ed1a069b"
+                },
+                {
+                    "description": "Điểm hàn 4 [/VBUS] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 101.55,
+                        "y": 79.705
+                    },
+                    "uuid": "f0f3ebea-9523-4bb4-9081-ed5b7e8a0d43"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 8 [/VBUS] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 106.85,
+                        "y": 75.895
+                    },
+                    "uuid": "86e1a27b-d443-4476-84d9-f45c7e901123"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của R14 trên F.Cu",
+                    "pos": {
+                        "x": 109.99,
+                        "y": 75.25
+                    },
+                    "uuid": "cffe5302-a417-41be-9e0f-6b4a09464a6e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 8 [/VBUS] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 106.85,
+                        "y": 75.895
+                    },
+                    "uuid": "86e1a27b-d443-4476-84d9-f45c7e901123"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của R19 trên F.Cu",
+                    "pos": {
+                        "x": 106.24,
+                        "y": 82.0
+                    },
+                    "uuid": "6ab5e654-4782-4e5e-93a7-86a42d2eb105"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của Q2 trên F.Cu",
+                    "pos": {
+                        "x": 107.5625,
+                        "y": 71.45
+                    },
+                    "uuid": "0b899897-1021-4f56-874f-ebe1b93256e4"
+                },
+                {
+                    "description": "Điểm hàn 8 [/VBUS] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 106.85,
+                        "y": 75.895
+                    },
+                    "uuid": "86e1a27b-d443-4476-84d9-f45c7e901123"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/VBUS] của D4 trên F.Cu",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 84.4
+                    },
+                    "uuid": "5fa9290d-e72d-44d5-986e-19319fee8f4b"
+                },
+                {
+                    "description": "Điểm hàn A4 [/VBUS] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 81.1
+                    },
+                    "uuid": "c452c07c-dae9-429e-babe-af21698d169d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 5 [/VBUS] của U2 trên F.Cu",
+                    "pos": {
+                        "x": 113.4375,
+                        "y": 77.8
+                    },
+                    "uuid": "72d2d138-96b1-4a69-abd6-3ac7061cce28"
+                },
+                {
+                    "description": "Điểm hàn A9 [/VBUS] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 76.3
+                    },
+                    "uuid": "aa484a81-2762-4583-8cce-0e9704dbc1f0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 5 [/VBUS] của U2 trên F.Cu",
+                    "pos": {
+                        "x": 113.4375,
+                        "y": 77.8
+                    },
+                    "uuid": "72d2d138-96b1-4a69-abd6-3ac7061cce28"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBUS] của R14 trên F.Cu",
+                    "pos": {
+                        "x": 109.99,
+                        "y": 75.25
+                    },
+                    "uuid": "cffe5302-a417-41be-9e0f-6b4a09464a6e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn A4 [/VBUS] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 81.1
+                    },
+                    "uuid": "c452c07c-dae9-429e-babe-af21698d169d"
+                },
+                {
+                    "description": "Điểm hàn 5 [/VBUS] của U2 trên F.Cu",
+                    "pos": {
+                        "x": 113.4375,
+                        "y": 77.8
+                    },
+                    "uuid": "72d2d138-96b1-4a69-abd6-3ac7061cce28"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VBUS_DET] của TP12 trên F.Cu",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 61.5
+                    },
+                    "uuid": "6252e3a3-b495-422b-80fa-edbe339708f2"
+                },
+                {
+                    "description": "Điểm hàn 2 [/VBUS_DET] của R14 trên F.Cu",
+                    "pos": {
+                        "x": 111.01,
+                        "y": 75.25
+                    },
+                    "uuid": "90f51a19-447a-43ca-b591-202380edc712"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/VBUS_DET] của R14 trên F.Cu",
+                    "pos": {
+                        "x": 111.01,
+                        "y": 75.25
+                    },
+                    "uuid": "90f51a19-447a-43ca-b591-202380edc712"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBUS_DET] của R15 trên F.Cu",
+                    "pos": {
+                        "x": 112.24,
+                        "y": 69.25
+                    },
+                    "uuid": "da3891b6-cbf8-4be1-896e-d38aafc35efc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VBUS_DET] của R15 trên F.Cu",
+                    "pos": {
+                        "x": 112.24,
+                        "y": 69.25
+                    },
+                    "uuid": "da3891b6-cbf8-4be1-896e-d38aafc35efc"
+                },
+                {
+                    "description": "Điểm hàn 31 [/VBUS_DET] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 64.0
+                    },
+                    "uuid": "a4d5447f-d52b-4ff3-ad6e-84a874b13a75"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/USB_DP_ESD] của R12 trên F.Cu",
+                    "pos": {
+                        "x": 112.24,
+                        "y": 75.25
+                    },
+                    "uuid": "37d55021-5ec0-4318-9d69-254416144e18"
+                },
+                {
+                    "description": "Điểm hàn 6 [/USB_DP_ESD] của U2 trên F.Cu",
+                    "pos": {
+                        "x": 113.4375,
+                        "y": 76.85
+                    },
+                    "uuid": "96821dd5-e256-4b05-b04a-fb0735f349ce"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 27 [/USB_DP] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 64.0
+                    },
+                    "uuid": "635b1877-7f7c-4fd0-8255-4cebb907be1a"
+                },
+                {
+                    "description": "Điểm hàn 2 [/USB_DP] của R12 trên F.Cu",
+                    "pos": {
+                        "x": 113.26,
+                        "y": 75.25
+                    },
+                    "uuid": "1299bcaf-f260-4e28-881c-0643befcae8a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/CC1] của R10 trên F.Cu",
+                    "pos": {
+                        "x": 112.24,
+                        "y": 73.75
+                    },
+                    "uuid": "7260639d-4886-4bb0-b581-1b2c1700df8e"
+                },
+                {
+                    "description": "Điểm hàn A5 [/CC1] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 79.95
+                    },
+                    "uuid": "ab2b4f5b-f520-4bd3-8f08-c461ccf08532"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn B6 [/USB_DP_EXT] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 77.95
+                    },
+                    "uuid": "50e715ab-08cf-4a29-a74a-04194ed101bd"
+                },
+                {
+                    "description": "Điểm hàn 1 [/USB_DP_EXT] của U2 trên F.Cu",
+                    "pos": {
+                        "x": 111.1625,
+                        "y": 76.85
+                    },
+                    "uuid": "39d0b70b-6096-4a54-aec6-d62c6b4c257d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn A6 [/USB_DP_EXT] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 78.95
+                    },
+                    "uuid": "29857510-3c87-40ec-aaa2-1568016be78d"
+                },
+                {
+                    "description": "Điểm hàn B6 [/USB_DP_EXT] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 77.95
+                    },
+                    "uuid": "50e715ab-08cf-4a29-a74a-04194ed101bd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn A7 [/USB_DM_EXT] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 78.45
+                    },
+                    "uuid": "f3e56d5d-cb34-4d3a-a940-80c9edc0d263"
+                },
+                {
+                    "description": "Điểm hàn 3 [/USB_DM_EXT] của U2 trên F.Cu",
+                    "pos": {
+                        "x": 111.1625,
+                        "y": 78.75
+                    },
+                    "uuid": "9bd544b1-71f7-4530-87d9-76302930ead5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn B7 [/USB_DM_EXT] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 79.45
+                    },
+                    "uuid": "8e644cbc-719d-4ad8-82ff-e2b4df361b0c"
+                },
+                {
+                    "description": "Điểm hàn A7 [/USB_DM_EXT] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 78.45
+                    },
+                    "uuid": "f3e56d5d-cb34-4d3a-a940-80c9edc0d263"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/CC2] của R11 trên F.Cu",
+                    "pos": {
+                        "x": 112.24,
+                        "y": 72.25
+                    },
+                    "uuid": "018877ef-8f03-45b2-9049-e687cb9e71c2"
+                },
+                {
+                    "description": "Điểm hàn B5 [/CC2] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 76.95
+                    },
+                    "uuid": "5f25d6c1-627a-4e16-91a1-8e54f5c01b13"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/BTN_SOS] của TP13 trên F.Cu",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 61.5
+                    },
+                    "uuid": "ed15c183-b601-43e7-9d99-8b6a8b954a2a"
+                },
+                {
+                    "description": "Đường mạch [/BTN_SOS] trên F.Cu, chiều dài 1.7972 mm",
+                    "pos": {
+                        "x": 82.51,
+                        "y": 76.75
+                    },
+                    "uuid": "0ddbc21c-3267-4b90-b155-02633957db08"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_SOS] trên F.Cu, chiều dài 5.1500 mm",
+                    "pos": {
+                        "x": 81.125,
+                        "y": 80.35
+                    },
+                    "uuid": "5ecde567-bfe8-429f-a77c-258ddd57f5e7"
+                },
+                {
+                    "description": "Điểm hàn 30 [/BTN_SOS] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 112.4,
+                        "y": 64.0
+                    },
+                    "uuid": "779145d2-c00f-4218-8f2e-11ee24cab7fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn PTH 2 [/MOT_L_NEG] của J3",
+                    "pos": {
+                        "x": 60.8,
+                        "y": 52.5
+                    },
+                    "uuid": "ec04ce6d-47c7-47d0-b690-fcf68e2506e2"
+                },
+                {
+                    "description": "Điểm hàn 2 [/MOT_L_NEG] của C1 trên F.Cu",
+                    "pos": {
+                        "x": 64.48,
+                        "y": 55.0
+                    },
+                    "uuid": "7afa3bf3-42e5-43c6-9662-8dde9e010384"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/MOT_L_NEG] của C1 trên F.Cu",
+                    "pos": {
+                        "x": 64.48,
+                        "y": 55.0
+                    },
+                    "uuid": "7afa3bf3-42e5-43c6-9662-8dde9e010384"
+                },
+                {
+                    "description": "Điểm hàn 3 [/MOT_L_NEG] của Q3 trên F.Cu",
+                    "pos": {
+                        "x": 64.8375,
+                        "y": 57.5
+                    },
+                    "uuid": "0c7bd880-2273-4aa3-8ebc-1a5ffa3ccc7f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/MOT_L_NEG] của D5 trên F.Cu",
+                    "pos": {
+                        "x": 69.35,
+                        "y": 53.1
+                    },
+                    "uuid": "306556d7-ca30-4538-b867-ddcbe4b707a7"
+                },
+                {
+                    "description": "Điểm hàn 2 [/MOT_L_NEG] của C1 trên F.Cu",
+                    "pos": {
+                        "x": 64.48,
+                        "y": 55.0
+                    },
+                    "uuid": "7afa3bf3-42e5-43c6-9662-8dde9e010384"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/VBAT_ADC] của R28 trên F.Cu",
+                    "pos": {
+                        "x": 99.25,
+                        "y": 65.26
+                    },
+                    "uuid": "94a58370-8eb2-42aa-8638-7dd3c5fb650f"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBAT_ADC] của C18 trên F.Cu",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 67.48
+                    },
+                    "uuid": "9db7b252-c4bd-4c63-a5fa-1ac5b2b3f9bd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/VBAT_ADC] của R27 trên F.Cu",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 64.24
+                    },
+                    "uuid": "e475defa-85a3-42c1-bf3c-7cf2dfc771db"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VBAT_ADC] của R28 trên F.Cu",
+                    "pos": {
+                        "x": 99.25,
+                        "y": 65.26
+                    },
+                    "uuid": "94a58370-8eb2-42aa-8638-7dd3c5fb650f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/VBAT_ADC] của R27 trên F.Cu",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 64.24
+                    },
+                    "uuid": "e475defa-85a3-42c1-bf3c-7cf2dfc771db"
+                },
+                {
+                    "description": "Điểm hàn 12 [/VBAT_ADC] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 53.3
+                    },
+                    "uuid": "7a565b2e-89f8-46a1-b0fb-b0e6097f8121"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn PTH 2 [/MOT_R_NEG] của J4",
+                    "pos": {
+                        "x": 60.8,
+                        "y": 84.9
+                    },
+                    "uuid": "b896e5f2-09b4-4afb-b1f4-396dc005d795"
+                },
+                {
+                    "description": "Điểm hàn 2 [/MOT_R_NEG] của D6 trên F.Cu",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 82.95
+                    },
+                    "uuid": "af3ad073-5e2d-4059-907c-16fa1afb3cfc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/MOT_R_NEG] của D6 trên F.Cu",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 82.95
+                    },
+                    "uuid": "af3ad073-5e2d-4059-907c-16fa1afb3cfc"
+                },
+                {
+                    "description": "Điểm hàn 3 [/MOT_R_NEG] của Q4 trên F.Cu",
+                    "pos": {
+                        "x": 64.9375,
+                        "y": 80.0
+                    },
+                    "uuid": "9c3d9068-3dcf-41cd-bb24-ae323577b170"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/MOT_R_NEG] của C2 trên F.Cu",
+                    "pos": {
+                        "x": 67.48,
+                        "y": 76.75
+                    },
+                    "uuid": "42928477-35cc-4ba1-8f02-50c6fee0f33d"
+                },
+                {
+                    "description": "Điểm hàn 3 [/MOT_R_NEG] của Q4 trên F.Cu",
+                    "pos": {
+                        "x": 64.9375,
+                        "y": 80.0
+                    },
+                    "uuid": "9c3d9068-3dcf-41cd-bb24-ae323577b170"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/BAT_D_COMMON] của Q1 trên F.Cu",
+                    "pos": {
+                        "x": 57.85,
+                        "y": 71.525
+                    },
+                    "uuid": "b8aae960-d789-443c-ac9c-a43384aad15f"
+                },
+                {
+                    "description": "Điểm hàn 8 [/BAT_D_COMMON] của Q1 trên F.Cu",
+                    "pos": {
+                        "x": 62.15,
+                        "y": 71.525
+                    },
+                    "uuid": "45ed43a0-8e67-424a-81d9-a31e7aa138a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 4 [/BAT_OD] của Q1 trên F.Cu",
+                    "pos": {
+                        "x": 57.85,
+                        "y": 73.475
+                    },
+                    "uuid": "669ee1c7-9932-4937-ac8b-31715c8b7953"
+                },
+                {
+                    "description": "Điểm hàn 1 [/BAT_OD] của U5 trên F.Cu",
+                    "pos": {
+                        "x": 58.8625,
+                        "y": 66.35
+                    },
+                    "uuid": "61caed17-34bf-4865-87f7-1bbdef553a03"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 3 [/BAT_OC] của U5 trên F.Cu",
+                    "pos": {
+                        "x": 58.8625,
+                        "y": 68.25
+                    },
+                    "uuid": "2c3f3654-fbdf-4d00-bbfa-9fed03968dbb"
+                },
+                {
+                    "description": "Điểm hàn 5 [/BAT_OC] của Q1 trên F.Cu",
+                    "pos": {
+                        "x": 62.15,
+                        "y": 73.475
+                    },
+                    "uuid": "4a59138b-5a48-4004-8f20-58a22a15e7c7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/LED_BEACON] của R5 trên F.Cu",
+                    "pos": {
+                        "x": 92.5,
+                        "y": 67.51
+                    },
+                    "uuid": "9cb0b886-829f-4ea4-bb43-804682d59a8f"
+                },
+                {
+                    "description": "Điểm hàn 6 [/LED_BEACON] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 112.4,
+                        "y": 52.2
+                    },
+                    "uuid": "12635317-af63-4abd-9847-c5cb51009333"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 5 [/IMU_INT] của J5 trên F.Cu",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 58.5
+                    },
+                    "uuid": "f7fbd22c-9455-4c26-92fe-698f364862be"
+                },
+                {
+                    "description": "Điểm hàn 12 [/IMU_INT] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 73.25,
+                        "y": 70.65
+                    },
+                    "uuid": "c20e0d87-bbfa-43ad-b840-619e70b51afc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 13 [/IMU_INT] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 54.1
+                    },
+                    "uuid": "9f140f6f-b8f0-49f9-ac08-e17461d4abb1"
+                },
+                {
+                    "description": "Điểm hàn 5 [/IMU_INT] của J5 trên F.Cu",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 58.5
+                    },
+                    "uuid": "f7fbd22c-9455-4c26-92fe-698f364862be"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 3 [/I2C_SDA] của J5 trên F.Cu",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 58.5
+                    },
+                    "uuid": "eaa34038-6fbd-40e2-8348-fae703e9c309"
+                },
+                {
+                    "description": "Điểm hàn 24 [/I2C_SDA] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 70.75,
+                        "y": 66.75
+                    },
+                    "uuid": "dc0ea91e-6fa5-4322-9a1c-874559c3f81f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 24 [/I2C_SDA] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 70.75,
+                        "y": 66.75
+                    },
+                    "uuid": "dc0ea91e-6fa5-4322-9a1c-874559c3f81f"
+                },
+                {
+                    "description": "Điểm hàn 2 [/I2C_SDA] của R32 trên F.Cu",
+                    "pos": {
+                        "x": 76.51,
+                        "y": 68.5
+                    },
+                    "uuid": "6e580119-3bda-4ef8-a4b5-7c93fcdb474a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/I2C_SDA] của TP10 trên F.Cu",
+                    "pos": {
+                        "x": 100.5,
+                        "y": 58.5
+                    },
+                    "uuid": "cdf3edd3-51d0-419e-abe6-86551386948b"
+                },
+                {
+                    "description": "Điểm hàn 2 [/I2C_SDA] của R32 trên F.Cu",
+                    "pos": {
+                        "x": 76.51,
+                        "y": 68.5
+                    },
+                    "uuid": "6e580119-3bda-4ef8-a4b5-7c93fcdb474a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 18 [/I2C_SDA] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 58.1
+                    },
+                    "uuid": "6f4bf812-138c-435a-8325-99bdfcb7fb2e"
+                },
+                {
+                    "description": "Điểm hàn 1 [/I2C_SDA] của TP10 trên F.Cu",
+                    "pos": {
+                        "x": 100.5,
+                        "y": 58.5
+                    },
+                    "uuid": "cdf3edd3-51d0-419e-abe6-86551386948b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 23 [/I2C_SCL] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 71.25,
+                        "y": 66.75
+                    },
+                    "uuid": "69610980-7034-4482-9f7a-52cde1fd90ea"
+                },
+                {
+                    "description": "Điểm hàn 2 [/I2C_SCL] của R33 trên F.Cu",
+                    "pos": {
+                        "x": 76.51,
+                        "y": 67.0
+                    },
+                    "uuid": "afe98288-1450-45fb-978e-7c13691a5196"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 4 [/I2C_SCL] của J5 trên F.Cu",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 58.5
+                    },
+                    "uuid": "a95a6d89-97d7-48c0-b7bf-b60ed9b8a3ef"
+                },
+                {
+                    "description": "Điểm hàn 23 [/I2C_SCL] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 71.25,
+                        "y": 66.75
+                    },
+                    "uuid": "69610980-7034-4482-9f7a-52cde1fd90ea"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 4 [/I2C_SCL] của J5 trên F.Cu",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 58.5
+                    },
+                    "uuid": "a95a6d89-97d7-48c0-b7bf-b60ed9b8a3ef"
+                },
+                {
+                    "description": "Điểm hàn 1 [/I2C_SCL] của TP11 trên F.Cu",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 61.5
+                    },
+                    "uuid": "082f6676-3ca5-432a-9125-89ede4af3b0c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/I2C_SCL] của R33 trên F.Cu",
+                    "pos": {
+                        "x": 76.51,
+                        "y": 67.0
+                    },
+                    "uuid": "afe98288-1450-45fb-978e-7c13691a5196"
+                },
+                {
+                    "description": "Điểm hàn 19 [/I2C_SCL] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 58.9
+                    },
+                    "uuid": "836aa7f5-ce01-4f10-a876-590770e0c112"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/MOT_L_PWM] của R1 trên F.Cu",
+                    "pos": {
+                        "x": 65.74,
+                        "y": 55.0
+                    },
+                    "uuid": "13af1c4c-81ad-44db-be1c-e7e3f905297a"
+                },
+                {
+                    "description": "Điểm hàn 20 [/MOT_L_PWM] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 59.7
+                    },
+                    "uuid": "791ed333-d93b-4e11-9c27-1c2adb3103fc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/MOT_R_PWM] của R3 trên F.Cu",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 79.51
+                    },
+                    "uuid": "0a655fd1-05d7-4d12-88a5-28a60d8ba366"
+                },
+                {
+                    "description": "Điểm hàn 21 [/MOT_R_PWM] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 60.5
+                    },
+                    "uuid": "83899034-d72b-4d72-b360-2350e96bde69"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/LED_STATUS] của R23 trên F.Cu",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 63.49
+                    },
+                    "uuid": "1a73cdf5-27b5-44c2-b2af-349672cbd677"
+                },
+                {
+                    "description": "Điểm hàn 1 [/LED_STATUS] của D9 trên F.Cu",
+                    "pos": {
+                        "x": 105.25,
+                        "y": 64.7875
+                    },
+                    "uuid": "6bd82772-c725-4b0a-8ae0-4f9434a651e0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/LED_STATUS] của D9 trên F.Cu",
+                    "pos": {
+                        "x": 105.25,
+                        "y": 64.7875
+                    },
+                    "uuid": "6bd82772-c725-4b0a-8ae0-4f9434a651e0"
+                },
+                {
+                    "description": "Điểm hàn 22 [/LED_STATUS] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 61.3
+                    },
+                    "uuid": "530e31dc-1fc7-4521-89c3-4382ccf25b6d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/BOOT] của TP9 trên F.Cu",
+                    "pos": {
+                        "x": 97.5,
+                        "y": 58.5
+                    },
+                    "uuid": "47a9cf15-bbda-482c-ac52-da4cf9f6b1e3"
+                },
+                {
+                    "description": "Điểm hàn 2 [/BOOT] của R22 trên F.Cu",
+                    "pos": {
+                        "x": 105.76,
+                        "y": 61.75
+                    },
+                    "uuid": "f763cbc6-8b57-4f42-beeb-935b3fd62902"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/BOOT] của R22 trên F.Cu",
+                    "pos": {
+                        "x": 105.76,
+                        "y": 61.75
+                    },
+                    "uuid": "f763cbc6-8b57-4f42-beeb-935b3fd62902"
+                },
+                {
+                    "description": "Điểm hàn 23 [/BOOT] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 62.1
+                    },
+                    "uuid": "65971997-ba92-4f22-b849-ff939ee9f2dc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 26 [/USB_DM] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 109.2,
+                        "y": 64.0
+                    },
+                    "uuid": "69c6898f-ccff-479f-9b2c-4d6e5b151a3e"
+                },
+                {
+                    "description": "Điểm hàn 2 [/USB_DM] của R13 trên F.Cu",
+                    "pos": {
+                        "x": 113.26,
+                        "y": 70.75
+                    },
+                    "uuid": "5bf61666-549b-41a3-9e98-80fd7935489e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/CHG_CHRG] của D7 trên F.Cu",
+                    "pos": {
+                        "x": 99.9625,
+                        "y": 84.25
+                    },
+                    "uuid": "88e2219d-8260-4708-a765-9af7ae68e330"
+                },
+                {
+                    "description": "Điểm hàn 7 [/CHG_CHRG] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 106.85,
+                        "y": 77.165
+                    },
+                    "uuid": "500e8aa2-ab1d-4534-9ff5-f52408c20769"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/D7_A] của D7 trên F.Cu",
+                    "pos": {
+                        "x": 101.5375,
+                        "y": 84.25
+                    },
+                    "uuid": "0f95e39a-71d1-44ad-ae1c-5cb91d6a085f"
+                },
+                {
+                    "description": "Điểm hàn 2 [/D7_A] của R30 trên F.Cu",
+                    "pos": {
+                        "x": 104.26,
+                        "y": 85.75
+                    },
+                    "uuid": "8195ffe6-b3e7-4763-9deb-6e758325440d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/BEACON_GATE] trên F.Cu, chiều dài 1.2300 mm",
+                    "pos": {
+                        "x": 92.5,
+                        "y": 65.26
+                    },
+                    "uuid": "5770eb26-899c-4294-aa45-b20ffedef3d8"
+                },
+                {
+                    "description": "Điểm hàn 1 [/BEACON_GATE] của Q5 trên F.Cu",
+                    "pos": {
+                        "x": 94.0625,
+                        "y": 69.05
+                    },
+                    "uuid": "df089631-cba6-4b1f-bc7a-afd8a4ba77bb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/CHG_STDBY] của D8 trên F.Cu",
+                    "pos": {
+                        "x": 99.2125,
+                        "y": 82.0
+                    },
+                    "uuid": "5e9da0c5-177f-47c3-b23b-c3fa889d789b"
+                },
+                {
+                    "description": "Điểm hàn 6 [/CHG_STDBY] của U3 trên F.Cu",
+                    "pos": {
+                        "x": 106.85,
+                        "y": 78.435
+                    },
+                    "uuid": "e2131390-8ca9-4e66-bd77-a51a65aee4b3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/D8_A] của D8 trên F.Cu",
+                    "pos": {
+                        "x": 100.7875,
+                        "y": 82.0
+                    },
+                    "uuid": "a977d30a-90d9-433d-bd00-cea7e4acff41"
+                },
+                {
+                    "description": "Điểm hàn 2 [/D8_A] của R31 trên F.Cu",
+                    "pos": {
+                        "x": 102.01,
+                        "y": 85.75
+                    },
+                    "uuid": "c550a6c7-389c-44ab-b0f5-da0b308897bd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/BAT_CS] của R18 trên F.Cu",
+                    "pos": {
+                        "x": 55.24,
+                        "y": 64.75
+                    },
+                    "uuid": "4be28eb7-0955-4ad7-9699-a02d6590bee8"
+                },
+                {
+                    "description": "Điểm hàn 2 [/BAT_CS] của U5 trên F.Cu",
+                    "pos": {
+                        "x": 58.8625,
+                        "y": 67.3
+                    },
+                    "uuid": "b53279a0-b9c3-4227-b658-f8ae9fb9ba7f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 10 [/IMU_REGOUT] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 72.25,
+                        "y": 70.65
+                    },
+                    "uuid": "d5eab5d2-f108-4637-bef0-559d59f70923"
+                },
+                {
+                    "description": "Điểm hàn 1 [/IMU_REGOUT] của C21 trên F.Cu",
+                    "pos": {
+                        "x": 75.52,
+                        "y": 71.5
+                    },
+                    "uuid": "556a0ed9-2d5c-4c21-9e10-37a76f0df739"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/BAT_SENSE] của R17 trên F.Cu",
+                    "pos": {
+                        "x": 56.26,
+                        "y": 66.25
+                    },
+                    "uuid": "78a42b8f-546d-4211-8b91-edd50273d51b"
+                },
+                {
+                    "description": "Điểm hàn 1 [/BAT_SENSE] của C3 trên F.Cu",
+                    "pos": {
+                        "x": 55.27,
+                        "y": 67.75
+                    },
+                    "uuid": "94d8de87-f676-4642-af0d-28e0ee32b504"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 5 [/BAT_SENSE] của U5 trên F.Cu",
+                    "pos": {
+                        "x": 61.1375,
+                        "y": 67.3
+                    },
+                    "uuid": "36aaefc3-894c-45bb-b676-dd3c5231c6a6"
+                },
+                {
+                    "description": "Điểm hàn 2 [/BAT_SENSE] của R17 trên F.Cu",
+                    "pos": {
+                        "x": 56.26,
+                        "y": 66.25
+                    },
+                    "uuid": "78a42b8f-546d-4211-8b91-edd50273d51b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/USB_DM_ESD] của R13 trên F.Cu",
+                    "pos": {
+                        "x": 112.24,
+                        "y": 70.75
+                    },
+                    "uuid": "42720662-434c-4813-a9c0-816d4ef4b88f"
+                },
+                {
+                    "description": "Điểm hàn 4 [/USB_DM_ESD] của U2 trên F.Cu",
+                    "pos": {
+                        "x": 113.4375,
+                        "y": 78.75
+                    },
+                    "uuid": "61558a32-cc0a-491f-ae60-1c7951c8f7de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Vi phạm khoảng hở lỗ khoan (ràng buộc lỗ khoan thiết lập bảng mạch khoảng hở 0.2500 mm; thực tế 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Điểm hàn A1 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 81.9
+                    },
+                    "uuid": "10c8646a-0067-4fdc-a7b3-23814201070b"
+                },
+                {
+                    "description": "Điểm hàn NPTH của J1",
+                    "pos": {
+                        "x": 117.095,
+                        "y": 81.59
+                    },
+                    "uuid": "76c9dab3-d098-4974-961d-4f4493cba8b7"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở lỗ khoan (ràng buộc lỗ khoan thiết lập bảng mạch khoảng hở 0.2500 mm; thực tế 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Điểm hàn B12 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 81.9
+                    },
+                    "uuid": "62f2fdf6-2c11-4515-b163-5bbf3db5c197"
+                },
+                {
+                    "description": "Điểm hàn NPTH của J1",
+                    "pos": {
+                        "x": 117.095,
+                        "y": 81.59
+                    },
+                    "uuid": "76c9dab3-d098-4974-961d-4f4493cba8b7"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở lỗ khoan (ràng buộc lỗ khoan thiết lập bảng mạch khoảng hở 0.2500 mm; thực tế 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Điểm hàn A12 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 75.5
+                    },
+                    "uuid": "85a441e6-0dd8-40e9-9276-2282baa5e028"
+                },
+                {
+                    "description": "Điểm hàn NPTH của J1",
+                    "pos": {
+                        "x": 117.095,
+                        "y": 75.81
+                    },
+                    "uuid": "d0b63ef6-1027-4a7b-bfbd-7c4b3fa64283"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở lỗ khoan (ràng buộc lỗ khoan thiết lập bảng mạch khoảng hở 0.2500 mm; thực tế 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Điểm hàn B1 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 75.5
+                    },
+                    "uuid": "10fb6ebb-9f26-4d80-af04-05e595257068"
+                },
+                {
+                    "description": "Điểm hàn NPTH của J1",
+                    "pos": {
+                        "x": 117.095,
+                        "y": 75.81
+                    },
+                    "uuid": "d0b63ef6-1027-4a7b-bfbd-7c4b3fa64283"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 80.8
+                    },
+                    "uuid": "f59b97d0-560d-4ae5-8234-2c92a74730b8"
+                },
+                {
+                    "description": "Văn bản PCB 'NS-CLIP-MB  REV A  2026-11-06' trên B.Silkscreen",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 85.3
+                    },
+                    "uuid": "b8da4b90-88e3-4b2a-b443-6da7602ce023"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 56.6
+                    },
+                    "uuid": "015a92d9-0179-4223-8287-b2a20a703f87"
+                },
+                {
+                    "description": "Vòng cung của D1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 59.0
+                    },
+                    "uuid": "d85125bf-8911-4179-b804-36212fc88b3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 56.6
+                    },
+                    "uuid": "015a92d9-0179-4223-8287-b2a20a703f87"
+                },
+                {
+                    "description": "Tròn của D1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 59.0
+                    },
+                    "uuid": "04229309-c47c-470d-b91b-c19e7a9c9a31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 122.37487,
+                        "y": 51.02513
+                    },
+                    "uuid": "fefc7409-219d-4eb7-8cbc-4a0c5b008926"
+                },
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.8,
+                        "y": 51.5
+                    },
+                    "uuid": "ac3e7469-dad1-4aeb-afc7-66de12c1386f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 123.33275,
+                        "y": 52.81718
+                    },
+                    "uuid": "f7dbe65d-ab3f-400e-9d39-e83a0e6af129"
+                },
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 123.4,
+                        "y": 51.5
+                    },
+                    "uuid": "4eb9dc01-84e4-470a-bddd-336f2206d841"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 123.4,
+                        "y": 53.5
+                    },
+                    "uuid": "3b77a541-b3b2-4211-9c20-5a7003549013"
+                },
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 123.4,
+                        "y": 64.7
+                    },
+                    "uuid": "c8dca1a6-f09a-4305-804d-2295b5448f55"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 123.4,
+                        "y": 53.5
+                    },
+                    "uuid": "3b77a541-b3b2-4211-9c20-5a7003549013"
+                },
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 123.6,
+                        "y": 64.9
+                    },
+                    "uuid": "66154fb2-7455-4e42-b0a7-e0fdebb40a4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Vòng cung của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 78.4
+                    },
+                    "uuid": "30d8e1cc-1cf9-4691-82ee-5ce2ad8bf5f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Tròn của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 78.4
+                    },
+                    "uuid": "873cfbc2-eb6e-474e-b066-ddfc9d72ec02"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Cấu hình hiện tại không bao gồm thư viện dấu chân 'Espressif'",
+            "items": [
+                {
+                    "description": "Dấu chân U1",
+                    "pos": {
+                        "x": 115.1,
+                        "y": 58.1
+                    },
+                    "uuid": "47f5ad70-96c9-4949-b54e-c209451ec449"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của U3",
+                    "pos": {
+                        "x": 104.2,
+                        "y": 80.3
+                    },
+                    "uuid": "2c8f286e-5828-4e69-90ac-6f7f4189aa73"
+                },
+                {
+                    "description": "Phân đoạn của U3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.26,
+                        "y": 80.36
+                    },
+                    "uuid": "58108aaf-ad9c-4fb9-88fc-fb40be54b90d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của U2",
+                    "pos": {
+                        "x": 112.3,
+                        "y": 79.8
+                    },
+                    "uuid": "623d393d-82ac-46fe-b04b-f4765e03c5fc"
+                },
+                {
+                    "description": "Phân đoạn của U2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 113.21,
+                        "y": 79.36
+                    },
+                    "uuid": "e068e367-7cae-47ca-8bf7-bdb11f7ee19e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của D1",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 61.0
+                    },
+                    "uuid": "ddcaea1c-22bb-4011-b7f5-a085d7a08cf7"
+                },
+                {
+                    "description": "Vòng cung của D1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 59.0
+                    },
+                    "uuid": "fca6a716-79e4-4181-a098-d99076d3f373"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Tròn của D1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 59.0
+                    },
+                    "uuid": "04229309-c47c-470d-b91b-c19e7a9c9a31"
+                },
+                {
+                    "description": "Trường tham chiếu của D1",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 61.0
+                    },
+                    "uuid": "ddcaea1c-22bb-4011-b7f5-a085d7a08cf7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R7",
+                    "pos": {
+                        "x": 96.164,
+                        "y": 68.414
+                    },
+                    "uuid": "b6d86c88-adf4-4d31-90d2-0c7c19189d2d"
+                },
+                {
+                    "description": "Phân đoạn của Q5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 94.24,
+                        "y": 68.44
+                    },
+                    "uuid": "d2d3bb45-8251-4993-aa05-e93d04132042"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R7",
+                    "pos": {
+                        "x": 96.164,
+                        "y": 68.414
+                    },
+                    "uuid": "b6d86c88-adf4-4d31-90d2-0c7c19189d2d"
+                },
+                {
+                    "description": "Phân đoạn của Q5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 95.76,
+                        "y": 68.44
+                    },
+                    "uuid": "d9fd40f6-a01a-4501-856d-fa60d9cf9e2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D9 trên F.Silkscreen",
+                    "pos": {
+                        "x": 104.515,
+                        "y": 63.2
+                    },
+                    "uuid": "03d05c89-2747-4c69-a0fc-e92eeb42b55d"
+                },
+                {
+                    "description": "Trường tham chiếu của R21",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 66.0
+                    },
+                    "uuid": "e60f5c59-6918-4d1c-868d-7fdc44ef4703"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D9 trên F.Silkscreen",
+                    "pos": {
+                        "x": 104.515,
+                        "y": 65.485
+                    },
+                    "uuid": "856f7828-b123-420f-ab67-753ddb53385b"
+                },
+                {
+                    "description": "Trường tham chiếu của R21",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 66.0
+                    },
+                    "uuid": "e60f5c59-6918-4d1c-868d-7fdc44ef4703"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Đa giác của U4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 103.85,
+                        "y": 66.69
+                    },
+                    "uuid": "8b1eb6d4-71e2-449e-a8a8-8e356a795499"
+                },
+                {
+                    "description": "Trường tham chiếu của R21",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 66.0
+                    },
+                    "uuid": "e60f5c59-6918-4d1c-868d-7fdc44ef4703"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R13",
+                    "pos": {
+                        "x": 114.75,
+                        "y": 70.75
+                    },
+                    "uuid": "0302605f-726e-448a-9ed9-2e6ee089ecf5"
+                },
+                {
+                    "description": "Vòng cung của D3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 118.2,
+                        "y": 68.705
+                    },
+                    "uuid": "c7ac748a-054e-472d-8d63-05bb968734dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 107.4,
+                        "y": 64.9
+                    },
+                    "uuid": "34577da5-8540-4885-bbc3-ada672c1ed01"
+                },
+                {
+                    "description": "Trường tham chiếu của D9",
+                    "pos": {
+                        "x": 106.664,
+                        "y": 65.414
+                    },
+                    "uuid": "9d5b4e7c-5946-4eb1-9828-4fbe4894b6d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D9 trên F.Silkscreen",
+                    "pos": {
+                        "x": 105.985,
+                        "y": 65.485
+                    },
+                    "uuid": "2b726efb-99f8-4783-84f1-42f4e21354ba"
+                },
+                {
+                    "description": "Trường tham chiếu của D9",
+                    "pos": {
+                        "x": 106.664,
+                        "y": 65.414
+                    },
+                    "uuid": "9d5b4e7c-5946-4eb1-9828-4fbe4894b6d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của SW3",
+                    "pos": {
+                        "x": 83.7,
+                        "y": 70.2
+                    },
+                    "uuid": "1414b26e-3b7f-41d6-8230-8d579217ecd1"
+                },
+                {
+                    "description": "Phân đoạn của SW3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 81.24,
+                        "y": 70.56
+                    },
+                    "uuid": "708cf3b9-9c31-4998-9b4a-bc48efc4260d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 68.06,
+                        "y": 63.185
+                    },
+                    "uuid": "cf81ecf4-b2c2-4146-9602-ba8e9dfcb0a8"
+                },
+                {
+                    "description": "Trường tham chiếu của C22",
+                    "pos": {
+                        "x": 72.689,
+                        "y": 63.689
+                    },
+                    "uuid": "d87e9d88-44b5-4faf-957c-e979fa741f7e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của Q3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 64.66,
+                        "y": 58.06
+                    },
+                    "uuid": "1fa46804-f9ea-434a-8bb1-16a1e3537a5d"
+                },
+                {
+                    "description": "Trường tham chiếu của Q3",
+                    "pos": {
+                        "x": 64.961,
+                        "y": 58.561
+                    },
+                    "uuid": "dc2a2bef-5baf-4905-9d17-b3a95f713f1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q4",
+                    "pos": {
+                        "x": 65.061,
+                        "y": 81.061
+                    },
+                    "uuid": "3e8a3bd1-8cb7-4c98-8d16-3e908bf3d1fc"
+                },
+                {
+                    "description": "Phân đoạn của Q4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 64.76,
+                        "y": 80.56
+                    },
+                    "uuid": "dd8c42a5-0935-458e-8b31-e2b976869a5b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D6 trên F.Silkscreen",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 86.96
+                    },
+                    "uuid": "ceba6b72-6040-4ec2-80f6-84b786713c31"
+                },
+                {
+                    "description": "Trường tham chiếu của D6",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 84.6
+                    },
+                    "uuid": "f5cc5359-caaf-408a-a989-95df94ebe089"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của SW2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 81.24,
+                        "y": 58.06
+                    },
+                    "uuid": "046112e0-c81c-4dfe-b9d9-47f03bc7fc9a"
+                },
+                {
+                    "description": "Trường tham chiếu của SW2",
+                    "pos": {
+                        "x": 83.7,
+                        "y": 57.7
+                    },
+                    "uuid": "66971d86-f3bb-4021-bf59-e834bb4f8862"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q1",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 74.0
+                    },
+                    "uuid": "150ffc30-d39d-4ec0-b459-95dd7b2ab266"
+                },
+                {
+                    "description": "Phân đoạn của Q1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 58.375,
+                        "y": 74.125
+                    },
+                    "uuid": "3b865cb7-a0bf-45f3-a2b4-f1336050fd3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Đa giác của U5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 58.55,
+                        "y": 65.79
+                    },
+                    "uuid": "03ff9a5e-11e0-4786-ac26-2ec81863b811"
+                },
+                {
+                    "description": "Trường tham chiếu của R17",
+                    "pos": {
+                        "x": 58.06,
+                        "y": 65.293
+                    },
+                    "uuid": "a12f7d42-ba13-4e8c-ae53-6b5bdba66a61"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 60.91,
+                        "y": 68.86
+                    },
+                    "uuid": "5ece3991-59bc-4dde-9269-abfa0fdbd0e0"
+                },
+                {
+                    "description": "Trường tham chiếu của U5",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 69.3
+                    },
+                    "uuid": "eea72e97-5183-4ca3-859c-fc67c8a7c3f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của SW4",
+                    "pos": {
+                        "x": 83.7,
+                        "y": 82.7
+                    },
+                    "uuid": "39cc0a71-c3fc-4395-bd66-5feeee1f3ed3"
+                },
+                {
+                    "description": "Phân đoạn của SW4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 81.24,
+                        "y": 83.06
+                    },
+                    "uuid": "e1066bd6-eba6-43f1-8b9c-96ca42d2f545"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của SW4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 86.16,
+                        "y": 79.34
+                    },
+                    "uuid": "6b275b3c-784c-4b2e-b5ad-a18086de35b3"
+                },
+                {
+                    "description": "Trường tham chiếu của C15",
+                    "pos": {
+                        "x": 83.061,
+                        "y": 79.311
+                    },
+                    "uuid": "82efaf36-00cb-4293-a1ae-b6ede34f0c31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D9 trên F.Silkscreen",
+                    "pos": {
+                        "x": 104.515,
+                        "y": 65.485
+                    },
+                    "uuid": "856f7828-b123-420f-ab67-753ddb53385b"
+                },
+                {
+                    "description": "Trường tham chiếu của D9",
+                    "pos": {
+                        "x": 106.664,
+                        "y": 65.414
+                    },
+                    "uuid": "9d5b4e7c-5946-4eb1-9828-4fbe4894b6d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của U4",
+                    "pos": {
+                        "x": 105.3,
+                        "y": 70.2
+                    },
+                    "uuid": "63e3eb0c-cbed-4743-b991-77c41e901d80"
+                },
+                {
+                    "description": "Phân đoạn của U4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.21,
+                        "y": 69.76
+                    },
+                    "uuid": "e49af009-8e88-47a6-914b-2e78c64d6cf7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q2",
+                    "pos": {
+                        "x": 109.561,
+                        "y": 71.339
+                    },
+                    "uuid": "1680b3b7-5f7b-4e7e-b453-7229edcb140a"
+                },
+                {
+                    "description": "Phân đoạn của Q2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 107.74,
+                        "y": 70.84
+                    },
+                    "uuid": "d04adbf2-49b9-4896-817b-838511191297"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q2",
+                    "pos": {
+                        "x": 109.561,
+                        "y": 71.339
+                    },
+                    "uuid": "1680b3b7-5f7b-4e7e-b453-7229edcb140a"
+                },
+                {
+                    "description": "Phân đoạn của Q2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 109.26,
+                        "y": 70.84
+                    },
+                    "uuid": "f5f53d44-8e3e-4a00-9c23-f30d4ad8a0fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.26,
+                        "y": 80.36
+                    },
+                    "uuid": "58108aaf-ad9c-4fb9-88fc-fb40be54b90d"
+                },
+                {
+                    "description": "Trường tham chiếu của C4",
+                    "pos": {
+                        "x": 106.522,
+                        "y": 80.852
+                    },
+                    "uuid": "9d4cdc8d-941f-4c6b-bf1a-0528514d9f76"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C4",
+                    "pos": {
+                        "x": 106.522,
+                        "y": 80.852
+                    },
+                    "uuid": "9d4cdc8d-941f-4c6b-bf1a-0528514d9f76"
+                },
+                {
+                    "description": "Phân đoạn của U3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.26,
+                        "y": 80.265
+                    },
+                    "uuid": "bd016c57-7683-4199-8cd4-caee7548afb0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D8 trên F.Silkscreen",
+                    "pos": {
+                        "x": 98.515,
+                        "y": 81.265
+                    },
+                    "uuid": "bc719df9-119a-4b91-858c-934643e27bb8"
+                },
+                {
+                    "description": "Trường tham chiếu của FID2",
+                    "pos": {
+                        "x": 97.235,
+                        "y": 82.152
+                    },
+                    "uuid": "d6d3763f-1e8a-4312-9425-1292f7fa8cb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của D2",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 76.4
+                    },
+                    "uuid": "618dd15a-96bc-459f-afc2-0bf3db13de1c"
+                },
+                {
+                    "description": "Vòng cung của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 78.4
+                    },
+                    "uuid": "91b8dfce-21a4-431d-b9fd-2053652a87e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của D2",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 76.4
+                    },
+                    "uuid": "618dd15a-96bc-459f-afc2-0bf3db13de1c"
+                },
+                {
+                    "description": "Tròn của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 78.4
+                    },
+                    "uuid": "873cfbc2-eb6e-474e-b066-ddfc9d72ec02"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.99,
+                        "y": 86.05
+                    },
+                    "uuid": "16c20c41-17b3-46f7-aadb-63a66d35ac8e"
+                },
+                {
+                    "description": "Trường tham chiếu của D4",
+                    "pos": {
+                        "x": 110.5,
+                        "y": 86.4
+                    },
+                    "uuid": "22d50559-4389-4e8d-a325-fe6d170ca396"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của Q5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 95.76,
+                        "y": 70.56
+                    },
+                    "uuid": "7c60d490-3588-4391-a03a-ed5e5f31c250"
+                },
+                {
+                    "description": "Trường tham chiếu của Q5",
+                    "pos": {
+                        "x": 96.061,
+                        "y": 71.061
+                    },
+                    "uuid": "826330b9-fcba-419d-b86c-99040b56b652"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Non-Mirrored text on back layer",
+            "items": [
+                {
+                    "description": "Văn bản PCB 'NS-CLIP-MB  REV A  2026-11-06' trên B.Silkscreen",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 85.3
+                    },
+                    "uuid": "b8da4b90-88e3-4b2a-b443-6da7602ce023"
+                }
+            ],
+            "severity": "warning",
+            "type": "nonmirrored_text_on_back_layer"
+        }
+    ]
+}

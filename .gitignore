@@ -1,0 +1,19 @@
+.pio/
+__pycache__/
+.pytest_cache/
+.venv/
+*.local.ini
+output/build/
+
+# Scratch and working folders from tool sessions
+.codex-*/
+.chart-data-*/
+.claude/
+output/.pcb-fab-work/
+
+# KiCad local state and backups
+.history/
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.lck

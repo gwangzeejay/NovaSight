@@ -1,0 +1,1173 @@
+
+--- PAGE 1 ---
+NovaSight — Brief thiết kế PCB (NovaChest
+V4.0 & NovaCane Clip V2.0)
+Nov 6, 2026  ·  @Smiling
+1. Phạm vi và cách đọc
+Cầ n vẽ  2 bo mạch cho b ả n Beta (Rev A): bo chính NovaChest NS-CHEST-MB (4 l ớ p, đ ứ ng
+dọc sau mặ t tr ướ c) và bo chính NovaCane Clip NS-CLIP-MB (2 l ớ p, nằ m ngang trên pin).
+C ả m biế n l ớ n, pin và motor vẫ n là linh kiệ n r ờ i, cắ m vào bo qua connector. Nh ờ  vậ y h ỏ ng
+con nào thì thay con đó.
+Thành phầ n Trên bo (vẽ  mạch) R ờ i, nố i qua connector
+NovaChest ESP32-S3-WROOM-1-N16R8, IP5306
+(sạc + boost 5 V), buck 3,3 V, 2 LDO
+camera, MPU-6050, 2 mạch lái
+motor, buffer TRIG, USB-C, công tắ c,
+nút Mode, LED
+Camera OV3660 (FPC 24 chân),
+breakout VL53L8CX, 2 board JSN-
+SR04T, 2 motor rung 1027 trên dây
+vai, pin LP124065 4000 mAh
+NovaCane
+Clip
+ESP32-C3-MINI-1, TP4056 + DW01A
++ FS8205A, chia t ả i (power-path),
+LDO 3,3 V, MPU-6050, 2 mạch lái
+motor, mạch LED, 3 nút, USB-C,
+công tắ c
+2 motor 1027, pin 603450, 2 LED đ ỏ  5
+mm, 1 LED trắ ng 5 mm
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 1 of 31
+
+--- PAGE 2 ---
+Trên c ả  hai bo, công tắ c gạt ch ỉ  bậ t mộ t MOSFET hoặ c chân EN. Motor lấ y nguồ n tr ự c tiế p
+t ừ  pin (Chest) hoặ c t ừ  VSYS (Clip), không qua rail 5 V hay 3,3 V.
+Ký hiệu độ chắc chắn
+[DS]: lấ y t ừ  datasheet hoặ c thiế t kế  tham chiế u c ủ a hãng. Đã ki ể m tra.
+[TK]: quyế t định thiế t kế  c ủ a nhóm, có tính toán ở  mục 5.
+[ĐO]: ph ả i đo hoặ c xác minh trên hàng thậ t tr ướ c khi đặ t mạch. Không đ ượ c b ỏ  qua.
+Hệ toạ độ (kh ớ p v ớ i file FreeCAD)
+Chest: X sang ph ả i ng ườ i đeo, Y t ừ  mặ t tr ướ c (Y = 0) vào trong về  phía ng ự c (Y = 43), Z
+h ướ ng lên. Gố c ở  tâm mặ t tr ướ c. Đ ơ n vị mm.
+Clip: X dọc thân gậ y, X = 0 ở  đầ u phía tay cầ m, X = 78 ở  đầ u phía mũi gậ y. Y ngang. Z
+h ướ ng lên, Z = 0 ở  trục gậ y.
+cây nguồ n hai bo · khố i tô màu là công tắ c t ả i
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 2 of 31
+
+--- PAGE 3 ---
+Thay đ ổ i so v ớ i Đặc t ả  v2 (b ả n Alpha dùng module)
+1. Chest: b ỏ  board K9_41 vì ng ườ i bán không công bố  pinout. Dùng th ẳ ng module ESP32-
+S3-WROOM-1-N16R8 và connector camera theo thiế t kế  tham chiế u ESP32-S3-EYE
+c ủ a Espressif.
+2. Chest: thay đ ườ ng 3,3 V t ừ  LDO bằ ng buck SY8088IAAC. Lý do: đ ỡ  nóng, và module R8
+ch ỉ  chịu t ớ i 65 °C.
+3. Hai bo: đ ư a MPU-6050 và mạch lái motor lên bo. B ỏ  GY-521 và module rung có MOSFET.
+Motor chạy t ừ  VBAT, không chạy t ừ  5 V.
+4. Công tắ c gạt ch ỉ  điề u khi ể n công tắ c t ả i (P-MOSFET hoặ c chân EN), không tr ự c tiế p
+mang dòng.
+5. Clip: thay ESP32-C3 Super Mini bằ ng ESP32-C3-MINI-1. Còn mộ t c ổ ng USB-C dùng
+chung cho sạc và nạp firmware. Pin map thay đ ổ i, xem mục 4.
+6. Clip: dòng sạc TP4056 đặ t 400 mA (R_PROG = 3,0 kΩ). Module TP4056 bán sẵ n hàn 1,2
+kΩ, t ứ c 1 A, quá cao cho pin kho ả ng 1000 mAh.
+7. Clip: thêm mạch chia t ả i. Máy vẫ n chạy khi cắ m sạc, nên b ỏ  quy tắ c "gạt OFF tr ướ c khi
+sạc". Ng ườ i khiế m thị không nhìn đ ượ c LED nên rấ t dễ  quên quy tắ c đó.
+8. Phía c ơ  khí cầ n s ử a theo bo m ớ i: vị trí nút Mode c ủ a Chest, chiề u dài light pipe, trụ bắ t
+bo, khe cho LED c ủ a Clip. Chi tiế t ở  mục 3 và 4.
+2. Yêu cầu chung cho c ả  hai bo
+C ả  hai bo đ ượ c thiế t kế  đ ể  đặ t gia công và hàn SMT tại JLCPCB, ch ỉ  hàn linh kiệ n mộ t mặ t.
+Ư u tiên linh kiệ n có sẵ n trên LCSC.
+Hạng mục NS-CHEST-MB NS-CLIP-MB
+Số  l ớ p, độ  dày 4 l ớ p, 1,6 mm 2 l ớ p, 1,0 mm
+Stackup L1 tín hiệ u + linh kiệ n · L2 GND liề n ·
+L3 nguồ n (5V, 3V3, VBAT) · L4 tín
+hiệ u chậ m
+L1 tín hiệ u + linh kiệ n · L2 GND liề n
+tố i đa
+Đồ ng 1 oz ngoài, 0,5 oz trong 1 oz
+Bề  mặ t ENIG (QFN MPU-6050 4×4 mm và
+module cầ n mặ t ph ẳ ng)
+ENIG
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 3 of 31
+
+--- PAGE 4 ---
+Quy tắc thiết kế bắt buộc
+1. GND liề n khố i. Không chia GND analog và digital. Khâu via GND dọc mép bo và quanh
+mạch nguồ n xung, b ướ c ≤ 5 mm.
+2. Antenna module ESP32. Theo mục "PCB Layout Recommendations" trong datasheet
+c ủ a module: antenna nằ m ở  mép bo, d ướ i antenna không có đồ ng ở  mọi l ớ p, không đặ t
+linh kiệ n. Nế u đ ượ c thì đ ể  antenna thò ra kh ỏ i mép bo [DS].
+3. Nguồ n xung (IP5306, SY8088IAAC): vòng C_in → IC → GND ph ả i ngắ n nhấ t. Node
+SW/LX ngắ n và nh ỏ , không chạy dây tín hiệ u d ướ i nó. Pad t ả n nhiệ t c ủ a IP5306 và
+TP4056 nố i GND bằ ng ≥ 9 via đồ ng đầ y [DS].
+4. Độ  rộ ng dây nguồ n theo b ả ng ở  mục 5. VBAT, 5V và node c ủ a cuộ n IP5306 đi bằ ng
+m ả ng đồ ng hoặ c dây ≥ 1,5 mm.
+5. USB D+/D−: đi cặ p song song, dài bằ ng nhau trong vòng 1 mm, không đ ổ i l ớ p. ESD đặ t
+sát connector.
+6. ESD: USB-C có USBLC6-2SC6 trên D+/D− và VBUS. Connector đi ra dây vai (motor
+Chest) có diode flyback và cầ u chì PTC.
+7. Không đ ư a tín hiệ u 5 V vào GPIO. ESP32 không chịu đ ượ c 5 V. Mọi tín hiệ u t ừ  mạch 5 V
+vào ph ả i qua cầ u chia hoặ c buffer.
+8. Chân strapping c ủ a ESP32 không đ ượ c bị kéo sai m ứ c lúc kh ở i độ ng. Mục 3 và 4 ghi rõ
+t ừ ng chân.
+9. Test point: mỗ i rail nguồ n, GND, EN, BOOT, UART TX/RX, SDA/SCL đề u có pad Ø 1,0
+mm, ghi tên trên silkscreen.
+10. Silkscreen: tên bo, Rev A, ngày, chân 1 c ủ a mọi connector, c ự c tính pin và motor.
+11. Fiducial: 3 cái trên mặ t hàn linh kiệ n.
+12. Chố ng ẩ m: bo đeo sát ng ườ i, có mồ  hôi và m ư a. Ch ừ a vùng không ph ủ  cho connector
+và antenna đ ể  có th ể  ph ủ  conformal coating sau này.
+Hạng mục NS-CHEST-MB NS-CLIP-MB
+Mặ t hàn linh
+kiệ n
+Ch ỉ  mặ t tr ướ c (h ướ ng −Y, phía mặ t
+ngoài). Mặ t sau ch ỉ  đ ể  test point.
+Ch ỉ  mặ t trên (+Z). Mặ t d ướ i ch ỉ  đ ể
+pad dây pin, motor, LED trắ ng
+Tố i thi ể u
+dây/khe
+0,1/0,1 mm (gi ớ i hạn 4 l ớ p c ủ a JLC);
+khuyên dùng 0,15/0,15
+0,15/0,15 mm
+Via 0,3 mm khoan / 0,6 mm pad 0,3 / 0,6 mm
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 4 of 31
+
+--- PAGE 5 ---
+File cần giao lại
+Project KiCad 8 (hoặ c EasyEDA Pro) đầ y đ ủ . Schematic xuấ t PDF.
+Gerber, khoan, BOM theo mã LCSC, file CPL.
+File STEP 3D c ủ a bo đã lắ p linh kiệ n. Nhóm c ơ  khí dùng file này đ ể  ki ể m tra va chạm
+trong FreeCAD.
+File DXF đ ườ ng bao bo, có lỗ  và vị trí connector.
+3. Bo NovaChest — NS-CHEST-MB
+NS-CHEST-MB là bo 4 l ớ p, kích th ướ c 100 × 49,6 × 1,6 mm. Bo đ ứ ng dọc, song song mặ t
+tr ướ c, nằ m gi ữ a cụm c ả m biế n ở  phía tr ướ c và pin ở  phía sau. Bo thay cho board K9_41,
+module IP5306, GY-521 và 2 module rung c ủ a b ả n Alpha.
+3.1 C ơ  khí: vị trí, đ ườ ng bao, vùng chiều cao
+Các số  liệ u d ướ i đây lấ y t ừ  mô hình FreeCAD novachest_v4.py . Vị trí lỗ  và connector đã
+đ ượ c ki ể m tra va chạm v ớ i mọi keep-out: đầ u dò siêu âm, camera, ToF, light pipe và g ờ  sau
+visor [TK].
+Thông số Giá trị
+Mặ t ph ẳ ng bo Mặ t hàn linh kiệ n (mặ t tr ướ c) ở  Y = 22,6, mặ t
+sau ở  Y = 24,2. Pin bắ t đầ u t ừ  Y = 27,0
+Đ ườ ng bao X −50 … +50, Z −24,8 … +24,8. Bo góc R2.
+Thành trong c ủ a v ỏ  ở  Z = ±25,5
+Lỗ  bắ t vít (NPTH Ø2,2, M2, keep-out Ø4,5
+không đồ ng, không linh kiệ n)
+H1 (−44; +22) · H2 (+44; +22) · H3 (−20; −20) ·
+H4 (+20; −20). Trụ mọc t ừ  v ỏ  tr ướ c. H3 và H4
+mọc t ừ  thành trong c ủ a phầ n cằ m
+Chiề u cao linh kiệ n mặ t tr ướ c ≤ 7,0 mm ở  mọi n ơ i
+Vùng A, bóng đầ u dò siêu âm |X| ≥ 40 và Z t ừ  −17,5 đế n +14,5: cao ≤ 1,2 mm
+(ch ỉ  đ ượ c 0402 và 0603). Keep-out c ủ a đầ u
+dò kế t thúc ở  Y = 21,1
+Chiề u cao linh kiệ n mặ t sau ≤ 2,0 mm (khe đế n pin là 2,8 mm). Th ự c tế  ch ỉ
+đặ t test point
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 5 of 31
+
+--- PAGE 6 ---
+Mặ t bằ ng đề  xuấ t. Module ESP32-S3 đặ t dọc ở  X −38 … −20, Z −0,7 … +24,8. Antenna chĩa
+lên mép trên và không chạm vùng A (đã ki ể m tra). Khố i nguồ n (IP5306, L1, buck) ở  góc d ướ i
+bên ph ả i, cạnh J1 và J4. MPU-6050 ở  gi ữ a bo, cách L1 và IP5306 ≥ 15 mm. Mạch camera ở
+gi ữ a phía trên.
+L ư u ý về  antenna. Pin LiPo nằ m sau bo, chồ ng lên phầ n d ướ i antenna t ừ  Z 19 đế n 21,5.
+Ng ự c ng ườ i đeo cũng ở  ngay sau. BLE cầ n v ươ n kho ả ng 1 m t ớ i Clip và điệ n thoại, nên chấ p
+nhậ n đ ượ c. Bắ t buộ c đo RSSI thậ t [ĐO].
+Linh kiệ n ở  mép bo Vị trí Yêu cầ u
+J1 USB-C (16 chân, top-
+mount)
+Mép d ướ i, tâm X =
++32,0
+Miệ ng c ổ ng h ướ ng −Z, chạm Z =
+−25,5 ± 0,2. Tâm c ổ ng ở  Y = 21,0, t ứ c
+tâm cao 1,6 mm so v ớ i mặ t bo. Ki ể m
+tra bằ ng STEP c ủ a connector [ĐO]
+SW1 công tắ c gạt, gạt ngang Mép d ướ i, X = −32,0 Cầ n gạt h ướ ng −Z. Ch ỉ  mang dòng µA
+(mục 3.3), nên dùng loại nh ỏ  ki ể u
+MSK-12C02. C ơ  khí sẽ  s ử a khe theo
+con đ ượ c chọn
+SW2 nút Mode (tact bấ m
+cạnh)
+Mép trên, X = +30,0 Thân nút h ướ ng +Z. C ơ  khí d ờ i nút
+t ừ  Y = 32,5 về  Y ≈ 21 đ ể  kh ớ p v ớ i bo
+D1 LED trạng thái Mặ t tr ướ c, (X −34; Z
+−16)
+C ơ  khí kéo dài light pipe t ừ  Y = 6 đế n
+Y = 22,4
+J2 FPC camera 24 chân,
+b ướ c 0,5
+Mặ t tr ướ c, tâm (X 0;
+Z +18,5)
+Cao ≤ 2 mm. Chiề u dài FPC t ừ
+camera đế n đây ≥ 20 mm [ĐO]
+J3 ToF (JST-SH 8 chân,
+đ ứ ng)
+Mặ t tr ướ c, tâm (X 0;
+Z −2)
+Nằ m gi ữ a camera và ToF
+J4 pin (JST-PH 2 chân,
+đ ứ ng)
+Mặ t tr ướ c, tâm (X
++2; Z −21)
+Dây pin vòng qua mép d ướ i
+J5 JSN ph ả i, J6 JSN trái (PH
+4 chân)
+(±45; −22) Ngoài vùng A
+J7 motor ph ả i, J8 motor trái
+(PH 2 chân)
+(±45; +16,75) Ngoài vùng A. Dây đi ra boot cáp ở  X
+= ±62 trên nóc v ỏ
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 6 of 31
+
+--- PAGE 7 ---
+3.2 Cây nguồn
+Các rail camera (2V8 cho AVDD và DOVDD, 1V5 cho DVDD) giố ng thiế t kế  tham chiế u
+ESP32-S3-EYE c ủ a Espressif [DS].
+3.3 Khối mạch và giá trị linh kiện
+A. USB-C (J1) và b ả o vệ
+CC1 và CC2 mỗ i chân mộ t điệ n tr ở  5,1 kΩ 1% xuố ng GND. Đây là thiế t bị ch ỉ  nhậ n nguồ n
+(sink), đ ể  sạc có c ổ ng USB-C vẫ n cấ p 5 V. Bắ t buộ c dùng hai điệ n tr ở  riêng, không gộ p
+chung.
+D+ nố i GPIO20, D− nố i GPIO19 (USB nộ i c ủ a ESP32-S3). Đặ t footprint 0 Ω nố i tiế p trên
+mỗ i dây. Dùng c ổ ng này đ ể  nạp firmware khi công tắ c ở  ON.
+U1 USBLC6-2SC6: D+/D− và VBUS. Shield nố i GND.
+VBUS → IP5306 VIN, và → cầ u chia 68 kΩ / 100 kΩ → GPIO44 (VBUS_DET). M ứ c tín hiệ u
+là 2,98 V ở  VBUS 5,0 V.
+Rail Nguồ n cấ p Điệ n
+áp
+Dòng thiế t
+kế
+T ả i
+VBUS USB-C 4,65–
+5,5 V
+≤ 2,4 A IP5306 VIN, VBUS_DET
+VBAT Pin LP124065 (có
+mạch b ả o vệ )
+3,0–4,2
+V
+2,1 A sạc; ≤
+1,2 A x ả
+IP5306 BAT, VBAT_MOT, đo
+điệ n áp pin
+5V_SYS IP5306 VOUT 5,0 V ≤ 2,1 A (IC) Q1 công tắ c t ả i
+5V_SW Q1 AO3401A 5,0 V 0,8 A thiế t
+kế
+Buck, 2 JSN, ToF (nế u chọn
+5 V), U5/U6
+3V3 U3 SY8088IAAC 3,32 V 1 A tố i đa; ≈
+0,75 A đ ỉ nh
+ESP32-S3, MPU-6050, 2
+LDO camera, ToF (mặ c
+định)
+2V8 U7 ME6211C28M5G-N 2,8 V ≤ 500 mA Camera AVDD, DOVDD
+1V5 U8 ME6211C15M5G-N 1,5 V ≤ 500 mA Camera DVDD
+VBAT_MOT VBAT qua F1 (PTC 0,5
+A)
+3,0–4,2
+V
+2 × 120 mA
+khi kh ở i
+độ ng
+2 motor 1027 trên dây vai
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 7 of 31
+
+--- PAGE 8 ---
+B. IP5306: sạc và boost 5 V (U2, ESOP-8)
+Theo datasheet: chân 1 VIN, 2 LED1, 3 LED2, 4 LED3, 5 KEY, 6 BAT, 7 SW, 8 VOUT, pad đáy
+nố i GND [DS].
+Hành vi c ủ a IP5306 theo datasheet [DS]:
+Nhấ n KEY 30 ms – 2 s thì bậ t boost. Nhấ n trên 2 s thì tắ t. Hai lầ n nhấ n ngắ n trong 1 s thì
+bậ t/tắ t đèn pin.
+T ự  về  standby khi t ả i < 45 mA kéo dài 32 s. Dòng standby kho ả ng 50 µA.
+Ngắ t khi quá nhiệ t ở  125 °C.
+C. Công tắ c nguồ n điề u khi ể n công tắ c t ả i [TK]
+1. SW1 gạt ON thì nố i VBAT vào net PWR_EN. PWR_EN có 100 kΩ kéo xuố ng GND.
+2. PWR_EN → 10 kΩ → gate Q2 (AO3400A). Q2 kéo gate c ủ a Q1 (AO3401A, P-MOSFET)
+xuố ng qua 10 kΩ.
+3. Q1: Source = 5V_SYS, Drain = 5V_SW. Gate có 100 kΩ kéo lên Source và 100 nF nố i
+Gate–Source. Nh ư  vậ y điệ n áp lên mề m trong kho ả ng 1 ms, hạn chế  dòng vọt vào các
+tụ phía sau.
+4. Tạo xung KEY: PWR_EN → tụ 1 µF → gate Q3 (2N7002). Gate có 470 kΩ xuố ng GND. Q3
+kéo KEY xuố ng GND kho ả ng 0,42 s, nằ m trong c ử a s ổ  "nhấ n ngắ n" 30 ms – 2 s, nên
+IP5306 luôn th ứ c dậ y khi gạt ON k ể  c ả  đang standby.
+Chân Nố i Linh kiệ n
+VIN VBUS 10 µF X5R 10 V + 100 nF, sát chân
+BAT VBAT (J4 chân 1) 2 × 22 µF X5R 10 V (0805)
+SW L1 → BAT L1 1,0 µH, Isat ≥ 4,5 A, DCR ≤ 10 mΩ, c ỡ
+7 × 7 mm. Datasheet g ợ i ý SPM70701R0
+[DS]
+VOUT 5V_SYS 2 × 22 µF X5R 10 V + 100 nF
+LED1–
+LED3
+Mạch báo pin 4 LED theo Hình 1 c ủ a
+datasheet (LED 0603, điệ n tr ở  1 kΩ)
+Ch ỉ  đ ể  kỹ  thuậ t viên xem khi m ở  v ỏ .
+Hoặ c chép đúng mạch LED c ủ a module
+MHCD42 đang dùng
+KEY Drain c ủ a Q3 và nút SW4 (DNP)
+xuố ng GND
+Xem mục C
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 8 of 31
+
+--- PAGE 9 ---
+5. Gạt OFF thì Q1 ngắ t, t ả i về  0. Sau 32 s IP5306 t ự  về  standby. Pin ch ỉ  còn tố n kho ả ng 50
+µA cho IP5306 và 4,5 µA cho cầ u chia đo pin.
+Cầ n ki ể m tra trên mạch thậ t [ĐO]:
+KEY tích c ự c m ứ c thấ p, t ứ c nố i KEY xuố ng GND là nhấ n.
+Khi cắ m sạc lúc máy đang chạy, đầ u ra 5 V có bị sụt ngắ n không. Có tài liệ u tham kh ả o
+ghi nhậ n hiệ n t ượ ng này. Nế u có, firmware ph ả i chịu đ ượ c việ c bị reset.
+D. Buck 3,3 V (U3 SY8088IAAC, SOT-23-5)
+Chân: 1 EN, 2 GND, 3 LX, 4 IN, 5 FB [DS].
+IN: 5V_SW, tụ 10 µF + 100 nF. EN nố i IN qua 100 kΩ.
+L2: 2,2 µH, Isat ≥ 1,5 A, DCR ≤ 60 mΩ (c ỡ  4 × 4 mm).
+Ra: 22 µF + 10 µF + 100 nF.
+FB: R trên 680 kΩ, R d ướ i 150 kΩ, cho 0,6 × (1 + 680/150) = 3,32 V. Thêm tụ feed-forward
+22 pF song song R trên. Bộ  giá trị này lấ y t ừ  ESP32-S3-EYE [DS].
+SY8088AAC (b ả n cũ) đang ở  trạng thái NRND, nên chọn b ả n I. Hai b ả n cùng s ơ  đồ
+chân.
+E. ESP32-S3-WROOM-1-N16R8 (U4)
+3V3 (chân 2): 10 µF + 100 nF sát chân, thêm 22 µF t ổ ng.
+EN (chân 3): 10 kΩ lên 3V3, 1 µF xuố ng GND. Thêm nút RESET nh ỏ  (SW5) xuố ng GND.
+GPIO0 (chân 27): 10 kΩ lên 3V3. Nút BOOT nh ỏ  (SW3) xuố ng GND.
+GPIO35, 36 và 37 bị PSRAM octal chiế m, không đ ượ c nố i [DS].
+Chân strapping: GPIO0 (pull-up yế u, 1 = boot bình th ườ ng), GPIO45 và GPIO46 (pull-
+down yế u, ph ả i bằ ng 0 lúc kh ở i độ ng), GPIO3 (floating) [DS].
+F. Camera OV3660 (J2, FPC 24 chân, b ướ c 0,5 mm)
+Pinout c ủ a connector theo ESP32-S3-EYE [DS]. Chân GPIO theo b ả ng chân chu ẩ n
+"ESP32-S3 WROOM / Freenove" mà th ư  việ n esp32-camera đã hỗ  tr ợ  sẵ n.
+[ĐO] Loại tiế p đi ể m c ủ a connector (top hay bottom contact) và th ứ  t ự  chân ph ả i kh ớ p
+v ớ i FPC c ủ a module camera mua về . Sai ở  đây là lỗ i hay gặ p nhấ t.
+Chân FPC Tín hiệ u Nố i
+1, 23, 24 NC —
+2 AGND GND
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 9 of 31
+
+--- PAGE 10 ---
+Dây DVP dài ≤ 40 mm, đi trên L1 v ớ i mặ t GND liề n ở  L2, không chạy qua vùng nguồ n xung.
+XCLK cách các dây khác ≥ 3 lầ n bề  rộ ng dây.
+G. Bus I²C c ả m biế n (GPIO2 SDA, GPIO14 SCL)
+Bus chạy 400 kHz vì MPU-6050 tố i đa 400 kHz. 2,2 kΩ kéo lên 3V3.
+[ĐO] Breakout ToF có sẵ n pull-up hay không. Nế u có thì đ ể  DNP điệ n tr ở  trên bo.
+Chân FPC Tín hiệ u Nố i
+3 SDA (SIOD) GPIO4, 4,7 kΩ lên 2V8
+4 AVDD 2V8 + 1 µF + 100 nF
+5 SCL (SIOC) GPIO5, 4,7 kΩ lên 2V8
+6 RESET (tích c ự c thấ p) 10 kΩ lên 2V8 + 100 nF xuố ng GND
+7 VSYNC GPIO6
+8 PWDN (tích c ự c cao) 10 kΩ xuố ng GND (camera luôn bậ t)
+9 HREF GPIO7
+10 DVDD 1V5 + 1 µF + 100 nF
+11 DOVDD 2V8 + 1 µF + 100 nF
+12 Y9 GPIO16
+13 XCLK (20 MHz) GPIO15, footprint 22 Ω nố i tiế p sát ESP32
+14 Y8 GPIO17
+15 DGND GND
+16 Y7 GPIO18
+17 PCLK GPIO13
+18 Y6 GPIO12
+19 Y2 GPIO11
+20 Y5 GPIO10
+21 Y3 GPIO9
+22 Y4 GPIO8
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 10 of 31
+
+--- PAGE 11 ---
+Địa ch ỉ  7-bit: MPU-6050 là 0x68 (AD0 = 0), VL53L8CX là 0x29 (0x52 dạng 8-bit) [DS].
+H. ToF VL53L8CX (J3, JST-SH 8 chân)
+Chip VL53L8CX cầ n AVDD 3,3 V, CORE 1,8 V và IOVDD 1,2/1,8 V [DS]. Vì vậ y bắ t buộ c dùng
+breakout có sẵ n LDO và mạch chuy ể n m ứ c logic, nhậ n VIN 3,2–5,5 V ki ể u Pololu #3419.
+Breakout ki ể u này tiêu thụ kho ả ng 100 mA, đ ỉ nh 150 mA.
+[ĐO] Breakout đang mua ở  Đ ứ c Huy ch ư a công bố  pinout. Tr ướ c khi chố t J3: chụp ả nh hai
+mặ t board, đọc nhãn chân, xác nhậ n có mạch chuy ể n m ứ c và VIN chịu đ ượ c 3,3 V.
+I. 2 c ả m biế n siêu âm JSN-SR04T (J5 ph ả i, J6 trái)
+JSN-SR04T V3.0 chạy 3,0–5,5 V, dòng ngh ỉ  d ướ i 8 mA, chế  độ  0 (Mode đ ể  h ở ) dùng xung
+TRIG ≥ 10 µs [DS]. Cấ p 5 V cho tầ m xa tố t nhấ t.
+[ĐO] Đố i chiế u th ứ  t ự  chân in trên board JSN thậ t. Đo m ứ c ECHO bằ ng oscilloscope.
+Chân Tín hiệ u Nố i
+1 VIN_TOF JP1 (0 Ω): mặ c định 3V3, ph ươ ng án 5V_SW
+2, 8 GND GND
+3 SDA GPIO2
+4 SCL GPIO14
+5 LPn GPIO41, 47 kΩ lên 3V3
+6 INT GPIO42, footprint 47 kΩ lên 3V3 (DNP)
+7 SPI/I2C_N JP2 (0 Ω) xuố ng GND đ ể  chọn I²C
+Chân Tín hiệ u Nố i
+1 5V 5V_SW + 10 µF tại connector
+2 TRIG U5/U6 74AHCT1G125 (VCC = 5V_SW, OE# = GND)
+→ 100 Ω → TRIG. Đầ u vào A t ừ  GPIO21 (trái) /
+GPIO39 (ph ả i)
+3 ECHO (m ứ c 5 V) 10 kΩ nố i tiế p + 15 kΩ xuố ng GND → GPIO38 (trái) /
+GPIO40 (ph ả i). M ứ c ra 3,0 V ở  5 V
+4 GND GND
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 11 of 31
+
+--- PAGE 12 ---
+J. MPU-6050 (U9, QFN-24 4 × 4 mm, LCSC C24112)
+VDD (chân 13): 3V3 + 100 nF. VLOGIC (chân 8): 3V3 + 10 nF.
+REGOUT (chân 10): 100 nF. CPOUT (chân 20): 2,2 nF X7R 50 V.
+AD0 (chân 9), CLKIN (chân 1), FSYNC (chân 11) nố i GND. INT (chân 12) nố i GPIO47.
+RESV (19, 21, 22) và NC đ ể  trố ng [DS].
+Đặ t chip th ẳ ng hàng: trục X c ủ a chip song song trục X c ủ a bo, dấ u chân 1 ở  góc trên
+bên trái. Ghi vào silkscreen đ ể  firmware đ ổ i trục. Không có via và lỗ  bắ t vít trong vòng
+5 mm quanh chip, đ ể  tránh ứ ng suấ t c ơ .
+K. Mạch lái 2 motor (J7, J8)
+J7/J8 chân 1 = VBAT_MOT (sau F1 PTC, gi ữ  0,5 A, c ỡ  1206). Chân 2 = MOT−.
+Q4/Q5 AO3400A làm khóa phía thấ p: Drain = MOT−, Source = GND. Gate nhậ n PWM
+qua 100 Ω, có 100 kΩ xuố ng GND.
+Gate c ủ a motor trái nố i GPIO45, motor ph ả i nố i GPIO46. Điệ n tr ở  100 kΩ kéo xuố ng gi ữ
+hai chân strapping này ở  m ứ c 0 lúc kh ở i độ ng, đúng yêu cầ u [DS].
+Diode flyback D2/D3 B5819W (SOD-123) mắ c ng ượ c song song motor, cathode về
+VBAT_MOT. 100 nF song song tại connector.
+PWM 20–25 kHz. Firmware gi ớ i hạn duty sao cho điệ n áp trung bình ≤ 3,0 V (mục 5).
+L. Nút, LED, test point
+SW2 Mode: GPIO3, 10 kΩ lên 3V3, 100 nF xuố ng GND, nút nố i GND.
+D1 LED trạng thái (0603): GPIO48 → 1 kΩ → LED → GND.
+Đo pin: VBAT → 470 kΩ / 470 kΩ → GPIO1 (ADC1_CH0), 100 nF tại chân ADC.
+Test point: VBUS, VBAT, 5V_SYS, 5V_SW, 3V3, 2V8, 1V5, GND × 3, EN, GPIO0, TXD0
+(GPIO43), SDA, SCL.
+3.4 B ả ng gán chân ESP32-S3 (NS-CHEST-MB)
+GPIO Chân
+module
+Ch ứ c năng Ghi chú
+0 27 BOOT Strapping. 10 kΩ kéo lên, nút SW3
+1 39 VBAT_ADC ADC1_CH0
+2 38 I2C_SDA C ả m biế n
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 12 of 31
+
+--- PAGE 13 ---
+GPIO Chân
+module
+Ch ứ c năng Ghi chú
+3 15 MODE_BTN Strapping (nguồ n tín hiệ u JTAG). Ch ỉ  có
+tác dụng khi eFuse đã đố t, kéo lên nên
+an toàn
+4, 5 4, 5 CAM_SIOD,
+CAM_SIOC
+SCCB
+6, 7 6, 7 CAM_VSYNC,
+CAM_HREF
+8–12, 16–
+18
+12, 17–20,
+9–11
+CAM_Y2…Y9 Theo b ả ng FPC
+13 21 CAM_PCLK
+14 22 I2C_SCL C ả m biế n
+15 8 CAM_XCLK
+19, 20 13, 14 USB_D−, USB_D+
+21 23 JSN_L_TRIG Qua U6
+38 31 JSN_L_ECHO Qua cầ u chia
+39 32 JSN_R_TRIG Qua U5 (chân JTAG, đ ượ c dùng vì nạp
+qua USB-JTAG)
+40 33 JSN_R_ECHO Qua cầ u chia
+41 34 TOF_LPN 47 kΩ kéo lên
+42 35 TOF_INT
+43 37 TXD0 Ch ỉ  đ ể  test point (log lúc kh ở i độ ng)
+44 36 VBUS_DET Cầ u chia 68 kΩ / 100 kΩ
+45 26 MOT_L_PWM Strapping, ph ả i bằ ng 0 lúc kh ở i độ ng
+(100 kΩ xuố ng)
+46 16 MOT_R_PWM Strapping, ph ả i bằ ng 0 lúc kh ở i độ ng
+(100 kΩ xuố ng)
+47 24 IMU_INT
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 13 of 31
+
+--- PAGE 14 ---
+Số  chân module lấ y theo symbol ESP32-S3-WROOM-1 trong schematic ESP32-S3-EYE
+[DS]. Toàn bộ  GPIO đã dùng hế t, không còn chân trố ng. Nế u sau này thêm DRV2605L thì
+ph ả i b ỏ  LED_STATUS hoặ c VBUS_DET đ ể  lấ y chân.
+4. Bo NovaCane Clip — NS-CLIP-MB
+NS-CLIP-MB là bo 2 l ớ p, kích th ướ c 73,4 × 37,4 × 1,0 mm. Bo nằ m ngang trong v ỏ  trên, ngay
+trên pin 603450. Toàn bộ  linh kiệ n hàn mặ t trên, cao ≤ 4,2 mm.
+4.1 C ơ  khí: vị trí, đ ườ ng bao, vùng chiều cao
+Số  liệ u lấ y t ừ  novaclip_v2.py . V ỏ  trên có lòng trong t ừ  X 1,8 đế n 76,2, Y ±19,2, trầ n trong ở
+Z = 30,5. Pin chiế m Z 16,2–23,7, X 5,5–63,5 [TK].
+GPIO Chân
+module
+Ch ứ c năng Ghi chú
+48 25 LED_STATUS
+35–37 28–30 — PSRAM octal, đ ể  trố ng
+Thông số Giá trị
+Mặ t ph ẳ ng bo Mặ t d ướ i Z = 25,3. Mặ t trên (mặ t linh kiệ n) Z = 26,3.
+Khe đế n pin 1,6 mm
+Đ ườ ng bao X 2,3 … 75,7, Y −18,7 … +18,7, bo góc R3,5
+Rãnh khoét cho 2 LED đ ỏ  5 mm Hai bên: X 41,2 … 46,8, t ừ  mép vào đế n |Y| = 12,1.
+LED nằ m ngang, tâm Z = 27,6, nên thân LED (Z 25,1–
+30,1) xuyên qua mặ t ph ẳ ng bo
+Cố  định bo Không cầ n lỗ  vít. Bo kẹp gi ữ a 4 gân đ ỡ  trên v ỏ  d ướ i
+và 4 gân ép trên v ỏ  trên. Phía c ơ  khí sẽ  thêm theo
+file DXF c ủ a bo. Ch ừ a 4 vùng trố ng 4 × 4 mm ở  4
+góc
+Chiề u cao mặ t trên ≤ 4,2 mm (đế n Z = 30,5). ≤ 3,0 mm trong vùng 3 mm
+sát mép, vì trầ n bo cong R1
+Mặ t d ướ i Không linh kiệ n SMD. Ch ỉ  có pad xuyên lỗ  cho dây
+và chân LED trắ ng
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 14 of 31
+
+--- PAGE 15 ---
+Mặ t bằ ng đề  xuấ t.
+Linh kiệ n Vị trí Yêu cầ u
+J1 USB-C 16 chân, top-mount Mép phía mũi gậ y (X max),
+tâm Y = −10,0
+Miệ ng c ổ ng chạm X = 76,2 ±
+0,2. Tâm c ổ ng Z = 27,9, t ứ c
+cao 1,6 mm so v ớ i mặ t bo
+[ĐO]
+SW1 công tắ c gạt, bấ m cạnh Mép Y = −18,7, tâm X = 25,0 Cầ n gạt đi theo X qua khe X
+21–29. Tâm cầ n gạt Z = 27,6,
+t ứ c cao 1,3 mm so v ớ i mặ t bo.
+Ch ỉ  mang dòng µA (mục 4.3)
+SW2 Mode (tròn), SW3 Xin
+đ ườ ng (thanh ngang), SW4
+SOS (vuông đ ỏ )
+(36,0; +12,5) · (36,0; 0) ·
+(36,0; −12,5)
+Tact SMD. Đ ỉ nh cầ n nhấ n ở  Z
+= 29,4 ± 0,2, t ứ c t ổ ng chiề u
+cao 3,1 mm so v ớ i mặ t bo. Nế u
+chọn switch thấ p h ơ n, phía
+c ơ  khí sẽ  kéo dài chân nút
+bấ m [ĐO]
+D1, D2 LED đ ỏ  5 mm, xuyên lỗ Mép trong c ủ a hai rãnh
+khoét, X 44,0
+Chân uố n 90°, thân LED
+h ướ ng ±Y ra lỗ  ×5,2 ở  thành
+v ỏ . Pad cách nhau 2,54 mm
+theo X
+D3 LED trắ ng 5 mm D ướ i bo, X 69,4–78, Y 0, Z
+20
+Chân th ẳ ng lên 2 pad xuyên
+lỗ  tại (70,5; ±1,27). Thân LED
+h ướ ng +X ra mặ t đầ u v ỏ
+Pad dây motor trái/ph ả i (9; +16,5) và (9; −16,5), 2
+pad mỗ i bên, khoan ×0,9
+Dây đi lên t ừ  khe motor X 3–15
+ở  hai bên thành. Có lỗ  ×1,6
+cạnh pad đ ể  luồ n gi ả m l ự c
+kéo
+Pad dây pin B+, B− (4,0; +3) và (4,0; −3), khoan
+×1,0
+Phía đầ u tay cầ m, đúng phía
+tab pin. Có lỗ  gi ả m l ự c kéo
+U1 ESP32-C3-MINI-1 (13,2 ×
+16,6 × 2,4)
+X 59,1–75,7, Y +4,0…+17,2,
+trục dài theo X
+Antenna ở  đầ u X = 75,7 (mép
+bo). Không có đồ ng ở  mọi l ớ p
+d ướ i antenna. Antenna nằ m
+ngoài vùng pin (pin kế t thúc ở
+X 63,5)
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 15 of 31
+
+--- PAGE 16 ---
+Phía tay cầ m (X 2–20): pad pin, DW01A + FS8205A, mạch lái motor.
+Gi ữ a (X 20–55): MPU-6050, 3 nút, công tắ c, mạch LED.
+Phía mũi gậ y (X 55–76): USB-C, TP4056, chia t ả i, LDO, module ESP32-C3.
+L ư u ý về  antenna. Thân gậ y th ườ ng bằ ng nhôm, nằ m d ướ i antenna kho ả ng 13 mm. Ph ả i đo
+RSSI khi Clip đang kẹp trên gậ y nhôm thậ t [ĐO].
+4.2 Cây nguồn
+4.3 Khối mạch và giá trị linh kiện
+A. USB-C (J1)
+CC1 và CC2 mỗ i chân 5,1 kΩ 1% xuố ng GND.
+D− nố i GPIO18, D+ nố i GPIO19. Đây là USB-Serial-JTAG c ủ a ESP32-C3, nên mộ t c ổ ng
+dùng cho c ả  sạc và nạp firmware [DS].
+U2 USBLC6-2SC6 trên D+/D−/VBUS.
+VBUS_DET: cầ u chia 68 kΩ / 100 kΩ → GPIO21. M ứ c 2,98 V khi có 5,0 V, và 2,68 V khi
+VBUS ch ỉ  còn 4,5 V.
+B. Sạc TP4056 (U3, ESOP-8)
+Chân: 1 TEMP, 2 PROG, 3 GND, 4 VCC, 5 BAT, 6 STDBY, 7 CHRG, 8 CE, pad đáy nố i GND
+[DS].
+Rail Nguồ n cấ p Điệ n áp Dòng thiế t kế T ả i
+VBUS USB-C 4,5–5,25 V ≤ 1 A TP4056, diode chia
+t ả i, VBUS_DET
+BAT+ Pin 603450 qua
+DW01A + FS8205A
+3,0–4,2 V 400 mA sạc;
+≤ 0,5 A x ả
+Q2 chia t ả i, đo pin
+VSYS Q2 (t ừ  pin) hoặ c D4
+(t ừ  USB)
+3,0–4,2 V; ≈ 4,6
+V khi cắ m sạc
+≤ 0,5 A LDO, motor, LED
+3V3 U4 AP2112K-3.3 3,3 V ≤ 600 mA ESP32-C3, MPU-6050,
+pull-up
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 16 of 31
+
+--- PAGE 17 ---
+Datasheet: dao độ ng R_PROG kho ả ng ±10%. Điệ n áp sạc đầ y 4,2 V ±1%. Ngắ t sạc khi dòng
+còn 1/10 dòng đặ t. T ự  gi ả m dòng khi nhiệ t độ  chip quá cao [DS].
+C. B ả o vệ  pin (U5 DW01A, Q1 FS8205A)
+Mạch ứ ng dụng chu ẩ n c ủ a DW01A:
+100 Ω t ừ  B+ vào VCC. 100 nF nố i VCC v ớ i GND c ủ a DW01A, t ứ c B−.
+1 kΩ t ừ  CS t ớ i P−.
+OD điề u khi ể n gate MOSFET x ả , OC điề u khi ể n gate MOSFET sạc.
+FS8205A nằ m trên đ ườ ng B− → P−. P− là GND c ủ a toàn bo.
+Ki ể m tra số  chân theo datasheet DW01A và FS8205A c ủ a hãng s ả n xuấ t đã chọn trên
+LCSC, vì các hãng clone có th ể  khác nhau [ĐO].
+Nế u pin mua về  đã có mạch b ả o vệ  riêng thì vẫ n gi ữ  mạch này, coi nh ư  b ả o vệ  hai l ớ p. GND
+trên bo là P−, không đ ượ c nố i B− vào GND ở  bấ t kỳ chỗ  nào khác.
+D. Chia t ả i (power-path) [TK]
+D4 SS14 (Schottky 1 A): Anode nố i VBUS, Cathode nố i VSYS.
+Q2 AO3401A (P-MOSFET): Drain nố i BAT+, Source nố i VSYS, Gate nố i VBUS. Gate có
+100 kΩ xuố ng GND.
+Khi không cắ m sạc, gate ở  0 V nên Q2 dẫ n và pin cấ p cho VSYS.
+Khi cắ m sạc, gate lên 5 V nên Q2 ngắ t. VSYS lấ y t ừ  USB qua D4, còn TP4056 sạc pin
+đúng dòng đặ t, không bị t ả i làm sai quá trình sạc.
+Chân Nố i Linh kiệ n
+VCC VBUS 10 µF + 100 nF
+BAT BAT+ 10 µF
+PROG GND qua R_PROG 3,0 kΩ 1%, cho I = 1200/3,0 = 400 mA
+[DS]
+TEMP GND Nố i GND đ ể  tắ t ch ứ c năng đo nhiệ t pin
+CE VCC Luôn cho phép sạc
+CHRG,
+STDBY
+Hai LED 0603 đ ỏ /xanh, 1 kΩ lên
+VCC
+Ch ỉ  đ ể  kỹ  thuậ t viên xem khi m ở  v ỏ
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 17 of 31
+
+--- PAGE 18 ---
+Diode thân c ủ a Q2 (D→S) phân c ự c ng ượ c khi có VBUS, nên không có dòng ch ả y
+ng ượ c vào pin.
+VSYS: 22 µF.
+E. LDO 3,3 V (U4 AP2112K-3.3, SOT-23-5) và công tắ c
+Chân: 1 VIN, 2 GND, 3 EN, 4 NC, 5 VOUT. [ĐO] Ki ể m tra lại theo datasheet c ủ a đúng mã
+đã chọn.
+VIN: VSYS, 10 µF. VOUT: 10 µF + 100 nF, thêm 22 µF sát chân 3V3 c ủ a module.
+EN: SW1 nố i EN v ớ i VSYS khi ở  ON. EN có 100 kΩ xuố ng GND. Công tắ c ch ỉ  mang dòng
+µA.
+Khi ở  OFF: LDO tắ t, ESP32 tắ t. Các MOSFET lái motor và LED tắ t nh ờ  điệ n tr ở  kéo
+xuố ng. Dòng còn lại gồ m kho ả ng 4,5 µA cho cầ u chia đo pin và dòng ngh ỉ  c ủ a DW01A.
+Ng ưỡ ng tắ t máy ch ủ  độ ng c ủ a firmware gi ữ  3,5 V. Ở  3,5 V v ớ i t ả i 300 mA, đầ u ra LDO
+kho ả ng 3,25 V, vẫ n trên m ứ c tố i thi ể u 3,0 V c ủ a ESP32-C3 [TK].
+F. ESP32-C3-MINI-1 (U1)
+3V3: 10 µF + 100 nF. EN: 10 kΩ lên 3V3 + 1 µF xuố ng GND, có test pad.
+GPIO9 (BOOT): 10 kΩ kéo lên. Pad BOOT ×1,5 đ ể  chạm nhíp xuố ng GND khi nạp lầ n đầ u.
+GPIO8: 10 kΩ kéo lên, vì ph ả i bằ ng 1 m ớ i vào đ ượ c chế  độ  nạp. GPIO8 = 0 cùng GPIO9 =
+0 là t ổ  h ợ p không h ợ p lệ  [DS].
+GPIO2: 10 kΩ kéo lên, làm theo h ướ ng dẫ n nạp c ủ a Espressif [DS].
+G. MPU-6050 (U6)
+Mạch giố ng mục 3.3-J c ủ a Chest, INT nố i GPIO1. Đặ t chip th ẳ ng trục X c ủ a bo (dọc gậ y),
+cách 3 nút ≥ 8 mm đ ể  l ự c bấ m không làm cong bo ngay d ướ i chip.
+H. Mạch lái 2 motor
+Giố ng mục 3.3-K c ủ a Chest, nh ư ng nguồ n motor là VSYS, không dùng PTC (dây nằ m trong
+v ỏ ).
+Q3 và Q4 AO3400A, gate t ừ  GPIO6 (trái) và GPIO7 (ph ả i) qua 100 Ω, có 100 kΩ xuố ng
+GND.
+Diode B5819W song song mỗ i motor.
+Khi có VBUS, VSYS ≈ 4,6 V. Firmware ph ả i đọc VBUS_DET và hạ duty t ươ ng ứ ng (mục
+5).
+I. Đèn "Xin đ ườ ng"
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 18 of 31
+
+--- PAGE 19 ---
+Q5 AO3400A, gate t ừ  GPIO3 qua 100 Ω, có 100 kΩ xuố ng GND.
+Drain nố i chung cathode c ủ a 3 nhánh, mỗ i nhánh mộ t điệ n tr ở  riêng lên VSYS: D1 đ ỏ  +
+100 Ω, D2 đ ỏ  + 100 Ω, D3 trắ ng + 68 Ω.
+Ba LED nháy cùng nhau 2 Hz. Dòng mỗ i LED t ừ  15 đế n 27 mA tuỳ VSYS, xem mục 5.
+J. Nút
+SW2 Mode → GPIO10. SW3 Xin đ ườ ng → GPIO2. SW4 SOS → GPIO20.
+Mỗ i nút 10 kΩ lên 3V3, 100 nF xuố ng GND, bấ m thì nố i GND.
+GPIO2 vố n cầ n kéo lên khi kh ở i độ ng, nên dùng cho nút (bình th ườ ng ở  m ứ c cao) là
+phù h ợ p. Nế u ng ườ i dùng gi ữ  nút Xin đ ườ ng đúng lúc bậ t máy thì ph ả i th ử  xem có ả nh
+h ưở ng đế n kh ở i độ ng không [ĐO].
+K. Đo pin, LED báo trạng thái, test point
+BAT+ → 470 kΩ / 470 kΩ → GPIO0 (ADC1_CH0), 100 nF.
+LED báo trạng thái 0603: 3V3 → 1 kΩ → LED → GPIO8 (sáng khi GPIO8 ở  m ứ c thấ p).
+Test point: VBUS, BAT+, VSYS, 3V3, GND × 2, EN, GPIO9, SDA, SCL.
+4.4 B ả ng gán chân ESP32-C3 (NS-CLIP-MB)
+B ả ng này thay cho pin map Super Mini trong Đặ c t ả  v2. GPIO11–17 không đ ư a ra ngoài
+module.
+GPIO Ch ứ c năng Ghi chú
+0 VBAT_ADC ADC1_CH0
+1 IMU_INT
+2 BTN_ROUTE (Xin đ ườ ng) Strapping, 10 kΩ kéo lên
+3 LED_BEACON Gate Q5
+4 I2C_SDA 4,7 kΩ kéo lên
+5 I2C_SCL 4,7 kΩ kéo lên
+6 MOT_L_PWM Gate Q3
+7 MOT_R_PWM Gate Q4
+8 LED_STATUS Strapping, 10 kΩ kéo lên, LED sáng khi m ứ c thấ p
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 19 of 31
+
+--- PAGE 20 ---
+5. Tính toán thiết kế
+V ớ i bo m ớ i, Chest chạy đ ượ c kho ả ng 5–8 gi ờ. Con số  này ch ư a đạt mục tiêu ≥ 10 gi ờ  trong
+Đặ c t ả  v2. Clip chạy kho ả ng 16–26 gi ờ, đạt mục tiêu. Mọi con số  ở  đây là tính toán thiế t kế .
+Dòng thậ t ph ả i đo ở  bu ổ i bring-up (mục 7).
+5.1 Ngân sách công suất NovaChest
+GPIO Ch ứ c năng Ghi chú
+9 BOOT Strapping, 10 kΩ kéo lên, có test pad
+10 BTN_MODE
+18 USB_D−
+19 USB_D+
+20 BTN_SOS U0RXD, dùng làm đầ u vào v ớ i 10 kΩ kéo lên
+21 VBUS_DET U0TXD. Lúc kh ở i độ ng, ROM in log ra chân này vào
+cầ u chia, vô hại. Firmware cấ u hình lại thành input
+T ả i Rail Trung bình Đ ỉ nh Nguồ n số  liệ u
+ESP32-S3 + camera,
+BLE bậ t, Wi-Fi tắ t
+3V3 240–455
+mA (0,8–1,5
+W)
+≈ 500 mA khi Wi-Fi
+phát (ch ỉ  lúc đồ ng
+bộ )
+Đặ c t ả  v2
+Breakout VL53L8CX 3V3 ≈ 100 mA 150 mA Pololu #3419 [DS]
+MPU-6050 3V3 3,9 mA — Datasheet
+T ổ ng 3V3 0,35–0,56 A ≈ 0,75 A (buck
+chịu 1 A)
+2 × JSN-SR04T 5V_SW 16 mA 60 mA < 8 mA mỗ i con [DS]
+T ổ ng 5V_SW (buck
+hiệ u suấ t 90%)
+0,28–0,47 A ≈ 0,62 A
+2 motor 1027 (bậ t 5%
+th ờ i gian)
+VBAT ≈ 27 mA (0,1
+W)
+240 mA khi kh ở i
+độ ng
+80 mA mỗ i con, kh ở i
+độ ng 120 mA [DS]
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 20 of 31
+
+--- PAGE 21 ---
+Th ờ i l ượ ng pin:
+t = \frac{14{,}8\ \text{Wh} \times 0{,}9}{1{,}64\ \dots\ 2{,}68\ \text{W}} 
+\approx 5{,}0\ \dots\ 8{,}1\ \text{gi ờ }
+Nế u đo thậ t vẫ n d ướ i 10 gi ờ , Rev B x ử  lý theo th ứ  t ự  sau:
+1. Firmware gi ả m tầ n suấ t chụp c ủ a camera.
+2. Thay chuỗ i "boost 5 V rồ i buck 3,3 V" (hiệ u suấ t gộ p kho ả ng 82%) bằ ng buck-boost lấ y
+th ẳ ng t ừ  pin ra 3,3 V (kho ả ng 90%). Khi đó ch ỉ  JSN còn cầ n 5 V.
+3. Dùng pin dung l ượ ng l ớ n h ơ n.
+5.2 Ngân sách công suất NovaCane Clip
+Th ờ i l ượ ng: 1000 mAh × 0,9 / (35–55 mA) ≈ 16–26 gi ờ . Dung l ượ ng thậ t c ủ a pin 603450 mua
+về  ph ả i đo [ĐO].
+T ả i Rail Trung bình Đ ỉ nh Nguồ n số  liệ u
+Công suấ t t ừ  pin
+(IP5306 hiệ u suấ t
+91%)
+1,64–2,68 W
+T ả i Trung bình Đ ỉ nh
+ESP32-C3, BLE kế t nố i, đọc IMU
+200 Hz
+20–40 mA ≈ 130 mA khi BLE phát
+MPU-6050 3,9 mA —
+2 motor (bậ t 5% th ờ i gian) ≈ 8 mA 240 mA khi kh ở i độ ng
+Đèn Xin đ ườ ng (3 LED, nháy
+50%)
+Ch ỉ  bậ t 60 s mỗ i lầ n
+bấ m
+≈ 70 mA
+T ổ ng ≈ 35–55 mA ≈ 440 mA (LDO 600 mA, Q2 và pin
+đề u đ ủ )
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 21 of 31
+
+--- PAGE 22 ---
+5.3 Sạc và nhiệt
+5.4 Giá trị đã tính
+Mục Giá trị Nhậ n xét
+TP4056 (Clip), R_PROG
+= 3,0 kΩ
+400 mA, kho ả ng 0,4C v ớ i pin
+1000 mAh. Sạc đầ y trong
+kho ả ng 3 gi ờ
+1 A (b ả n module) là 1C, quá cao
+cho pin nh ỏ  nằ m trong v ỏ  kín
+T ổ n hao TP4056 =
+(VBUS − VBAT) × I
+0,8 W lúc pin 3,0 V, 0,52 W lúc
+3,7 V
+Pad đáy nố i m ả ng đồ ng ≥ 100
+mm². Chip t ự  gi ả m dòng khi
+nóng [DS]
+IP5306 (Chest) Sạc kho ả ng 2 A, hiệ u suấ t đế n
+97% theo hãng
+Hao kho ả ng 0,3–0,7 W trong v ỏ
+kín. Đo nhiệ t độ  v ỏ  khi sạc ở  35
+°C môi tr ườ ng [ĐO]
+Dòng USB c ủ a Clip khi
+cắ m sạc
+0,4 A sạc + kho ả ng 0,05 A t ả i Qua D4 SS14, t ổ n hao kho ả ng
+0,02 W
+Mạch Công th ứ c Kế t qu ả
+Buck 3V3 (Chest) 0,6 × (1 +
+680k/150k)
+3,32 V
+Cầ u chia đo pin 470 kΩ / 470
+kΩ
+VBAT / 2 2,1 V ở  4,2 V. Dòng rò 4,5 µA, kho ả ng 3,3
+mAh mỗ i tháng. ADC đặ t suy hao 12 dB
+VBUS_DET 68 kΩ / 100 kΩ VBUS × 100/168 2,98 V ở  5,0 V. 2,68 V ở  4,5 V, vẫ n trên
+V_IH min 2,475 V. 3,13 V ở  5,25 V, d ướ i
+3,6 V
+ECHO JSN 10 kΩ / 15 kΩ 5 V × 15/25 3,0 V ở  5,0 V, 3,15 V ở  5,25 V
+Xung KEY: 1 µF × 470 kΩ t = RC · ln(3,7/1,5) 0,42 s, nằ m trong c ử a s ổ  30 ms – 2 s
+Kh ở i độ ng mề m Q1: 10 kΩ và
+100 nF
+τ  = RC Kho ả ng 1 ms
+RC chân EN c ủ a ESP32: 10
+kΩ × 1 µF
+τ  = RC 10 ms
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 22 of 31
+
+--- PAGE 23 ---
+Gi ớ i hạn duty PWM cho motor. Motor 1027 định m ứ c 3,0 V, d ả i hoạt độ ng kho ả ng 2,5–3,3 V
+[DS]. Firmware tính duty theo điệ n áp nguồ n đang đo đ ượ c:
+D_{max} = \frac{3{,}0\ \text{V}}{V_{nguồn}} \quad \Rightarrow \quad 71\%\ 
+(4{,}2\ \text{V}),\ 81\%\ (3{,}7\ \text{V}),\ 65\%\ (4{,}6\ \text{V khi Clip 
+cắm sạc})
+"M ứ c 1–3" c ủ a ngôn ng ữ  rung là t ỉ  lệ  phầ n trăm c ủ a D_max, không ph ả i duty tuyệ t đố i. Trên
+Chest, nguồ n motor là VBAT. Trên Clip, nguồ n motor là VSYS: dùng VBAT_ADC khi không
+cắ m sạc, và coi là 4,7 V khi VBUS_DET = 1.
+5.5 Độ rộng dây nguồn
+Tính theo IPC-2221, đồ ng 1 oz ở  l ớ p ngoài, nhiệ t tăng 10 °C. L ớ p trong (0,5 oz) cầ n rộ ng gấ p
+kho ả ng 2,5 lầ n.
+Mạch Công th ứ c Kế t qu ả
+LED đ ỏ  5 mm, 100 Ω (Vf ≈ 2,0
+V)
+(VSYS − Vf)/R 15 mA ở  3,5 V, 22 mA ở  4,2 V, 26 mA ở  4,6
+V
+LED trắ ng 5 mm, 68 Ω (Vf ≈
+3,1 V)
+(VSYS − Vf)/R 6 mA ở  3,5 V, 16 mA ở  4,2 V, 22 mA ở  4,6
+V. Đèn m ờ  đi khi pin yế u
+Dòng Bề  rộ ng tố i
+thi ể u
+Dùng trên bo
+0,5 A 0,12 mm 3V3 nhánh, 5V_SW đế n JSN: 0,4 mm
+1 A 0,30 mm 3V3 chính, 5V_SW, BAT+ và VSYS c ủ a Clip: 0,6–
+0,8 mm
+2 A 0,78 mm VBUS và 5V_SYS c ủ a Chest: ≥ 1,5 mm hoặ c
+m ả ng đồ ng
+3 A (đ ỉ nh dòng cuộ n
+c ả m)
+1,37 mm VBAT, node SW c ủ a IP5306, L1 trên Chest:
+m ả ng đồ ng ≥ 2,5 mm, nhiề u via
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 23 of 31
+
+--- PAGE 24 ---
+6. BOM c ủ a bo mạch
+Cộ t LCSC ch ỉ  ghi nh ữ ng mã đã tra đ ượ c. Dòng ghi "—" thì ng ườ i vẽ  t ự  tra trên LCSC theo
+MPN và ư u tiên loại "Basic" c ủ a JLC. Tụ và điệ n tr ở  dùng c ỡ  0402 hoặ c 0603 theo mặ c định.
+Tụ gố m X5R hoặ c X7R định m ứ c ≥ 10 V, riêng 2,2 nF định m ứ c 50 V.
+6.1 NS-CHEST-MB
+Ref Linh kiệ n / MPN V ỏ SL LCSC Ghi chú
+U4 ESP32-S3-WROOM-1-N16R8 Module 1 — Giố ng chip trong K9_41
+U2 IP5306 (Injoinic) ESOP-8 1 — Không dùng IP5306-CK vì b ả n
+đó boost liên tục, không có
+standby. Không cầ n b ả n I2C
+U3 SY8088IAAC SOT-23-5 1 C479072 Buck 1 A, 1,5 MHz
+U7 ME6211C28M5G-N SOT-23-5 1 — 2V8 cho camera
+U8 ME6211C15M5G-N SOT-23-5 1 — 1V5 cho camera
+U9 MPU-6050 QFN-24
+4×4
+1 C24112
+U5, U6 74AHCT1G125 SOT-23-5 2 — Buffer TRIG 5 V
+U1 USBLC6-2SC6 SOT-23-6 1 — ESD USB
+Q1 AO3401A SOT-23 1 — Công tắ c t ả i 5 V
+Q2, Q4,
+Q5
+AO3400A SOT-23 3 —
+Q3 2N7002 SOT-23 1 — Xung KEY
+L1 1,0 µH, Isat ≥ 4,5 A, DCR ≤ 10 mΩ 7×7 mm 1 — Datasheet g ợ i ý SPM70701R0
+L2 2,2 µH, Isat ≥ 1,5 A 4×4 mm 1 —
+F1 PTC gi ữ  0,5 A 1206 1 — Nguồ n motor
+D2, D3 B5819W SOD-123 2 — Flyback motor
+D1 LED 0603 trắ ng 0603 1 — LED trạng thái, đi qua light
+pipe
+D4–D7 LED 0603 xanh 0603 4 — Mạch báo pin c ủ a IP5306
+J1 USB-C 16 chân, top-mount, tâm
+cao kho ả ng 1,6 mm
+SMD 1 — Ki ể m tra bằ ng file STEP
+J2 FPC 24 chân, b ướ c 0,5 mm, nắ p
+lậ t
+SMD 1 — Loại tiế p đi ể m theo FPC c ủ a
+camera [ĐO]
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 24 of 31
+
+--- PAGE 25 ---
+Ref Linh kiệ n / MPN V ỏ SL LCSC Ghi chú
+J3 JST-SH 8 chân đ ứ ng (SM08B-
+SRSS-TB hoặ c t ươ ng đ ươ ng)
+SMD 1 — ToF
+J4, J7,
+J8
+JST-PH 2 chân đ ứ ng (B2B-PH-K) THT 3 — Pin, motor trái/ph ả i
+J5, J6 JST-PH 4 chân đ ứ ng (B4B-PH-K) THT 2 — JSN
+SW1 Công tắ c gạt bấ m cạnh, ki ể u
+MSK-12C02
+SMD 1 — Ch ỉ  mang dòng µA
+SW2 Tact bấ m cạnh SMD 1 — Mode
+SW3,
+SW5
+Tact 3×4 mm SMD 2 — BOOT, RESET
+SW4 Tact (DNP) SMD 0 — KEY c ủ a IP5306, đ ể  th ử
+C 22 µF 10 V (0805) 0805 6 — IP5306 BAT ×2, VOUT ×2; buck
+ra; 3V3 t ổ ng
+C 10 µF 10 V 0603 6 — IP5306 VIN; buck vào và ra;
+ESP32; JSN ×2
+C 1 µF 0402 9 — Rail camera ×3; LDO vào/ra ×4;
+EN; xung KEY
+C 100 nF 0402 ≈ 16 — Kh ử  nhiễ u, Q1 gate–source,
+ADC, nút, RESET camera
+C 10 nF; 2,2 nF 50 V X7R; 22 pF 0402 1; 1; 1 — VLOGIC; CPOUT; feed-forward
+buck
+R 5,1 kΩ 1% 0402 2 — CC1, CC2
+R 680 kΩ 1%; 150 kΩ 1% 0402 1; 1 — FB buck
+R 470 kΩ 1% 0402 3 — Đo pin ×2; xung KEY
+R 100 kΩ 0402 6 — VBUS_DET d ướ i; PWR_EN; kéo
+lên gate Q1; EN buck; gate
+motor ×2
+R 68 kΩ 0402 1 — VBUS_DET trên
+R 47 kΩ 0402 2 — LPn; INT (DNP)
+R 15 kΩ 0402 2 — ECHO
+R 10 kΩ 0402 9 — Gate Q2; nố i tiế p gate Q1; EN;
+GPIO0; Mode; RESET và
+PWDN camera; ECHO nố i tiế p
+×2
+R 4,7 kΩ; 2,2 kΩ 0402 2; 2 — SCCB; I²C
+R 1 kΩ 0402 5 — LED trạng thái; 4 LED báo pin
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 25 of 31
+
+--- PAGE 26 ---
+6.2 NS-CLIP-MB
+Ref Linh kiệ n / MPN V ỏ SL LCSC Ghi chú
+R 100 Ω 0402 4 — TRIG ×2; gate motor ×2
+R 22 Ω; 0 Ω 0402 1; 5 — XCLK; USB ×2, JP1 (2 vị trí, ch ỉ
+lắ p 1), JP2
+Ref Linh kiệ n / MPN V ỏ SL LCSC Ghi chú
+U1 ESP32-C3-MINI-1-N4X Module 1 — Datasheet v2.0 ghi b ả n -N4 là
+NRND, nên chọn -N4X
+U3 TP4056 ESOP-8 1 — R_PROG 3,0 kΩ
+U5 DW01A SOT-23-6 1 —
+Q1 FS8205A TSSOP-8 hoặ c
+SOT-23-6
+1 — 2 MOSFET N chung drain
+U4 AP2112K-3.3TRG1 SOT-23-5 1 — LDO 600 mA, có chân EN
+U6 MPU-6050 QFN-24 1 C24112
+U2 USBLC6-2SC6 SOT-23-6 1 —
+Q2 AO3401A SOT-23 1 — Chia t ả i
+Q3, Q4,
+Q5
+AO3400A SOT-23 3 — Motor ×2, LED
+D4 SS14 SMA 1 — Chia t ả i
+D5, D6 B5819W SOD-123 2 — Flyback
+D1, D2 LED đ ỏ  siêu sáng 5 mm THT 2 — Mua tại VN (theo K06 c ủ a Đặ c
+t ả  v2)
+D3 LED trắ ng 5 mm THT 1 —
+D7, D8,
+D9
+LED 0603 đ ỏ , xanh, xanh 0603 3 — CHRG, STDBY, trạng thái
+J1 USB-C 16 chân top-mount SMD 1 —
+SW1 Công tắ c gạt bấ m cạnh SMD 1 —
+SW2–
+SW4
+Tact SMD, t ổ ng chiề u cao
+mục tiêu 3,1 mm
+SMD 3 —
+C 22 µF 10 V 0805 2 — VSYS; 3V3 t ổ ng
+C 10 µF 10 V 0603 5 — TP4056 VCC, BAT; LDO vào, ra;
+ESP32
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 26 of 31
+
+--- PAGE 27 ---
+Các điệ n tr ở  LED dùng c ỡ  0603 vì t ổ n hao l ớ n nhấ t kho ả ng 0,07 W, v ượ t định m ứ c 1/16 W
+c ủ a c ỡ  0402.
+7. Checklist review và bring-up
+Không đặ t mạch khi ch ư a xong phầ n "Tr ướ c khi đặ t mạch". Bu ổ i bring-up đầ u tiên cấ p
+nguồ n bằ ng nguồ n lab có gi ớ i hạn dòng, ch ư a cắ m pin thậ t.
+Tr ướ c khi đặt mạch
+Ref Linh kiệ n / MPN V ỏ SL LCSC Ghi chú
+C 1 µF; 100 nF; 10 nF; 2,2 nF
+50 V
+0402 1; ≈ 10;
+1; 1
+— EN; kh ử  nhiễ u, nút, ADC,
+DW01A; VLOGIC; CPOUT
+R 3,0 kΩ 1% 0402 1 — R_PROG
+R 5,1 kΩ 1% 0402 2 — CC
+R 470 kΩ 1% 0402 2 — Đo pin
+R 100 kΩ 0402 6 — VBUS_DET d ướ i; gate Q2; EN
+LDO; gate ×3
+R 68 kΩ 0402 1 — VBUS_DET trên
+R 10 kΩ 0402 6 — EN; GPIO9; GPIO8; GPIO2;
+Mode; SOS
+R 4,7 kΩ 0402 2 — I²C
+R 1 kΩ 0402 4 — CHRG; STDBY; LED trạng thái;
+CS c ủ a DW01A
+R 100 Ω 0603 6 — VCC c ủ a DW01A; LED đ ỏ  ×2;
+gate ×3
+R 68 Ω 0603 1 — LED trắ ng
+Đã có hàng thậ t và đã đo: breakout VL53L8CX, board JSN-SR04T, module camera
+OV3660 (loại tiế p đi ể m FPC, chiề u dài FPC), pin LP124065 và 603450 (kích th ướ c, vị trí
+tab).
+Pinout c ủ a J2, J3, J5, J6 đã đố i chiế u v ớ i ả nh chụp board thậ t.
+Footprint c ủ a module ESP32 lấ y t ừ  th ư  việ n KiCad chính th ứ c hoặ c t ừ  Espressif. Vùng
+cấ m đồ ng d ướ i antenna đã vẽ  trên mọi l ớ p.
+Không chân strapping nào bị kéo sai m ứ c. S3: GPIO0 = 1, GPIO45 = 0, GPIO46 = 0. C3:
+GPIO2 = 1, GPIO8 = 1, GPIO9 = 1.
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 27 of 31
+
+--- PAGE 28 ---
+Bring-up NS-CHEST-MB
+1. Ch ư a lắ p ESP32, ch ư a cắ m camera. Cấ p 3,7 V vào J4 bằ ng nguồ n lab gi ớ i hạn 0,5 A.
+2. 
+3. 
+4. Lắ p ESP32.
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+Không có tín hiệ u 5 V nào đi th ẳ ng vào GPIO: ECHO, VBUS_DET, VIN c ủ a ToF.
+CC1 và CC2 có hai điệ n tr ở  5,1 kΩ riêng. Th ử  v ớ i cục sạc có c ổ ng USB-C và cáp C-to-C.
+File STEP c ủ a bo đã lắ p linh kiệ n đã đ ư a vào FreeCAD, chạy ki ể m tra va chạm: 0 va
+chạm v ớ i v ỏ , pin, đầ u dò siêu âm, camera, ToF.
+Vùng A (bóng đầ u dò siêu âm) trên Chest không có linh kiệ n nào cao quá 1,2 mm.
+Clip: chiề u cao c ủ a tact, công tắ c gạt và USB-C kh ớ p v ớ i các tâm Z đã ghi ở  mục 4.1.
+Nế u không kh ớ p thì báo phía c ơ  khí ch ỉ nh nút.
+DRC theo quy tắ c c ủ a JLC đạt, không còn lỗ i.
+Mộ t ng ườ i khác review schematic theo tài liệ u này.
+SW1 ở  OFF: dòng < 0,2 mA sau 40 s.
+Gạt ON: 5V_SW lên 4,9–5,15 V trong vòng 1 s, 3V3 lên 3,25–3,35 V, 2V8 và 1V5 đúng.
+Ki ể m tra IP5306: bậ t t ừ  trạng thái standby bằ ng xung KEY. Đo bằ ng oscilloscope
+độ  rộ ng xung KEY trong kho ả ng 0,3–0,6 s. Gạt ON/OFF 20 lầ n, bậ t đ ủ  20 lầ n.
+Cắ m USB khi máy đang ON. Đo độ  sụt c ủ a 5V_SYS bằ ng oscilloscope. Ghi lại ESP32
+có bị reset không.
+Nạp firmware qua USB-C: gi ữ  BOOT rồ i nhấ n RESET.
+Quét I²C: thấ y 0x68 và 0x29.
+Camera chụp đ ượ c ả nh JPEG ở  XCLK 20 MHz. Nế u ả nh lỗ i thì th ử  10 MHz và đ ổ i
+điệ n tr ở  nố i tiế p XCLK.
+Hai JSN đo đúng thùng carton ở  0,5 m, 1 m, 2 m. Oscilloscope: ECHO ở  chân GPIO ≤
+3,3 V.
+Motor: rung đúng bên. Đo dòng kh ở i độ ng. Duty bị gi ớ i hạn đúng theo công th ứ c ở
+mục 5.
+Đo dòng t ừ  pin ở  chế  độ  Đi bộ  trong 10 phút, rồ i cậ p nhậ t b ả ng 5.1.
+Nhiệ t độ : sạc đầ y khi đã đóng v ỏ , và chạy 1 gi ờ  ngoài nắ ng. Module ESP32 ph ả i < 65
+°C.
+RSSI c ủ a BLE t ớ i Clip và t ớ i điệ n thoại khi đeo trên ng ườ i thậ t.
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 28 of 31
+
+--- PAGE 29 ---
+Bring-up NS-CLIP-MB
+1. Cấ p 3,7 V vào B+/B− bằ ng nguồ n lab gi ớ i hạn 0,3 A.
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+8. Đi ể m ch ư a chắc và nguồn tham kh ả o
+Có 6 đi ể m ph ả i xác minh trên hàng thậ t tr ướ c khi chố t layout. Sai mộ t trong số  này là ph ả i
+làm lại bo.
+SW1 ở  OFF: dòng < 20 µA.
+Gạt ON: 3V3 lên 3,25–3,35 V.
+Hạ nguồ n về  3,5 V, cho t ả i ESP32 phát BLE: 3V3 vẫ n ≥ 3,2 V.
+Cắ m USB khi máy ON: máy không reset. Dòng sạc 360–440 mA, đo bằ ng điệ n áp
+trên chân PROG (1 V t ươ ng ứ ng 400 mA). VBUS_DET = 1.
+B ả o vệ  pin: x ả  nguồ n lab xuố ng 2,4 V thì mạch ph ả i ngắ t. Ngắ n mạch P+/P− qua
+điệ n tr ở  0,1 Ω thì mạch ph ả i ngắ t. Ki ể m tra ng ưỡ ng thậ t theo datasheet c ủ a hãng
+s ả n xuấ t DW01A đã chọn.
+Nạp firmware lầ n đầ u: chạm pad BOOT xuố ng GND rồ i bậ t nguồ n. Các lầ n sau nạp
+t ự  độ ng qua USB-JTAG.
+Ba nút, đèn Xin đ ườ ng nháy 2 Hz, hai motor, MPU-6050 đọc đ ượ c ở  200 Hz.
+Gi ữ  nút Xin đ ườ ng (GPIO2) trong lúc bậ t máy: máy vẫ n kh ở i độ ng bình th ườ ng.
+Đo RSSI khi Clip kẹp trên gậ y nhôm thậ t. Đo dòng trung bình trong 10 phút, rồ i cậ p
+nhậ t b ả ng 5.2.
+# Đi ể m ch ư a chắ c Ả nh h ưở ng nế u sai Cách xác minh
+1 Loại tiế p đi ể m, th ứ  t ự  chân
+và chiề u dài FPC c ủ a module
+OV3660
+Camera không
+chạy, có th ể  cháy
+Chụp FPC, đố i chiế u v ớ i b ả ng
+ở  mục 3.3-F. Đo chiề u dài flex
+2 Pinout, nguồ n và pull-up c ủ a
+breakout VL53L8CX đang
+mua
+ToF không kế t nố i
+đ ượ c
+Chụp hai mặ t board, đo bằ ng
+đồ ng hồ . Nế u board không có
+mạch chuy ể n m ứ c thì đ ổ i sang
+loại có (ki ể u Pololu #3419)
+3 Th ứ  t ự  chân board JSN và
+m ứ c điệ n áp ECHO
+Không đo đ ượ c,
+hoặ c h ỏ ng GPIO
+Oscilloscope
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 29 of 31
+
+--- PAGE 30 ---
+Nh ữ ng việ c phía c ơ  khí ph ả i s ử a theo bo m ớ i:
+Chest:
+D ờ i nút Mode về  Y ≈ 21.
+Kéo dài light pipe đế n Y = 22,4.
+Làm 4 trụ bắ t bo tại H1–H4.
+B ỏ  trụ và gân c ủ a K9_41, IP5306, GY-521.
+Clip: gân đ ỡ  và gân ép bo, chiề u dài chân nút bấ m theo tact đã chọn.
+Nguồn tham kh ả o
+Schematic ESP32-S3-EYE V2.2 (Espressif): pinout FPC camera, rail 2V8/1V5, buck
+SY8088.
+ESP32-S3-WROOM-1 datasheet (Espressif): chân strapping, GPIO35–37 bị PSRAM
+octal chiế m.
+B ả ng chân camera cho ESP32-S3 WROOM / Freenove và esp32-camera.
+ESP32-C3-MINI-1 datasheet (Espressif) và h ướ ng dẫ n nố i dây nạp ESP32-C3.
+IP5306 datasheet và ghi chú sụt áp khi chuy ể n nguồ n.
+TP4056 datasheet (LCSC).
+SY8088 application note và SY8088IAAC trên LCSC.
+VL53L8CX (ST) và Pololu #3419.
+JSN-SR04T V3.0.
+MPU-6050 pinout.
+Motor 1027: INEED C1027 và datasheet trên Farnell.
+# Đi ể m ch ư a chắ c Ả nh h ưở ng nế u sai Cách xác minh
+4 IP5306: KEY tích c ự c thấ p, t ự
+th ứ c khi có t ả i, sụt áp khi
+cắ m sạc
+Không bậ t đ ượ c,
+hoặ c máy reset
+Th ử  trên module MHCD42
+đang có ngay hôm nay
+5 Chiề u cao công tắ c, tact,
+USB-C so v ớ i các lỗ  trên v ỏ
+Không lắ p đ ượ c, nút
+bấ m không ăn
+File STEP c ủ a linh kiệ n đã
+chọn đ ư a vào FreeCAD
+6 Hiệ u năng antenna khi có pin,
+ng ự c ng ườ i đeo và gậ y nhôm
+gầ n đó
+BLE r ớ t kế t nố i Đo RSSI ở  bu ổ i bring-up. Nế u
+kém thì Rev B dùng b ả n -1U
+v ớ i antenna ngoài
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 30 of 31
+
+--- PAGE 31 ---
+Nộ i bộ : Đặ c t ả  kỹ  thuậ t v2, tài liệ u thông số  CAD, các file novachest_v4.py  và
+novaclip_v2.py  trong th ư  mục NovaSight_CAD.
+NovaSight — Brief thiết kế PCB (NovaChest V4.0 & NovaCane Clip V2.0)
+Page 31 of 31

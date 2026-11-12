@@ -1,0 +1,177 @@
+1. Tổng quan sản phẩm
+NovaSight là hệ thống hỗ trợ di chuyển dành cho người mù và người khiếm thị nặng đang dùng gậy trắng. Hệ thống không thay thế gậy trắng. Nó bổ sung đúng phần mà gậy không với tới được: vật cản ở tầm ngực và đầu, cùng những thay đổi mặt đất cách người dùng 1-3 m, tức là xa hơn đầu gậy. Khi phát hiện nguy cơ, hệ thống báo bằng rung nhẹ để đôi tai người dùng vẫn rảnh cho tiếng xe và tiếng người xung quanh.
+Hệ thống gồm hai thiết bị phần cứng và một ứng dụng tuỳ chọn:
+NovaChest: mô-đun đeo trước ngực, làm nhiệm vụ nhìn trước 1-3 m. Hai cảm biến siêu âm canh vật cản thân trên. Cảm biến ToF đa vùng và camera cùng soi mặt đất phía trước. Hai mô đun rung nằm trên dây đeo vai.
+NovaCane Clip: bộ kẹp gắn ngay dưới tay cầm của cây gậy người dùng đang có. Đây là kênh rung chính dưới ngón trỏ, đồng thời có nút SOS, nút “Xin đường” với đèn nháy đỏ, và cảm biến chuyển động đo độ gồ ghề mặt đường.
+NovaApp: ứng dụng di động để cài đặt, luyện nhận biết rung, gửi SOS và tổng hợp bản đồ mặt đường. Mọi chức năng an toàn vẫn chạy khi không có điện thoại.
+Hai thiết bị dùng được độc lập và mạnh hơn khi dùng cùng nhau. Toàn bộ xử lý cảnh báo chạy ngay trên thiết bị, không cần Internet.
+
+a) NovaChest đeo trước ngực (bản ray trượt)
+
+b) NovaCane Clip kẹp dưới tay cầm gậy
+Hình 1. Hai thiết bị phần cứng của NovaSight (mô hình 3D dựng theo kích thước thật)
+2. Sản phẩm bắt nguồn từ người dùng thật
+Nhóm phỏng vấn sâu những người khiếm thị tại trụ sở của Hội Người Mù TP. Nha Trang, từ 25 đến 52 tuổi. Phần lớn đi bán chổi, tăm hoặc chào hàng hằng ngày. Từ đó nhóm rút ra 15 nhu cầu (N1-N15). Mỗi linh kiện và tính năng trong bản thiết kế hiện tại đều phải phục vụ ít nhất một nhu cầu; linh kiện nào không truy về được nhu cầu nào thì bị loại. Bảng 1 tóm tắt các insight quan trọng nhất và cách sản phẩm đáp ứng.
+Bảng 1. Từ insight phỏng vấn đến quyết định thiết kế
+Người dùng nói
+Nhu cầu
+Sản phẩm đáp ứng
+“Xe cao ở dưới không đụng được thì hay bị đụng đầu, trúng cái trán” (chú Ngây); va ngực, mũi vào xe chở hàng (anh C)
+N1: vật cản đầu, ngực
+2 cảm biến siêu âm chống nước trên Chest, chếch lên 15°, không bị nắng làm mù
+“Khoảng tầm 1 mét rưỡi đến 2 m mà nó rung là tốt”; kính cũ “đi nhanh không kịp bắt” (chú N)
+N2, N3: báo sớm, đủ nhanh
+Nhìn trước 1–3 m; ngưỡng báo tăng theo tốc độ đi đo bằng IMU; mục tiêu còn ≥1,2 s để phản ứng
+Ổ gà, đường gồ ghề làm đi chậm (anh C)
+N4: mặt đất phía trước
+ToF đa vùng và camera tìm bậc, hố ở 0,8–3 m; Clip đo độ gồ ghề để xây bản đồ
+“Rung mạnh, giật cột lên thì mình mới giật mình” (cô S); 4/5 người lo bị giật mình
+N5: rung nhẹ
+Mọi mẫu rung khởi động mềm; mặc định ở mức thấp nhất, 3 mức chỉnh được
+Người mù rất nhạy âm thanh, phải nghe xe cộ (chú N, anh C)
+N6: tai rảnh
+Không có loa trên cả hai thiết bị; không phát âm thanh tự động
+Khi không chắc thì “đứng lại, lắng nghe” (chú N)
+N9: báo không chắc
+Mẫu rung riêng “không chắc” khi cảm biến thiếu tin cậy, thay vì im lặng hoặc báo bừa
+Thích gậy gỗ gõ cho kêu; quen tư thế gậy thu gọn, vươn dài (chị T)
+N13, N14: giữ gậy cũ
+Clip kẹp được gậy Ø12–25 mm, không đụng đầu gậy, không đổi kỹ thuật quét
+Chưa từng dùng thiết bị hỗ trợ nào; thu nhập thấp
+N11, N12: dễ dùng, giá hợp lý
+Một công tắc gạt là chạy; kẹp vào là dùng; bỏ thân gậy tự chế để hạ giá
+
+Từ các insight này, nhóm đặt sáu ràng buộc bắt buộc cho sản phẩm: (1) không thay gậy trắng và không làm hỏng kỹ thuật O&M; (2) không chiếm thính giác; (3) rung nhẹ, chỉnh được; (4) khi không chắc thì phải báo là không chắc; (5) mỗi thiết bị dùng được độc lập, không bắt buộc có app; (6) hoạt động được dưới nắng TP.HCM, hoặc tự biết và tự báo khi không hoạt động được.
+3. NovaChest 
+NovaChest là một khối nhỏ gọn 148 × 55 × 43 mm, nặng khoảng 250 g kể cả pin, đeo giữa ngực ở độ cao khoảng 1,2-1,3 m. Mặt trước có ba mắt xếp đối xứng. Hai bên là hai đầu dò siêu âm viền đỏ. Ở giữa là ô kính tối chứa camera phía trên và cảm biến ToF đa vùng phía dưới, đặt trong một cằm vát nghiêng 35° để nhìn xuống mặt đường. Vỏ màu sáng giúp giảm hấp thụ nhiệt dưới nắng.
+
+a) Mặt trước
+
+b) Hình tách lớp
+Hình 2. NovaChest: hai đầu dò siêu âm, cụm camera và ToF ở giữa, nút Mode trên đỉnh
+3.1. Vai trò của các cảm biến
+Nhóm không dựa vào một cảm biến duy nhất. Mỗi loại cảm biến được giao đúng việc mà nó làm tốt nhất, và các góc lắp đã được kiểm tra trên mô hình 3D để không có chi tiết nào che tầm nhìn của cảm biến.
+Bảng 2. Bố trí cảm biến trên NovaChest
+Cảm biến
+Hướng lắp
+Nhiệm vụ
+Điểm mạnh
+2 × siêu âm chống nước JSN-SR04T
+Hai bên, xoay ra ngoài 15°, chếch lên 15°
+Vật cản tầm ngực và đầu trong vòng 2,5 m; báo trái, phải hoặc chính giữa
+Không bị ánh nắng ảnh hưởng; chịu mưa
+ToF đa vùng VL53L8CX (8×8 hoặc 4×4 vùng)
+Giữa, chúc xuống 35°
+Bản đồ độ sâu mặt đất: bậc lên/xuống, hố, vật thấp
+Chính xác khi trời tối, trong bóng râm, trong nhà
+Camera OV3660
+Giữa, chúc xuống 25°
+Hỗ trợ nhận diện bậc, hố, vũng nước ban ngày
+Camera thụ động hoạt động tốt nhất dưới nắng
+IMU MPU6050
+Gắn cứng trên khung
+Tư thế thiết bị, đi hay đứng, nhịp bước để ước tốc độ đi
+Bù góc nghiêng khi người dùng cúi, nghiêng
+
+3.2. Phản hồi và cách đeo
+Chest có hai mô-đun rung riêng gắn trên dây vai trái và phải, ngay dưới xương đòn. Nhờ vậy, Chest vẫn tự cảnh báo được khi gậy đang gập lại, khi hai tay bận bưng đồ, hoặc khi mất kết nối với gậy. Đây chính là tình huống chị T kể: va mặt vào vật cản lúc hai tay đang cầm đồ.
+
+
+a) Bố trí linh kiện bên trong
+
+b) Ray trượt và đế gắn dây
+Hình 3. Bên trong NovaChest và cơ cấu ray trượt tháo lắp một tay
+4. NovaCane Clip
+Phiên bản trước của NovaSight là một cây gậy telescopic tự chế. Sau phỏng vấn, nhóm bỏ hướng này. Người dùng đã quen và gắn bó với cây gậy của mình, có người còn thích gậy gỗ vì gõ kêu to. Cảm biến đặt trên thân gậy cũng chỉ giúp nhìn xa thêm khoảng 0,3 m. NovaCane Clip vì vậy là một bộ kẹp 78 × 42 × 49 mm, lắp vào cây gậy sẵn có trong dưới một phút.
+Kẹp vừa nhiều loại gậy: lòng kẹp dùng bộ lót TPU thay được (đường kính trong 15, 18, 21, 25 mm), khớp với gậy Ø12–25 mm. Hai vít M3 bằng thép không gỉ siết hàm kẹp; lớp TPU vừa chống xoay vừa không làm trầy gậy.
+Đặt dưới ngón trỏ: kẹp nằm ngay dưới mép tay cầm. Ba nút xếp hàng ngang, cách nhau 12,5 mm, mỗi nút một hình dạng để phân biệt bằng xúc giác: Mode tròn lồi, Xin đường dạng thanh ngang, SOS vuông màu đỏ có gờ (giữ 3 giây).
+Rung nhẹ, hai motor: hai mô-đun rung đặt hai bên, khởi động mềm, có ba mức cường độ. Vì thân gậy truyền rung đi khắp nơi, hướng trái/phải được mã hoá chủ yếu bằng nhịp rung chứ không chỉ bằng vị trí motor.
+An toàn khi qua đường: nút Xin đường bật LED đỏ siêu sáng nháy 2 Hz trong 60 giây. Hai vòng băng phản quang trên thân gậy giúp người lái xe nhìn thấy từ xa vào ban đêm. Sản phẩm không tuyên bố “qua đường an toàn”; nó chỉ giúp người dùng được nhìn thấy rõ hơn.
+Hiểu trạng thái gậy: IMU nhận ra gậy đang quét, đứng yên hay đã cất đi. Khi gậy cất đi, Clip báo cho Chest để Chest nhận toàn bộ việc cảnh báo. Trong lúc quét, IMU ghi độ gồ ghề mặt đường để đóng góp vào bản đồ chung.
+
+a) Mặt trên: Mode, Xin đường, SOS
+
+b) Hình tách lớp: vỏ, đế, hàm kẹp, lót TPU
+Hình 4. NovaCane Clip với ba nút khác hình dạng và bộ lót đổi được
+5. NovaApp
+NovaApp là thành phần tuỳ chọn, không nằm trong vòng an toàn. Ứng dụng phục vụ chủ yếu cho người hỗ trợ và giai đoạn làm quen:
+Cài đặt ban đầu do chuyên viên O&M hoặc kỹ thuật viên thực hiện: ghép đôi thiết bị, hiệu chuẩn chiều cao đeo, chọn mức rung.
+Bài luyện rung: phát từng mẫu rung kèm lời giải thích, sau đó kiểm tra xem người dùng đã nhận ra đúng chưa.
+SOS: nhận tín hiệu từ nút SOS trên Clip, gửi tin nhắn kèm vị trí cho người thân, rồi rung xác nhận trên gậy.
+Bản đồ mặt đường và tuyến quen: gom dữ liệu gồ ghề từ Clip và sự kiện bậc, hố từ Chest theo vị trí GPS. Khi người dùng bật, app báo trước “đoạn sắp tới gồ ghề”. App chỉ đọc trạng thái khi được hỏi, không tự phát âm thanh.
+6. Hệ thống hoạt động như thế nào
+6.1. Luồng xử lý
+NovaSight áp dụng kiến trúc ưu tiên khoảng cách (distance-first). Cảm biến khoảng cách phát hiện sự kiện trước, camera chỉ tham gia để tăng hoặc giảm độ tin cậy. Nhờ vậy, thiết bị không phải chạy AI hình ảnh liên tục và tiết kiệm pin.
+Thu nhận: siêu âm (khoảng 10 Hz mỗi bên, phát xen kẽ), ToF (15–30 Hz), camera (3-7 khung hình/giây), IMU (100 Hz).
+Xử lý tại biên: ESP32-S3 trên Chest lọc nhiễu, bù góc nghiêng theo IMU, so sánh mặt đất đo được với mặt phẳng đã hiệu chuẩn để tìm bậc và hố.
+Đánh giá nguy cơ: một ứng viên phải tồn tại qua ít nhất 3 khung hình và phải tiến lại gần đúng với tốc độ đi thì mới được cảnh báo. Mỗi vùng đo được xếp vào ba mức: “tin”, “yếu” hoặc “không dùng”.
+Phản hồi: Chest tự rung trên dây vai, đồng thời gửi bản sao sự kiện qua BLE sang Clip. Vòng cảnh báo trên Chest chạy được kể cả khi không có gậy, không có điện thoại, không có Internet.
+6.2. Một ngôn ngữ rung, chỉ ba mẫu khi đang đi
+Người dùng vừa đi vừa nghe xe cộ không thể nhớ nhiều mẫu rung. Vì vậy khi đang đi, cả hai thiết bị chỉ dùng chung ba mẫu, học một lần là dùng cho cả hai:
+Bảng 3. Ba mẫu rung khi di chuyển
+Mẫu
+Ý nghĩa
+Trên Cane Clip (kênh chính)
+Trên Chest (dự phòng, chỉ hướng)
+1. Vật cản phía trước
+Có vật ở tầm ngực, đầu hoặc chắn đường
+1 rung dài 250 ms, lặp nhanh dần khi vật đến gần
+Rung vai phía có vật; cả hai vai nếu vật ở giữa
+2. Hụt hoặc gồ dưới chân
+Bậc, hố, ổ gà phía trước; người dùng tự kiểm tra lại bằng gậy
+3 xung ngắn 80 ms
+3 xung ngắn trên cả hai vai
+3. Không chắc
+Cảm biến không đủ tin cậy, nên dừng lại lắng nghe
+1 nhịp chậm 600 ms (tăng rồi giảm), lặp tối đa 3 lần
+Như trên gậy
+
+Mọi mẫu rung đều tăng dần cường độ trong 60–80 ms thay vì bật đột ngột. Chỉ cảnh báo “rất gần” (dưới 1 m) mới được mạnh hơn mức người dùng đã chọn, và chỉ hơn một bậc. Hai thiết bị không bao giờ rung cùng một cảnh báo cùng lúc.
+6.3. Ba chế độ theo bối cảnh
+Nút Mode chuyển giữa ba chế độ; máy xác nhận bằng 1, 2 hoặc 3 xung rung rất nhẹ. Đi bộ (mặc định): đầy đủ mặt đất và thân trên. Đông người: chỉ báo vật gần nhất ở chính giữa trong 1,2 m và gộp các cảnh báo liên tiếp, dành cho chợ, nơi chị Thương kể bị báo liên tục. Trong nhà: tầm báo 1 m, rung nhẹ nhất, tắt camera.
+7. Thông số kỹ thuật chính
+Bảng 4. Thông số bản Alpha (giá trị thiết kế, sẽ cập nhật theo kết quả đo thực tế)
+Hạng mục
+NovaChest V4.0
+NovaCane Clip V2.0
+Kích thước
+148 × 55 × 43 mm
+78 × 42 × 49 mm
+Khối lượng
+≈ 250 g (pod, kể cả pin); dây đeo ≈ 120 g
+≈ 99 g ở mô hình Alpha; mục tiêu Beta ≤ 80 g
+Bộ xử lý
+ESP32-S3 (N16R8), BLE 5
+ESP32-C3 Super Mini, BLE 5
+Cảm biến
+2 × siêu âm JSN-SR04T, ToF VL53L8CX, camera OV3660, IMU MPU6050
+IMU MPU6050
+Vùng phát hiện
+Thân trên: đến 2,5 m, trái/giữa/phải. Mặt đất: 0,8–3 m (tối, bóng râm); ban ngày dựa vào camera
+Nhận cảnh báo từ Chest; đo độ gồ ghề khi quét
+Phản hồi
+2 mô-đun rung trên dây vai, 3 mức
+2 mô-đun rung dưới ngón trỏ, 3 mức; LED đỏ “Xin đường”
+Điều khiển
+Công tắc gạt, nút Mode
+Công tắc gạt, nút Mode, Xin đường, SOS
+Pin, sạc
+Li-Po 4.000 mAh; ước 6–9 giờ, mục tiêu ≥ 10 giờ; USB-C
+Li-Po 2.000 mAh; ước 15–20 giờ; USB-C
+Độ trễ mục tiêu
+Từ cảm biến đến rung ≤ 200 ms
+Qua BLE, cùng mục tiêu
+Vỏ, bảo vệ
+PETG màu sáng, gioăng, mục tiêu IP54
+PETG, lót TPU, vít inox
+Tài liệu tham khảo
+Florida Vision Technology 2026, WeWALK Smart Cane 2, truy cập 06/11/2026, https://floridareading.com/products/wewalk-smart-cane-2
+Kim, SY & Cho, K 2013, ‘Usability and design guidelines of smart canes for users with visual impairments’, International Journal of Design, vol. 7, no. 1, pp. 99–110.
+Lộc Liên 2024, ‘Việt Nam có 77 triệu xe máy, thuộc hàng cao nhất thế giới’ (theo trích dẫn trong Bản mô tả dự án NovaSight).
+Manduchi, R & Kurniawan, S 2011, ‘Mobility-related accidents experienced by people with visual impairment’, AER Journal: Research and Practice in Visual Impairment and Blindness, vol. 4, no. 2, pp. 44–54.
+Dữ liệu nhân trắc nam giới Việt Nam từ quét 3D cơ thể (n = 378, TP.HCM), công bố năm 2022.
+National Statistics Office of Vietnam (NSO) 2025, Điều tra Người khuyết tật Việt Nam năm 2023, Hà Nội.
+STMicroelectronics, VL53L8CX – Low-power high-performance 8×8 multizone Time-of-Flight sensor, datasheet.
+Sức khỏe & Đời sống 2025, ‘Việt Nam có khoảng 2 triệu người mù, thị lực kém, 1/3 số này không có khả năng điều trị’, 09/10/2025.
+Sensors 2021, vol. 21, no. 12, article 4250 (MDPI), tổng quan giá các thiết bị siêu âm hỗ trợ người khiếm thị, https://www.mdpi.com/1424-8220/21/12/4250
+NovaSight 2026, Biên bản phỏng vấn 5 người dùng tại Hội Người mù TP.HCM và Đặc tả kỹ thuật v2 NovaChest V4.0 & NovaCane Clip V2.0 (tài liệu nội bộ).

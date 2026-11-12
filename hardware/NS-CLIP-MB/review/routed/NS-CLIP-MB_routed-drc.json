@@ -1,0 +1,4464 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-06T21:34:20",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "NS-CLIP-MB_routed.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 1.2323 mm",
+                    "pos": {
+                        "x": 98.3714,
+                        "y": 54.6286
+                    },
+                    "uuid": "d80b7d32-5d14-4d84-80fb-1be473029b39"
+                },
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 0.8003 mm",
+                    "pos": {
+                        "x": 80.9241,
+                        "y": 60.8159
+                    },
+                    "uuid": "84e266b9-4b9c-4025-a1e7-e06b60e62d77"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 1.5000 mm",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 64.51
+                    },
+                    "uuid": "701884a3-bd49-4a26-85ab-476f27074bd8"
+                },
+                {
+                    "description": "Điểm hàn 5 [/3V3] của U4 trên F.Cu",
+                    "pos": {
+                        "x": 106.4375,
+                        "y": 67.25
+                    },
+                    "uuid": "a4fdbd58-6e82-4299-9767-9b1e4338c55f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 0.8867 mm",
+                    "pos": {
+                        "x": 104.113,
+                        "y": 62.377
+                    },
+                    "uuid": "7aa07c66-3355-4499-9aeb-785dd729609f"
+                },
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 1.5000 mm",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 64.51
+                    },
+                    "uuid": "701884a3-bd49-4a26-85ab-476f27074bd8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của J5 trên F.Cu",
+                    "pos": {
+                        "x": 69.5,
+                        "y": 58.5
+                    },
+                    "uuid": "b704b270-9210-4572-a09a-dc86afa70c8f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 9 [/GND] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 71.75,
+                        "y": 70.65
+                    },
+                    "uuid": "a7f6198b-cd80-4472-b85c-393552045dfe"
+                },
+                {
+                    "description": "Điểm hàn 11 [/GND] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 70.65
+                    },
+                    "uuid": "6380b001-6e86-4ce8-bd6b-d8826a6ba810"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 9 [/GND] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 71.75,
+                        "y": 70.65
+                    },
+                    "uuid": "a7f6198b-cd80-4472-b85c-393552045dfe"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 11 [/GND] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 70.65
+                    },
+                    "uuid": "6380b001-6e86-4ce8-bd6b-d8826a6ba810"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/GND] của C20 trên F.Cu",
+                    "pos": {
+                        "x": 76.48,
+                        "y": 65.5
+                    },
+                    "uuid": "30f1dca4-a955-442b-baac-a718cc8c74db"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của C19 trên F.Cu",
+                    "pos": {
+                        "x": 76.48,
+                        "y": 70.0
+                    },
+                    "uuid": "125fdb20-21df-42c7-8595-ae37756a57a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của C19 trên F.Cu",
+                    "pos": {
+                        "x": 76.48,
+                        "y": 70.0
+                    },
+                    "uuid": "125fdb20-21df-42c7-8595-ae37756a57a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của C15 trên F.Cu",
+                    "pos": {
+                        "x": 82.48,
+                        "y": 78.25
+                    },
+                    "uuid": "1db8e69e-4da1-4a5e-9649-e571c5c8736b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/GND] của C6 trên F.Cu",
+                    "pos": {
+                        "x": 98.73,
+                        "y": 85.75
+                    },
+                    "uuid": "a41af1e1-bb99-4844-90c6-f1f58a42d0b7"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của R20 trên F.Cu",
+                    "pos": {
+                        "x": 104.26,
+                        "y": 73.0
+                    },
+                    "uuid": "267d34f7-6555-45cd-b8dd-cc0719b9395e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của R20 trên F.Cu",
+                    "pos": {
+                        "x": 104.26,
+                        "y": 73.0
+                    },
+                    "uuid": "267d34f7-6555-45cd-b8dd-cc0719b9395e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/LDO_EN] trên F.Cu, chiều dài 2.2196 mm",
+                    "pos": {
+                        "x": 75.0195,
+                        "y": 80.1881
+                    },
+                    "uuid": "fb3b225b-ee66-4264-803f-2fdaf60960a0"
+                },
+                {
+                    "description": "Đường mạch [/LDO_EN] trên F.Cu, chiều dài 0.9567 mm",
+                    "pos": {
+                        "x": 102.1894,
+                        "y": 71.9494
+                    },
+                    "uuid": "c6b0799d-7afb-4bb2-aa0d-13b5d03183c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_ROUTE] trên F.Cu, chiều dài 4.0799 mm",
+                    "pos": {
+                        "x": 86.275,
+                        "y": 67.85
+                    },
+                    "uuid": "0779fb09-2286-4594-97ef-bb68071fbf41"
+                },
+                {
+                    "description": "Đường mạch [/BTN_ROUTE] trên F.Cu, chiều dài 0.3238 mm",
+                    "pos": {
+                        "x": 107.9803,
+                        "y": 50.93
+                    },
+                    "uuid": "ebe703ca-fef9-4a5b-90b0-5c20556ac30f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn PTH 1 [/BEACON_NEG] của D3",
+                    "pos": {
+                        "x": 118.2,
+                        "y": 69.975
+                    },
+                    "uuid": "5ee0d144-dd21-49cb-a539-e803acf17286"
+                },
+                {
+                    "description": "Đường mạch [/BEACON_NEG] trên F.Cu, chiều dài 4.3679 mm",
+                    "pos": {
+                        "x": 95.9375,
+                        "y": 70.0
+                    },
+                    "uuid": "17129917-9d4c-41d9-b46f-55f811e6bdd0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 1.6036 mm",
+                    "pos": {
+                        "x": 96.6161,
+                        "y": 65.9411
+                    },
+                    "uuid": "fc234716-32d0-43f8-9de5-aed8305b3b76"
+                },
+                {
+                    "description": "Điểm hàn 1 [/VSYS] của U4 trên F.Cu",
+                    "pos": {
+                        "x": 104.1625,
+                        "y": 67.25
+                    },
+                    "uuid": "5378cf83-d5d5-43e4-9b1a-12cb3db76583"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn PTH 2 [/D3_A] của D3",
+                    "pos": {
+                        "x": 118.2,
+                        "y": 67.435
+                    },
+                    "uuid": "aeacc56a-6f49-429d-88ef-b2b7464d8b33"
+                },
+                {
+                    "description": "Đường mạch [/D3_A] trên F.Cu, chiều dài 1.5273 mm",
+                    "pos": {
+                        "x": 99.5437,
+                        "y": 62.9996
+                    },
+                    "uuid": "6c3141cd-75c8-40dd-b2fd-61150ed016b9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/BAT_PLUS] của TP2 trên F.Cu",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 55.5
+                    },
+                    "uuid": "46511a6d-aa04-4612-8b94-7d3f8c753509"
+                },
+                {
+                    "description": "Đường mạch [/BAT_PLUS] trên F.Cu, chiều dài 3.4507 mm",
+                    "pos": {
+                        "x": 52.8,
+                        "y": 68.69
+                    },
+                    "uuid": "27aa14cf-8cc6-4ffd-b074-74953e46229e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/BAT_PLUS] trên F.Cu, chiều dài 0.1677 mm",
+                    "pos": {
+                        "x": 100.8686,
+                        "y": 65.1414
+                    },
+                    "uuid": "22cdd856-cb4d-4461-830d-d3901d2ca6e7"
+                },
+                {
+                    "description": "Điểm hàn 1 [/BAT_PLUS] của TP2 trên F.Cu",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 55.5
+                    },
+                    "uuid": "46511a6d-aa04-4612-8b94-7d3f8c753509"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/B_MINUS] của C3 trên F.Cu",
+                    "pos": {
+                        "x": 56.23,
+                        "y": 67.75
+                    },
+                    "uuid": "703482b2-0055-4451-a389-5cd843f316db"
+                },
+                {
+                    "description": "Điểm hàn PTH 2 [/B_MINUS] của J2",
+                    "pos": {
+                        "x": 52.8,
+                        "y": 66.4
+                    },
+                    "uuid": "742f903b-0fad-4ee1-8cae-d4bc70a17334"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/B_MINUS] của C3 trên F.Cu",
+                    "pos": {
+                        "x": 56.23,
+                        "y": 67.75
+                    },
+                    "uuid": "703482b2-0055-4451-a389-5cd843f316db"
+                },
+                {
+                    "description": "Điểm hàn 6 [/B_MINUS] của U5 trên F.Cu",
+                    "pos": {
+                        "x": 61.1375,
+                        "y": 66.35
+                    },
+                    "uuid": "e9510472-a8eb-4950-b95b-ec98e5c1ec89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/MCU_EN] trên F.Cu, chiều dài 2.5785 mm",
+                    "pos": {
+                        "x": 62.0785,
+                        "y": 57.5
+                    },
+                    "uuid": "690760ab-75d1-4474-a5dc-f57755c55ddb"
+                },
+                {
+                    "description": "Đường mạch [/MCU_EN] trên F.Cu, chiều dài 1.7122 mm",
+                    "pos": {
+                        "x": 101.0393,
+                        "y": 69.0071
+                    },
+                    "uuid": "fef82343-da3e-4226-ba0a-02edc8c8fcc0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/MCU_EN] trên F.Cu, chiều dài 1.0664 mm",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 67.7964
+                    },
+                    "uuid": "c8d774a4-5adc-4c67-9ab9-184749571d3f"
+                },
+                {
+                    "description": "Đường mạch [/MCU_EN] trên F.Cu, chiều dài 1.9073 mm",
+                    "pos": {
+                        "x": 106.1673,
+                        "y": 64.0
+                    },
+                    "uuid": "cdb9b299-5ef1-46fa-889e-233e49284cb1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS_DET] trên F.Cu, chiều dài 3.1499 mm",
+                    "pos": {
+                        "x": 60.0858,
+                        "y": 63.0858
+                    },
+                    "uuid": "74077b6d-c655-4cf8-97ff-c21836a98f3c"
+                },
+                {
+                    "description": "Đường mạch [/VBUS_DET] trên F.Cu, chiều dài 0.8078 mm",
+                    "pos": {
+                        "x": 111.9027,
+                        "y": 62.4653
+                    },
+                    "uuid": "180b7abd-08c6-4c90-a2df-ce289c55acfd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/VBUS_DET] của R14 trên F.Cu",
+                    "pos": {
+                        "x": 111.01,
+                        "y": 75.25
+                    },
+                    "uuid": "90f51a19-447a-43ca-b591-202380edc712"
+                },
+                {
+                    "description": "Đường mạch [/VBUS_DET] trên F.Cu, chiều dài 1.7678 mm",
+                    "pos": {
+                        "x": 112.24,
+                        "y": 69.25
+                    },
+                    "uuid": "84221e24-1f6d-4823-a1cc-fdf234eab241"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 1 [/USB_DP_EXT] của U2 trên F.Cu",
+                    "pos": {
+                        "x": 111.1625,
+                        "y": 76.85
+                    },
+                    "uuid": "39d0b70b-6096-4a54-aec6-d62c6b4c257d"
+                },
+                {
+                    "description": "Đường mạch [/USB_DP_EXT] trên F.Cu, chiều dài 0.0700 mm",
+                    "pos": {
+                        "x": 116.0695,
+                        "y": 77.9995
+                    },
+                    "uuid": "2029da63-6ab3-4926-a545-66caacfa40ed"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 3 [/USB_DM_EXT] của U2 trên F.Cu",
+                    "pos": {
+                        "x": 111.1625,
+                        "y": 78.75
+                    },
+                    "uuid": "9bd544b1-71f7-4530-87d9-76302930ead5"
+                },
+                {
+                    "description": "Đường mạch [/USB_DM_EXT] trên F.Cu, chiều dài 0.4361 mm",
+                    "pos": {
+                        "x": 115.3961,
+                        "y": 78.45
+                    },
+                    "uuid": "407d1bbd-b1be-4f96-a41b-e53dd4d6b730"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_SOS] trên F.Cu, chiều dài 3.2111 mm",
+                    "pos": {
+                        "x": 86.275,
+                        "y": 80.35
+                    },
+                    "uuid": "d599209f-4881-4cdd-97ad-4eccd8035944"
+                },
+                {
+                    "description": "Đường mạch [/BTN_SOS] trên F.Cu, chiều dài 1.3203 mm",
+                    "pos": {
+                        "x": 110.3496,
+                        "y": 65.4318
+                    },
+                    "uuid": "663845c5-8032-4c4b-82ef-b31b9d8ce456"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBAT_ADC] trên F.Cu, chiều dài 1.4425 mm",
+                    "pos": {
+                        "x": 99.73,
+                        "y": 65.26
+                    },
+                    "uuid": "a8100db2-d285-4a39-a33d-c39176321a58"
+                },
+                {
+                    "description": "Điểm hàn 12 [/VBAT_ADC] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 53.3
+                    },
+                    "uuid": "7a565b2e-89f8-46a1-b0fb-b0e6097f8121"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/BAT_OD] trên F.Cu, chiều dài 0.8517 mm",
+                    "pos": {
+                        "x": 57.85,
+                        "y": 73.475
+                    },
+                    "uuid": "d9a88301-7147-4f53-b8b1-6dcf2799754d"
+                },
+                {
+                    "description": "Điểm hàn 1 [/BAT_OD] của U5 trên F.Cu",
+                    "pos": {
+                        "x": 58.8625,
+                        "y": 66.35
+                    },
+                    "uuid": "61caed17-34bf-4865-87f7-1bbdef553a03"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/LED_BEACON] trên F.Cu, chiều dài 0.3441 mm",
+                    "pos": {
+                        "x": 108.5061,
+                        "y": 51.255
+                    },
+                    "uuid": "305e89b5-77b0-451f-9f9d-7647422ddd90"
+                },
+                {
+                    "description": "Đường mạch [/LED_BEACON] trên F.Cu, chiều dài 0.8501 mm",
+                    "pos": {
+                        "x": 93.1026,
+                        "y": 68.1126
+                    },
+                    "uuid": "090e5474-a4b9-40b3-a4e4-1d5565bd8ead"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/IMU_INT] trên B.Cu, chiều dài 0.8526 mm",
+                    "pos": {
+                        "x": 78.8622,
+                        "y": 59.9768
+                    },
+                    "uuid": "fa710b67-cd08-4fa9-90cf-a3599b35a394"
+                },
+                {
+                    "description": "Đường mạch [/IMU_INT] trên F.Cu, chiều dài 0.7946 mm",
+                    "pos": {
+                        "x": 106.7983,
+                        "y": 54.2088
+                    },
+                    "uuid": "e29eab04-4e22-45dc-90dd-8e62312acac3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/I2C_SCL] trên F.Cu, chiều dài 1.5350 mm",
+                    "pos": {
+                        "x": 76.0285,
+                        "y": 64.1029
+                    },
+                    "uuid": "a46ddd19-3c2b-4ef2-b667-a3d187ca6f13"
+                },
+                {
+                    "description": "Điểm hàn 19 [/I2C_SCL] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 58.9
+                    },
+                    "uuid": "836aa7f5-ce01-4f10-a876-590770e0c112"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/MOT_R_PWM] trên F.Cu, chiều dài 0.9904 mm",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 79.51
+                    },
+                    "uuid": "88d0ceaa-1d9d-4ebd-a207-0ba3d32c9096"
+                },
+                {
+                    "description": "Điểm hàn 21 [/MOT_R_PWM] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 60.5
+                    },
+                    "uuid": "83899034-d72b-4d72-b360-2350e96bde69"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 2 [/LED_STATUS] của R23 trên F.Cu",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 63.49
+                    },
+                    "uuid": "1a73cdf5-27b5-44c2-b2af-349672cbd677"
+                },
+                {
+                    "description": "Điểm hàn 1 [/LED_STATUS] của D9 trên F.Cu",
+                    "pos": {
+                        "x": 105.25,
+                        "y": 64.7875
+                    },
+                    "uuid": "6bd82772-c725-4b0a-8ae0-4f9434a651e0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 22 [/LED_STATUS] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 61.3
+                    },
+                    "uuid": "530e31dc-1fc7-4521-89c3-4382ccf25b6d"
+                },
+                {
+                    "description": "Điểm hàn 1 [/LED_STATUS] của D9 trên F.Cu",
+                    "pos": {
+                        "x": 105.25,
+                        "y": 64.7875
+                    },
+                    "uuid": "6bd82772-c725-4b0a-8ae0-4f9434a651e0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Đường mạch [/BOOT] trên F.Cu, chiều dài 3.8674 mm",
+                    "pos": {
+                        "x": 98.7701,
+                        "y": 59.7701
+                    },
+                    "uuid": "6630f8a8-1489-42d3-a26e-9e276f758b6a"
+                },
+                {
+                    "description": "Điểm hàn 2 [/BOOT] của R22 trên F.Cu",
+                    "pos": {
+                        "x": 105.76,
+                        "y": 61.75
+                    },
+                    "uuid": "f763cbc6-8b57-4f42-beeb-935b3fd62902"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 5 [/BAT_SENSE] của U5 trên F.Cu",
+                    "pos": {
+                        "x": 61.1375,
+                        "y": 67.3
+                    },
+                    "uuid": "36aaefc3-894c-45bb-b676-dd3c5231c6a6"
+                },
+                {
+                    "description": "Đường mạch [/BAT_SENSE] trên F.Cu, chiều dài 1.4001 mm",
+                    "pos": {
+                        "x": 55.27,
+                        "y": 67.24
+                    },
+                    "uuid": "969f71ac-d648-44a9-846e-3137f04aa14a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Vi phạm khoảng hở (điểm hàn khoảng hở 0.6000 mm; thực tế 0.5720 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.9328 mm",
+                    "pos": {
+                        "x": 98.4296,
+                        "y": 85.0904
+                    },
+                    "uuid": "53ac3641-5d7e-401c-8c31-7744fbc843ad"
+                },
+                {
+                    "description": "Điểm hàn [<no net>] của FID2 trên F.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 84.0
+                    },
+                    "uuid": "d8d7a759-42ab-4dfe-87e3-860ca807b1be"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở (điểm hàn khoảng hở 0.6000 mm; thực tế 0.5720 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.9129 mm",
+                    "pos": {
+                        "x": 99.3425,
+                        "y": 85.0904
+                    },
+                    "uuid": "74b1b7f3-ade2-4895-90ae-16f55a88a3d7"
+                },
+                {
+                    "description": "Điểm hàn [<no net>] của FID2 trên F.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 84.0
+                    },
+                    "uuid": "d8d7a759-42ab-4dfe-87e3-860ca807b1be"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở lỗ khoan (ràng buộc lỗ khoan thiết lập bảng mạch khoảng hở 0.2500 mm; thực tế 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Điểm hàn B12 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 81.9
+                    },
+                    "uuid": "62f2fdf6-2c11-4515-b163-5bbf3db5c197"
+                },
+                {
+                    "description": "Điểm hàn NPTH của J1",
+                    "pos": {
+                        "x": 117.095,
+                        "y": 81.59
+                    },
+                    "uuid": "76c9dab3-d098-4974-961d-4f4493cba8b7"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở lỗ khoan (ràng buộc lỗ khoan thiết lập bảng mạch khoảng hở 0.2500 mm; thực tế 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Điểm hàn A12 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 75.5
+                    },
+                    "uuid": "85a441e6-0dd8-40e9-9276-2282baa5e028"
+                },
+                {
+                    "description": "Điểm hàn NPTH của J1",
+                    "pos": {
+                        "x": 117.095,
+                        "y": 75.81
+                    },
+                    "uuid": "d0b63ef6-1027-4a7b-bfbd-7c4b3fa64283"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở lỗ khoan (ràng buộc lỗ khoan thiết lập bảng mạch khoảng hở 0.2500 mm; thực tế 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Điểm hàn B1 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 75.5
+                    },
+                    "uuid": "10fb6ebb-9f26-4d80-af04-05e595257068"
+                },
+                {
+                    "description": "Điểm hàn NPTH của J1",
+                    "pos": {
+                        "x": 117.095,
+                        "y": 75.81
+                    },
+                    "uuid": "d0b63ef6-1027-4a7b-bfbd-7c4b3fa64283"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở lỗ khoan (ràng buộc lỗ khoan thiết lập bảng mạch khoảng hở 0.2500 mm; thực tế 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Điểm hàn A1 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 81.9
+                    },
+                    "uuid": "10c8646a-0067-4fdc-a7b3-23814201070b"
+                },
+                {
+                    "description": "Điểm hàn NPTH của J1",
+                    "pos": {
+                        "x": 117.095,
+                        "y": 81.59
+                    },
+                    "uuid": "76c9dab3-d098-4974-961d-4f4493cba8b7"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3431 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 80.8
+                    },
+                    "uuid": "f59b97d0-560d-4ae5-8234-2c92a74730b8"
+                },
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 4.6379 mm",
+                    "pos": {
+                        "x": 87.7844,
+                        "y": 80.3569
+                    },
+                    "uuid": "539e335e-267f-4001-97f0-10762c1929c2"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3681 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 0.8859 mm",
+                    "pos": {
+                        "x": 93.5388,
+                        "y": 80.3569
+                    },
+                    "uuid": "67212108-7ec0-4906-99d2-67c8a97e9b12"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3681 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 1.1165 mm",
+                    "pos": {
+                        "x": 92.4223,
+                        "y": 80.3569
+                    },
+                    "uuid": "936392e6-958c-45b6-ad64-e90ec62ef979"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.4282 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 119.9,
+                        "y": 87.4
+                    },
+                    "uuid": "789737c8-9d8a-45aa-ae3e-a82b1100629d"
+                },
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.5708 mm",
+                    "pos": {
+                        "x": 102.1771,
+                        "y": 86.8968
+                    },
+                    "uuid": "2e04d251-978a-45f3-b99b-d11f538cb890"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.4282 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 119.9,
+                        "y": 87.4
+                    },
+                    "uuid": "789737c8-9d8a-45aa-ae3e-a82b1100629d"
+                },
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.6610 mm",
+                    "pos": {
+                        "x": 101.5161,
+                        "y": 86.8968
+                    },
+                    "uuid": "c870b50d-4044-43ac-b756-e385a92c7aec"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.4032 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 119.9,
+                        "y": 87.4
+                    },
+                    "uuid": "789737c8-9d8a-45aa-ae3e-a82b1100629d"
+                },
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.7440 mm",
+                    "pos": {
+                        "x": 100.99,
+                        "y": 86.3707
+                    },
+                    "uuid": "cc1cd0b8-6b3a-4bca-a9c7-19b1f429aa31"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3359 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Đường mạch [/VBUS] trên B.Cu, chiều dài 0.3006 mm",
+                    "pos": {
+                        "x": 94.6162,
+                        "y": 80.3641
+                    },
+                    "uuid": "03936b55-41ff-48a3-82b2-52112f7a9ac0"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3609 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Đường mạch [/VBUS] trên B.Cu, chiều dài 0.5663 mm",
+                    "pos": {
+                        "x": 92.6694,
+                        "y": 80.3641
+                    },
+                    "uuid": "1476d2a9-06d3-475d-af1e-90140d4b0bcc"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.2904 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Đường mạch [/VBUS] trên B.Cu, chiều dài 7.1539 mm",
+                    "pos": {
+                        "x": 99.6748,
+                        "y": 85.4227
+                    },
+                    "uuid": "3ade9981-bc42-4a11-87e3-8ec8c0af1691"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3359 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Đường mạch [/VBUS] trên B.Cu, chiều dài 1.3630 mm",
+                    "pos": {
+                        "x": 94.0324,
+                        "y": 80.3641
+                    },
+                    "uuid": "53879490-58d3-4262-a15a-dc0178a700f2"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3609 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Đường mạch [/VBUS] trên B.Cu, chiều dài 0.2833 mm",
+                    "pos": {
+                        "x": 92.1031,
+                        "y": 80.3641
+                    },
+                    "uuid": "c549d14c-43e5-4565-a4b2-e32d73aa0057"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3609 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Đường mạch [/VBUS] trên B.Cu, chiều dài 0.2832 mm",
+                    "pos": {
+                        "x": 94.3156,
+                        "y": 80.3641
+                    },
+                    "uuid": "e9e97088-5cd8-43c5-b217-d37005e195f3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.4635 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 50.0
+                    },
+                    "uuid": "426e100d-22e5-44fa-9689-2b1a9d909934"
+                },
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.0193 mm",
+                    "pos": {
+                        "x": 89.2883,
+                        "y": 56.9511
+                    },
+                    "uuid": "1cd9f302-f0a5-435e-b2e8-bcfbbd4f6f6a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.4089 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 50.0
+                    },
+                    "uuid": "426e100d-22e5-44fa-9689-2b1a9d909934"
+                },
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.9740 mm",
+                    "pos": {
+                        "x": 87.7624,
+                        "y": 56.1511
+                    },
+                    "uuid": "5cba88b3-8d7e-4b3b-a92a-d0efa01b4601"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.4089 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 50.0
+                    },
+                    "uuid": "426e100d-22e5-44fa-9689-2b1a9d909934"
+                },
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.1204 mm",
+                    "pos": {
+                        "x": 88.4511,
+                        "y": 56.8398
+                    },
+                    "uuid": "5e5a407b-c1d2-4619-ab4a-c3aba47cb0d8"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3180 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 56.6
+                    },
+                    "uuid": "015a92d9-0179-4223-8287-b2a20a703f87"
+                },
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.8494 mm",
+                    "pos": {
+                        "x": 94.66,
+                        "y": 57.0311
+                    },
+                    "uuid": "7fb4b8c1-cc2e-4c0b-bdaf-bff8184f5d2f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.2852 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 50.0
+                    },
+                    "uuid": "426e100d-22e5-44fa-9689-2b1a9d909934"
+                },
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.8281 mm",
+                    "pos": {
+                        "x": 88.4511,
+                        "y": 56.9602
+                    },
+                    "uuid": "d120ee12-2390-4e05-918f-661818b0849b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.4630 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 50.0
+                    },
+                    "uuid": "426e100d-22e5-44fa-9689-2b1a9d909934"
+                },
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.0129 mm",
+                    "pos": {
+                        "x": 89.2792,
+                        "y": 56.9602
+                    },
+                    "uuid": "e6f7e8c6-261e-449d-af98-307a5f281702"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.3311 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 56.6
+                    },
+                    "uuid": "015a92d9-0179-4223-8287-b2a20a703f87"
+                },
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 5.2724 mm",
+                    "pos": {
+                        "x": 89.3876,
+                        "y": 57.0311
+                    },
+                    "uuid": "fdd6cec6-d22c-4f14-96d0-37003886508e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Vi phạm khoảng hở rìa bảng mạch (rìa thiết lập bảng mạch khoảng hở 0.5000 mm; thực tế 0.4630 mm)",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 50.0
+                    },
+                    "uuid": "426e100d-22e5-44fa-9689-2b1a9d909934"
+                },
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.1131 mm",
+                    "pos": {
+                        "x": 89.3076,
+                        "y": 56.9511
+                    },
+                    "uuid": "fdde28c0-8773-4d3e-b96f-c98ae9ee5aa3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 0.0573 mm",
+                    "pos": {
+                        "x": 103.9962,
+                        "y": 72.3277
+                    },
+                    "uuid": "339634c5-b74a-4387-9b1c-ca707f635b97"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 0.1897 mm",
+                    "pos": {
+                        "x": 105.245,
+                        "y": 69.7508
+                    },
+                    "uuid": "96b07f78-53c7-4cce-8224-7a778b343745"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 0.3397 mm",
+                    "pos": {
+                        "x": 76.1395,
+                        "y": 67.7879
+                    },
+                    "uuid": "98da708c-9ec1-495b-b5a9-aace0bc0a5d6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 0.0550 mm",
+                    "pos": {
+                        "x": 105.3,
+                        "y": 69.7421
+                    },
+                    "uuid": "9cc91106-9a37-425d-af92-bfa469a083c6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 0.1376 mm",
+                    "pos": {
+                        "x": 104.1338,
+                        "y": 72.3277
+                    },
+                    "uuid": "cbae2729-e859-4925-817f-1121974cc1e0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/3V3] trên F.Cu, chiều dài 0.0379 mm",
+                    "pos": {
+                        "x": 76.1395,
+                        "y": 67.75
+                    },
+                    "uuid": "e0bf5939-fc2c-4865-8c43-b8ee6079a316"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_MODE] trên F.Cu, chiều dài 0.1171 mm",
+                    "pos": {
+                        "x": 104.5813,
+                        "y": 57.2224
+                    },
+                    "uuid": "1526e3a8-c17a-4ab1-adc4-3faed30bf5cc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_MODE] trên F.Cu, chiều dài 0.5704 mm",
+                    "pos": {
+                        "x": 97.2694,
+                        "y": 57.0309
+                    },
+                    "uuid": "23c4de0e-f3d6-4ab2-ad5e-d3074f6310b3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_MODE] trên F.Cu, chiều dài 7.6413 mm",
+                    "pos": {
+                        "x": 96.8661,
+                        "y": 57.4342
+                    },
+                    "uuid": "55aabb81-681a-43e3-bcbd-8eae86b605e7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_MODE] trên F.Cu, chiều dài 0.6767 mm",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 56.5
+                    },
+                    "uuid": "98fc43d4-afc7-41a4-b452-c1aea4d17ed9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_MODE] trên F.Cu, chiều dài 0.4240 mm",
+                    "pos": {
+                        "x": 106.5235,
+                        "y": 56.7998
+                    },
+                    "uuid": "bbb0ad84-7fe8-4a90-9795-8dfbe6ab7cf1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_MODE] trên F.Cu, chiều dài 0.1250 mm",
+                    "pos": {
+                        "x": 106.3985,
+                        "y": 56.7998
+                    },
+                    "uuid": "e63f4ef5-f0be-4c59-9ea5-2f6a5a42d751"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BTN_MODE] trên F.Cu, chiều dài 0.2831 mm",
+                    "pos": {
+                        "x": 104.7815,
+                        "y": 57.4226
+                    },
+                    "uuid": "ef55c676-a983-451e-8657-e8fc75c167ce"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 0.3021 mm",
+                    "pos": {
+                        "x": 67.4071,
+                        "y": 82.6627
+                    },
+                    "uuid": "2cdb3f23-c5f3-4926-8df6-1b57acca5d50"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 0.7156 mm",
+                    "pos": {
+                        "x": 66.9011,
+                        "y": 83.1687
+                    },
+                    "uuid": "2f8a8f85-b269-4ae5-9bc0-51b3cec7a9ca"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 0.3165 mm",
+                    "pos": {
+                        "x": 104.2958,
+                        "y": 83.0262
+                    },
+                    "uuid": "575b848f-3489-426f-905b-abeb186648aa"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 0.8573 mm",
+                    "pos": {
+                        "x": 66.9011,
+                        "y": 84.026
+                    },
+                    "uuid": "63e00983-2774-4860-8dcf-ddab87849e78"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 0.8859 mm",
+                    "pos": {
+                        "x": 93.5388,
+                        "y": 80.3569
+                    },
+                    "uuid": "67212108-7ec0-4906-99d2-67c8a97e9b12"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 0.1866 mm",
+                    "pos": {
+                        "x": 105.8773,
+                        "y": 83.6334
+                    },
+                    "uuid": "790761b4-fdb3-49b2-8254-822fbb83d67a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 1.1165 mm",
+                    "pos": {
+                        "x": 92.4223,
+                        "y": 80.3569
+                    },
+                    "uuid": "936392e6-958c-45b6-ad64-e90ec62ef979"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 0.6606 mm",
+                    "pos": {
+                        "x": 105.4102,
+                        "y": 83.1663
+                    },
+                    "uuid": "d5de333d-3895-4290-b54d-881bdc4710f2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VSYS] trên F.Cu, chiều dài 0.1353 mm",
+                    "pos": {
+                        "x": 104.1605,
+                        "y": 83.0262
+                    },
+                    "uuid": "e857916c-3b77-491b-80e6-01b2fa80396c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/B_MINUS] trên F.Cu, chiều dài 0.2118 mm",
+                    "pos": {
+                        "x": 56.8735,
+                        "y": 72.0252
+                    },
+                    "uuid": "98777f80-703d-47b2-b26a-d08708515f0a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/B_MINUS] trên F.Cu, chiều dài 0.8267 mm",
+                    "pos": {
+                        "x": 57.85,
+                        "y": 72.175
+                    },
+                    "uuid": "b0a0cea8-ab20-4581-bc1e-51371483f885"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/B_MINUS] trên F.Cu, chiều dài 0.6435 mm",
+                    "pos": {
+                        "x": 56.23,
+                        "y": 72.0252
+                    },
+                    "uuid": "faeacbd4-116b-4239-b47b-ac7c4930f742"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.2831 mm",
+                    "pos": {
+                        "x": 114.4932,
+                        "y": 76.6494
+                    },
+                    "uuid": "03dbacf8-b8e3-4450-aa91-7d44a6fd7a45"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.1024 mm",
+                    "pos": {
+                        "x": 114.4932,
+                        "y": 76.9325
+                    },
+                    "uuid": "06a6382a-8053-47e0-a674-6e9fa5eb7e31"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.5708 mm",
+                    "pos": {
+                        "x": 102.1771,
+                        "y": 86.8968
+                    },
+                    "uuid": "2e04d251-978a-45f3-b99b-d11f538cb890"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 1.6561 mm",
+                    "pos": {
+                        "x": 114.3639,
+                        "y": 81.1
+                    },
+                    "uuid": "36260913-be6f-447f-945a-011228ed9028"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.6740 mm",
+                    "pos": {
+                        "x": 113.6899,
+                        "y": 81.2992
+                    },
+                    "uuid": "5753a8a6-5c73-4d58-9173-9a34a939a3d3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.7789 mm",
+                    "pos": {
+                        "x": 114.5656,
+                        "y": 77.4508
+                    },
+                    "uuid": "666254d1-802f-4a22-bc19-34f37b0d9598"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.2831 mm",
+                    "pos": {
+                        "x": 111.2733,
+                        "y": 76.1663
+                    },
+                    "uuid": "78a498a4-05a8-4e58-9b06-333ff97ae637"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.1659 mm",
+                    "pos": {
+                        "x": 110.9902,
+                        "y": 76.1663
+                    },
+                    "uuid": "c44899ab-f8a9-4b9e-a4a8-2237087cd278"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.6610 mm",
+                    "pos": {
+                        "x": 101.5161,
+                        "y": 86.8968
+                    },
+                    "uuid": "c870b50d-4044-43ac-b756-e385a92c7aec"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên F.Cu, chiều dài 0.4938 mm",
+                    "pos": {
+                        "x": 113.7867,
+                        "y": 77.4508
+                    },
+                    "uuid": "e2ebb243-016c-4a59-99bb-fb1bcc1374ae"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên B.Cu, chiều dài 0.5663 mm",
+                    "pos": {
+                        "x": 92.6694,
+                        "y": 80.3641
+                    },
+                    "uuid": "1476d2a9-06d3-475d-af1e-90140d4b0bcc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên B.Cu, chiều dài 0.2833 mm",
+                    "pos": {
+                        "x": 92.1031,
+                        "y": 80.3641
+                    },
+                    "uuid": "c549d14c-43e5-4565-a4b2-e32d73aa0057"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/VBUS] trên B.Cu, chiều dài 0.2832 mm",
+                    "pos": {
+                        "x": 94.3156,
+                        "y": 80.3641
+                    },
+                    "uuid": "e9e97088-5cd8-43c5-b217-d37005e195f3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CC1] trên F.Cu, chiều dài 0.0700 mm",
+                    "pos": {
+                        "x": 115.9705,
+                        "y": 79.9995
+                    },
+                    "uuid": "44fb0fbd-8563-48c7-84e2-9802ddeef9cb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CC1] trên F.Cu, chiều dài 0.9648 mm",
+                    "pos": {
+                        "x": 115.0057,
+                        "y": 79.9995
+                    },
+                    "uuid": "61b75588-d34c-4522-8561-20f2c0d29ce9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/USB_DP_EXT] trên F.Cu, chiều dài 0.0700 mm",
+                    "pos": {
+                        "x": 116.0695,
+                        "y": 77.9995
+                    },
+                    "uuid": "2029da63-6ab3-4926-a545-66caacfa40ed"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/USB_DP_EXT] trên F.Cu, chiều dài 0.8426 mm",
+                    "pos": {
+                        "x": 116.9121,
+                        "y": 77.9995
+                    },
+                    "uuid": "bbf2ed17-45c3-4829-a4b6-bf41d9190aa0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/USB_DM_EXT] trên F.Cu, chiều dài 0.8828 mm",
+                    "pos": {
+                        "x": 115.0877,
+                        "y": 79.4005
+                    },
+                    "uuid": "d2a72d6a-adaa-4e76-ad79-bce19a8a6165"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/USB_DM_EXT] trên F.Cu, chiều dài 0.0700 mm",
+                    "pos": {
+                        "x": 115.9705,
+                        "y": 79.4005
+                    },
+                    "uuid": "d3aea143-abd6-4253-b0d0-33380bbc9643"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CC2] trên F.Cu, chiều dài 0.0700 mm",
+                    "pos": {
+                        "x": 116.0695,
+                        "y": 76.9995
+                    },
+                    "uuid": "01f24215-d91d-43dc-8dff-be8c6c8fb757"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CC2] trên F.Cu, chiều dài 0.4616 mm",
+                    "pos": {
+                        "x": 112.4605,
+                        "y": 73.0679
+                    },
+                    "uuid": "3aa5c9ac-bab3-4ac5-b612-4ddf0a6431d3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CC2] trên F.Cu, chiều dài 4.1793 mm",
+                    "pos": {
+                        "x": 113.8957,
+                        "y": 72.6677
+                    },
+                    "uuid": "4707bebe-25bc-461e-b8ce-170b07812fb7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CC2] trên F.Cu, chiều dài 0.2831 mm",
+                    "pos": {
+                        "x": 113.6955,
+                        "y": 72.8679
+                    },
+                    "uuid": "6e869c44-62bf-4a73-a568-a1d861fcf6e1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CC2] trên F.Cu, chiều dài 0.3118 mm",
+                    "pos": {
+                        "x": 112.24,
+                        "y": 72.8474
+                    },
+                    "uuid": "935b429e-dbe0-42fe-b085-9344707dbb75"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CC2] trên F.Cu, chiều dài 1.2988 mm",
+                    "pos": {
+                        "x": 117.3683,
+                        "y": 76.9995
+                    },
+                    "uuid": "97916c39-c7d3-492f-8ff1-631a68ce57d5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.0193 mm",
+                    "pos": {
+                        "x": 89.2883,
+                        "y": 56.9511
+                    },
+                    "uuid": "1cd9f302-f0a5-435e-b2e8-bcfbbd4f6f6a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.8281 mm",
+                    "pos": {
+                        "x": 88.4511,
+                        "y": 56.9602
+                    },
+                    "uuid": "d120ee12-2390-4e05-918f-661818b0849b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.0129 mm",
+                    "pos": {
+                        "x": 89.2792,
+                        "y": 56.9602
+                    },
+                    "uuid": "e6f7e8c6-261e-449d-af98-307a5f281702"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/MOT_L_PWM] trên F.Cu, chiều dài 0.1131 mm",
+                    "pos": {
+                        "x": 89.3076,
+                        "y": 56.9511
+                    },
+                    "uuid": "fdde28c0-8773-4d3e-b96f-c98ae9ee5aa3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BOOT] trên F.Cu, chiều dài 0.4682 mm",
+                    "pos": {
+                        "x": 106.0553,
+                        "y": 61.8002
+                    },
+                    "uuid": "1a1e29d7-116f-44f0-9455-b0128a917156"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BOOT] trên F.Cu, chiều dài 0.4240 mm",
+                    "pos": {
+                        "x": 106.5235,
+                        "y": 61.8002
+                    },
+                    "uuid": "3248cb54-5543-48cf-a037-ef223d5b2ec8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BOOT] trên F.Cu, chiều dài 0.0502 mm",
+                    "pos": {
+                        "x": 105.76,
+                        "y": 61.8002
+                    },
+                    "uuid": "96513231-ff66-4836-b1bf-1cdb317b4e96"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/BOOT] trên F.Cu, chiều dài 0.6767 mm",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 62.1
+                    },
+                    "uuid": "b8f98d6f-3b62-41f4-ae88-8bb7f87ac28a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CHG_CHRG] trên F.Cu, chiều dài 0.3802 mm",
+                    "pos": {
+                        "x": 105.8006,
+                        "y": 76.4958
+                    },
+                    "uuid": "0abb28b6-0ffb-4e10-8dfb-674e4c9efc4b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/CHG_CHRG] trên F.Cu, chiều dài 0.9464 mm",
+                    "pos": {
+                        "x": 106.1808,
+                        "y": 76.4958
+                    },
+                    "uuid": "410c6012-5a52-4a78-bb46-597e265ca8de"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/D8_A] trên F.Cu, chiều dài 0.3507 mm",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 84.3894
+                    },
+                    "uuid": "14c55171-be8d-4c5a-bf15-0c3bbf40a6a8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/D8_A] trên F.Cu, chiều dài 0.2040 mm",
+                    "pos": {
+                        "x": 101.1565,
+                        "y": 85.1466
+                    },
+                    "uuid": "25a21ad6-908d-423d-93ba-0b43f7ea46e8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/D8_A] trên F.Cu, chiều dài 0.5749 mm",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 84.7401
+                    },
+                    "uuid": "e7c67de1-5d92-4437-a002-2ef0975b5fac"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/USB_DM_ESD] trên B.Cu, chiều dài 0.1996 mm",
+                    "pos": {
+                        "x": 115.1959,
+                        "y": 82.6202
+                    },
+                    "uuid": "693254af-cb51-4855-827f-9e2d4f493a54"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Chiều rộng đường mạch (ràng buộc thiết lập bảng mạch chiều rộng tối thiểu 0.2000 mm; thực tế 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Đường mạch [/USB_DM_ESD] trên B.Cu, chiều dài 0.2831 mm",
+                    "pos": {
+                        "x": 115.3961,
+                        "y": 82.42
+                    },
+                    "uuid": "88f6ed01-e927-4de3-854c-0fda14420319"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của C20 trên F.Cu",
+                    "pos": {
+                        "x": 76.48,
+                        "y": 65.5
+                    },
+                    "uuid": "30f1dca4-a955-442b-baac-a718cc8c74db"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của C17 trên F.Cu",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 54.52
+                    },
+                    "uuid": "5ecbee4f-9842-4075-b0e3-f6d3addb300e"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của C10 trên F.Cu",
+                    "pos": {
+                        "x": 102.25,
+                        "y": 68.77
+                    },
+                    "uuid": "0eb94674-689c-4c96-a641-c60ea188be6e"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn A1 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 81.9
+                    },
+                    "uuid": "10c8646a-0067-4fdc-a7b3-23814201070b"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn A12 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 75.5
+                    },
+                    "uuid": "85a441e6-0dd8-40e9-9276-2282baa5e028"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn B1 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 75.5
+                    },
+                    "uuid": "10fb6ebb-9f26-4d80-af04-05e595257068"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn B12 [/GND] của J1 trên F.Cu",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 81.9
+                    },
+                    "uuid": "62f2fdf6-2c11-4515-b163-5bbf3db5c197"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 14 [/GND] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 54.9
+                    },
+                    "uuid": "714a5330-3219-4f31-a278-36ee69412fe9"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của C6 trên F.Cu",
+                    "pos": {
+                        "x": 98.73,
+                        "y": 85.75
+                    },
+                    "uuid": "a41af1e1-bb99-4844-90c6-f1f58a42d0b7"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của R4 trên F.Cu",
+                    "pos": {
+                        "x": 65.26,
+                        "y": 77.5
+                    },
+                    "uuid": "d51c42a1-a83a-4697-b5b3-6ffcbe24c556"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 9 [/GND] của U6 trên F.Cu",
+                    "pos": {
+                        "x": 71.75,
+                        "y": 70.65
+                    },
+                    "uuid": "a7f6198b-cd80-4472-b85c-393552045dfe"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của U4 trên F.Cu",
+                    "pos": {
+                        "x": 104.1625,
+                        "y": 68.2
+                    },
+                    "uuid": "e45b1dc3-8580-4efa-b92c-4ef539be99bf"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của C15 trên F.Cu",
+                    "pos": {
+                        "x": 82.48,
+                        "y": 78.25
+                    },
+                    "uuid": "1db8e69e-4da1-4a5e-9649-e571c5c8736b"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của R28 trên F.Cu",
+                    "pos": {
+                        "x": 99.25,
+                        "y": 64.24
+                    },
+                    "uuid": "7791c4aa-37b8-4d79-b76d-fcf5054fe58b"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Kết nối thoát nhiệt tới vùng không đầy đủ (lớp F.Cu; vùng số nan hoa tối thiểu 2; thực tế 1)",
+            "items": [
+                {
+                    "description": "Vùng [/GND] trên F.Cu, độ ưu tiên 0",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 50.0
+                    },
+                    "uuid": "715cf967-9cb9-4d9c-bfd3-f449894aed09"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của R11 trên F.Cu",
+                    "pos": {
+                        "x": 113.26,
+                        "y": 72.25
+                    },
+                    "uuid": "ebe053be-ec62-449e-ba2e-2753266aa955"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/3V3] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 72.0525,
+                        "y": 74.8846
+                    },
+                    "uuid": "12007aa9-b162-40b7-bd19-10af323350eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/LDO_EN] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 75.0195,
+                        "y": 80.1881
+                    },
+                    "uuid": "b88fdb89-c44c-4b62-aa3d-3535d52aa385"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/BTN_ROUTE] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.6565,
+                        "y": 50.93
+                    },
+                    "uuid": "56bb8337-d24c-4f1a-8403-877abb4fd818"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/VSYS] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.6257,
+                        "y": 65.986
+                    },
+                    "uuid": "93966cef-37eb-4c1a-9022-d083044528a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/D3_A] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 101.071,
+                        "y": 62.9996
+                    },
+                    "uuid": "90b8a348-6f19-4fe2-a0a7-ee7cfdf61bb2"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/MCU_EN] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 62.0785,
+                        "y": 57.5
+                    },
+                    "uuid": "8befe927-e9ad-4103-b99e-5dee9fbf6966"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/MCU_EN] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 101.0393,
+                        "y": 69.0071
+                    },
+                    "uuid": "bb7d524d-c683-48eb-9a8b-d7963ca7a7ef"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/VBUS_DET] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 63.2357,
+                        "y": 63.0858
+                    },
+                    "uuid": "f5447b4a-2090-477f-b418-08c928d1c2f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/USB_DP_EXT] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.4452,
+                        "y": 75.7097
+                    },
+                    "uuid": "6328c638-b65e-4f37-8c43-ea2db0abd410"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/BTN_SOS] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 65.567,
+                        "y": 62.8845
+                    },
+                    "uuid": "2cca1678-c5e1-4595-b649-cb54cbd4c2be"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/BTN_SOS] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 110.3496,
+                        "y": 65.4318
+                    },
+                    "uuid": "c8ec56f4-e160-416d-a218-1463d33efdde"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/BAT_OD] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.2505,
+                        "y": 74.5153
+                    },
+                    "uuid": "6c8aa489-4018-4c83-886e-daca8161e1a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/LED_BEACON] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.5061,
+                        "y": 51.255
+                    },
+                    "uuid": "d0e70a0b-c183-4c7e-9e4d-7f2cc7c9cc60"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/LED_BEACON] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.9527,
+                        "y": 68.1126
+                    },
+                    "uuid": "fbcddfa0-2a69-4ba6-880d-7cb8acb17f45"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/IMU_INT] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.2364,
+                        "y": 54.7707
+                    },
+                    "uuid": "72b6d3ef-8746-406d-80d5-137e727c2245"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/I2C_SDA] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.9512,
+                        "y": 57.8226
+                    },
+                    "uuid": "c05554bf-b4fc-48bf-af6c-2e854cdb1bc4"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/I2C_SCL] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 61.9682,
+                        "y": 60.0055
+                    },
+                    "uuid": "5832a7fa-464a-42c8-aa35-139e53dd23cc"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/MOT_R_PWM] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 65.3064,
+                        "y": 78.8068
+                    },
+                    "uuid": "c9ea6fc6-3755-436d-b6c8-6611eb0c91f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/LED_STATUS] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.4284,
+                        "y": 65.3617
+                    },
+                    "uuid": "f6083736-c523-495a-a94e-031c9db5de6d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/BOOT] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.6375,
+                        "y": 59.7701
+                    },
+                    "uuid": "4f3a073c-8086-4dee-9f9e-61727a93caec"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/USB_DM] trên F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.5905,
+                        "y": 65.873
+                    },
+                    "uuid": "1bf3cb29-25bc-41d0-b36e-42371dd688e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 80.8
+                    },
+                    "uuid": "f59b97d0-560d-4ae5-8234-2c92a74730b8"
+                },
+                {
+                    "description": "Văn bản PCB 'NS-CLIP-MB  REV A  2026-11-06' trên B.Silkscreen",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 85.3
+                    },
+                    "uuid": "b8da4b90-88e3-4b2a-b443-6da7602ce023"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 56.6
+                    },
+                    "uuid": "015a92d9-0179-4223-8287-b2a20a703f87"
+                },
+                {
+                    "description": "Vòng cung của D1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 59.0
+                    },
+                    "uuid": "d85125bf-8911-4179-b804-36212fc88b3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 56.6
+                    },
+                    "uuid": "015a92d9-0179-4223-8287-b2a20a703f87"
+                },
+                {
+                    "description": "Tròn của D1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 59.0
+                    },
+                    "uuid": "04229309-c47c-470d-b91b-c19e7a9c9a31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 122.37487,
+                        "y": 51.02513
+                    },
+                    "uuid": "fefc7409-219d-4eb7-8cbc-4a0c5b008926"
+                },
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.8,
+                        "y": 51.5
+                    },
+                    "uuid": "ac3e7469-dad1-4aeb-afc7-66de12c1386f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 123.33275,
+                        "y": 52.81718
+                    },
+                    "uuid": "f7dbe65d-ab3f-400e-9d39-e83a0e6af129"
+                },
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 123.4,
+                        "y": 51.5
+                    },
+                    "uuid": "4eb9dc01-84e4-470a-bddd-336f2206d841"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 123.4,
+                        "y": 53.5
+                    },
+                    "uuid": "3b77a541-b3b2-4211-9c20-5a7003549013"
+                },
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 123.4,
+                        "y": 64.7
+                    },
+                    "uuid": "c8dca1a6-f09a-4305-804d-2295b5448f55"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 123.4,
+                        "y": 53.5
+                    },
+                    "uuid": "3b77a541-b3b2-4211-9c20-5a7003549013"
+                },
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 123.6,
+                        "y": 64.9
+                    },
+                    "uuid": "66154fb2-7455-4e42-b0a7-e0fdebb40a4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Vòng cung của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 78.4
+                    },
+                    "uuid": "30d8e1cc-1cf9-4691-82ee-5ce2ad8bf5f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 94.5,
+                        "y": 80.8
+                    },
+                    "uuid": "568360f8-a355-4325-8425-7b2172f38b57"
+                },
+                {
+                    "description": "Tròn của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 78.4
+                    },
+                    "uuid": "873cfbc2-eb6e-474e-b066-ddfc9d72ec02"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Cấu hình hiện tại không bao gồm thư viện dấu chân 'Espressif'",
+            "items": [
+                {
+                    "description": "Dấu chân U1",
+                    "pos": {
+                        "x": 115.1,
+                        "y": 58.1
+                    },
+                    "uuid": "47f5ad70-96c9-4949-b54e-c209451ec449"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của U3",
+                    "pos": {
+                        "x": 104.2,
+                        "y": 80.3
+                    },
+                    "uuid": "2c8f286e-5828-4e69-90ac-6f7f4189aa73"
+                },
+                {
+                    "description": "Phân đoạn của U3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.26,
+                        "y": 80.36
+                    },
+                    "uuid": "58108aaf-ad9c-4fb9-88fc-fb40be54b90d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của U2",
+                    "pos": {
+                        "x": 112.3,
+                        "y": 79.8
+                    },
+                    "uuid": "623d393d-82ac-46fe-b04b-f4765e03c5fc"
+                },
+                {
+                    "description": "Phân đoạn của U2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 113.21,
+                        "y": 79.36
+                    },
+                    "uuid": "e068e367-7cae-47ca-8bf7-bdb11f7ee19e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của D1",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 61.0
+                    },
+                    "uuid": "ddcaea1c-22bb-4011-b7f5-a085d7a08cf7"
+                },
+                {
+                    "description": "Vòng cung của D1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 59.0
+                    },
+                    "uuid": "fca6a716-79e4-4181-a098-d99076d3f373"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Tròn của D1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 59.0
+                    },
+                    "uuid": "04229309-c47c-470d-b91b-c19e7a9c9a31"
+                },
+                {
+                    "description": "Trường tham chiếu của D1",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 61.0
+                    },
+                    "uuid": "ddcaea1c-22bb-4011-b7f5-a085d7a08cf7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R7",
+                    "pos": {
+                        "x": 96.164,
+                        "y": 68.414
+                    },
+                    "uuid": "b6d86c88-adf4-4d31-90d2-0c7c19189d2d"
+                },
+                {
+                    "description": "Phân đoạn của Q5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 94.24,
+                        "y": 68.44
+                    },
+                    "uuid": "d2d3bb45-8251-4993-aa05-e93d04132042"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R7",
+                    "pos": {
+                        "x": 96.164,
+                        "y": 68.414
+                    },
+                    "uuid": "b6d86c88-adf4-4d31-90d2-0c7c19189d2d"
+                },
+                {
+                    "description": "Phân đoạn của Q5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 95.76,
+                        "y": 68.44
+                    },
+                    "uuid": "d9fd40f6-a01a-4501-856d-fa60d9cf9e2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D9 trên F.Silkscreen",
+                    "pos": {
+                        "x": 104.515,
+                        "y": 63.2
+                    },
+                    "uuid": "03d05c89-2747-4c69-a0fc-e92eeb42b55d"
+                },
+                {
+                    "description": "Trường tham chiếu của R21",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 66.0
+                    },
+                    "uuid": "e60f5c59-6918-4d1c-868d-7fdc44ef4703"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D9 trên F.Silkscreen",
+                    "pos": {
+                        "x": 104.515,
+                        "y": 65.485
+                    },
+                    "uuid": "856f7828-b123-420f-ab67-753ddb53385b"
+                },
+                {
+                    "description": "Trường tham chiếu của R21",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 66.0
+                    },
+                    "uuid": "e60f5c59-6918-4d1c-868d-7fdc44ef4703"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Đa giác của U4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 103.85,
+                        "y": 66.69
+                    },
+                    "uuid": "8b1eb6d4-71e2-449e-a8a8-8e356a795499"
+                },
+                {
+                    "description": "Trường tham chiếu của R21",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 66.0
+                    },
+                    "uuid": "e60f5c59-6918-4d1c-868d-7fdc44ef4703"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R13",
+                    "pos": {
+                        "x": 114.75,
+                        "y": 70.75
+                    },
+                    "uuid": "0302605f-726e-448a-9ed9-2e6ee089ecf5"
+                },
+                {
+                    "description": "Vòng cung của D3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 118.2,
+                        "y": 68.705
+                    },
+                    "uuid": "c7ac748a-054e-472d-8d63-05bb968734dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của U1",
+                    "pos": {
+                        "x": 115.865,
+                        "y": 56.252
+                    },
+                    "uuid": "4c5af0f2-7fc3-4677-bcf0-475348ea289e"
+                },
+                {
+                    "description": "Văn bản dấu chân của U1 (Antenna Area)",
+                    "pos": {
+                        "x": 115.1,
+                        "y": 58.1
+                    },
+                    "uuid": "ae73af52-79bb-47a7-bfdc-07819dcc464c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 107.4,
+                        "y": 64.9
+                    },
+                    "uuid": "34577da5-8540-4885-bbc3-ada672c1ed01"
+                },
+                {
+                    "description": "Trường tham chiếu của D9",
+                    "pos": {
+                        "x": 106.664,
+                        "y": 65.414
+                    },
+                    "uuid": "9d5b4e7c-5946-4eb1-9828-4fbe4894b6d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D9 trên F.Silkscreen",
+                    "pos": {
+                        "x": 105.985,
+                        "y": 65.485
+                    },
+                    "uuid": "2b726efb-99f8-4783-84f1-42f4e21354ba"
+                },
+                {
+                    "description": "Trường tham chiếu của D9",
+                    "pos": {
+                        "x": 106.664,
+                        "y": 65.414
+                    },
+                    "uuid": "9d5b4e7c-5946-4eb1-9828-4fbe4894b6d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của SW3",
+                    "pos": {
+                        "x": 83.7,
+                        "y": 70.2
+                    },
+                    "uuid": "1414b26e-3b7f-41d6-8230-8d579217ecd1"
+                },
+                {
+                    "description": "Phân đoạn của SW3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 81.24,
+                        "y": 70.56
+                    },
+                    "uuid": "708cf3b9-9c31-4998-9b4a-bc48efc4260d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 68.06,
+                        "y": 63.185
+                    },
+                    "uuid": "cf81ecf4-b2c2-4146-9602-ba8e9dfcb0a8"
+                },
+                {
+                    "description": "Trường tham chiếu của C22",
+                    "pos": {
+                        "x": 72.689,
+                        "y": 63.689
+                    },
+                    "uuid": "d87e9d88-44b5-4faf-957c-e979fa741f7e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của Q3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 64.66,
+                        "y": 58.06
+                    },
+                    "uuid": "1fa46804-f9ea-434a-8bb1-16a1e3537a5d"
+                },
+                {
+                    "description": "Trường tham chiếu của Q3",
+                    "pos": {
+                        "x": 64.961,
+                        "y": 58.561
+                    },
+                    "uuid": "dc2a2bef-5baf-4905-9d17-b3a95f713f1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q4",
+                    "pos": {
+                        "x": 65.061,
+                        "y": 81.061
+                    },
+                    "uuid": "3e8a3bd1-8cb7-4c98-8d16-3e908bf3d1fc"
+                },
+                {
+                    "description": "Phân đoạn của Q4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 64.76,
+                        "y": 80.56
+                    },
+                    "uuid": "dd8c42a5-0935-458e-8b31-e2b976869a5b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D6 trên F.Silkscreen",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 86.96
+                    },
+                    "uuid": "ceba6b72-6040-4ec2-80f6-84b786713c31"
+                },
+                {
+                    "description": "Trường tham chiếu của D6",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 84.6
+                    },
+                    "uuid": "f5cc5359-caaf-408a-a989-95df94ebe089"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của SW2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 81.24,
+                        "y": 58.06
+                    },
+                    "uuid": "046112e0-c81c-4dfe-b9d9-47f03bc7fc9a"
+                },
+                {
+                    "description": "Trường tham chiếu của SW2",
+                    "pos": {
+                        "x": 83.7,
+                        "y": 57.7
+                    },
+                    "uuid": "66971d86-f3bb-4021-bf59-e834bb4f8862"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q1",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 74.0
+                    },
+                    "uuid": "150ffc30-d39d-4ec0-b459-95dd7b2ab266"
+                },
+                {
+                    "description": "Phân đoạn của Q1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 58.375,
+                        "y": 74.125
+                    },
+                    "uuid": "3b865cb7-a0bf-45f3-a2b4-f1336050fd3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Đa giác của U5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 58.55,
+                        "y": 65.79
+                    },
+                    "uuid": "03ff9a5e-11e0-4786-ac26-2ec81863b811"
+                },
+                {
+                    "description": "Trường tham chiếu của R17",
+                    "pos": {
+                        "x": 58.06,
+                        "y": 65.293
+                    },
+                    "uuid": "a12f7d42-ba13-4e8c-ae53-6b5bdba66a61"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 60.91,
+                        "y": 68.86
+                    },
+                    "uuid": "5ece3991-59bc-4dde-9269-abfa0fdbd0e0"
+                },
+                {
+                    "description": "Trường tham chiếu của U5",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 69.3
+                    },
+                    "uuid": "eea72e97-5183-4ca3-859c-fc67c8a7c3f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của SW4",
+                    "pos": {
+                        "x": 83.7,
+                        "y": 82.7
+                    },
+                    "uuid": "39cc0a71-c3fc-4395-bd66-5feeee1f3ed3"
+                },
+                {
+                    "description": "Phân đoạn của SW4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 81.24,
+                        "y": 83.06
+                    },
+                    "uuid": "e1066bd6-eba6-43f1-8b9c-96ca42d2f545"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của SW4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 86.16,
+                        "y": 79.34
+                    },
+                    "uuid": "6b275b3c-784c-4b2e-b5ad-a18086de35b3"
+                },
+                {
+                    "description": "Trường tham chiếu của C15",
+                    "pos": {
+                        "x": 83.061,
+                        "y": 79.311
+                    },
+                    "uuid": "82efaf36-00cb-4293-a1ae-b6ede34f0c31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D9 trên F.Silkscreen",
+                    "pos": {
+                        "x": 104.515,
+                        "y": 65.485
+                    },
+                    "uuid": "856f7828-b123-420f-ab67-753ddb53385b"
+                },
+                {
+                    "description": "Trường tham chiếu của D9",
+                    "pos": {
+                        "x": 106.664,
+                        "y": 65.414
+                    },
+                    "uuid": "9d5b4e7c-5946-4eb1-9828-4fbe4894b6d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của U4",
+                    "pos": {
+                        "x": 105.3,
+                        "y": 70.2
+                    },
+                    "uuid": "63e3eb0c-cbed-4743-b991-77c41e901d80"
+                },
+                {
+                    "description": "Phân đoạn của U4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.21,
+                        "y": 69.76
+                    },
+                    "uuid": "e49af009-8e88-47a6-914b-2e78c64d6cf7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q2",
+                    "pos": {
+                        "x": 109.561,
+                        "y": 71.339
+                    },
+                    "uuid": "1680b3b7-5f7b-4e7e-b453-7229edcb140a"
+                },
+                {
+                    "description": "Phân đoạn của Q2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 107.74,
+                        "y": 70.84
+                    },
+                    "uuid": "d04adbf2-49b9-4896-817b-838511191297"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q2",
+                    "pos": {
+                        "x": 109.561,
+                        "y": 71.339
+                    },
+                    "uuid": "1680b3b7-5f7b-4e7e-b453-7229edcb140a"
+                },
+                {
+                    "description": "Phân đoạn của Q2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 109.26,
+                        "y": 70.84
+                    },
+                    "uuid": "f5f53d44-8e3e-4a00-9c23-f30d4ad8a0fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.26,
+                        "y": 80.36
+                    },
+                    "uuid": "58108aaf-ad9c-4fb9-88fc-fb40be54b90d"
+                },
+                {
+                    "description": "Trường tham chiếu của C4",
+                    "pos": {
+                        "x": 106.522,
+                        "y": 80.852
+                    },
+                    "uuid": "9d4cdc8d-941f-4c6b-bf1a-0528514d9f76"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C4",
+                    "pos": {
+                        "x": 106.522,
+                        "y": 80.852
+                    },
+                    "uuid": "9d4cdc8d-941f-4c6b-bf1a-0528514d9f76"
+                },
+                {
+                    "description": "Phân đoạn của U3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.26,
+                        "y": 80.265
+                    },
+                    "uuid": "bd016c57-7683-4199-8cd4-caee7548afb0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D8 trên F.Silkscreen",
+                    "pos": {
+                        "x": 98.515,
+                        "y": 81.265
+                    },
+                    "uuid": "bc719df9-119a-4b91-858c-934643e27bb8"
+                },
+                {
+                    "description": "Trường tham chiếu của FID2",
+                    "pos": {
+                        "x": 97.235,
+                        "y": 82.152
+                    },
+                    "uuid": "d6d3763f-1e8a-4312-9425-1292f7fa8cb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của D2",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 76.4
+                    },
+                    "uuid": "618dd15a-96bc-459f-afc2-0bf3db13de1c"
+                },
+                {
+                    "description": "Vòng cung của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 78.4
+                    },
+                    "uuid": "91b8dfce-21a4-431d-b9fd-2053652a87e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của D2",
+                    "pos": {
+                        "x": 90.425,
+                        "y": 76.4
+                    },
+                    "uuid": "618dd15a-96bc-459f-afc2-0bf3db13de1c"
+                },
+                {
+                    "description": "Tròn của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.695,
+                        "y": 78.4
+                    },
+                    "uuid": "873cfbc2-eb6e-474e-b066-ddfc9d72ec02"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 106.99,
+                        "y": 86.05
+                    },
+                    "uuid": "16c20c41-17b3-46f7-aadb-63a66d35ac8e"
+                },
+                {
+                    "description": "Trường tham chiếu của D4",
+                    "pos": {
+                        "x": 110.5,
+                        "y": 86.4
+                    },
+                    "uuid": "22d50559-4389-4e8d-a325-fe6d170ca396"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của Q5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 95.76,
+                        "y": 70.56
+                    },
+                    "uuid": "7c60d490-3588-4391-a03a-ed5e5f31c250"
+                },
+                {
+                    "description": "Trường tham chiếu của Q5",
+                    "pos": {
+                        "x": 96.061,
+                        "y": 71.061
+                    },
+                    "uuid": "826330b9-fcba-419d-b86c-99040b56b652"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Văn bản dấu chân của U1 (Antenna Area)",
+                    "pos": {
+                        "x": 115.1,
+                        "y": 58.1
+                    },
+                    "uuid": "ae73af52-79bb-47a7-bfdc-07819dcc464c"
+                },
+                {
+                    "description": "Điểm hàn 49 [/GND] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 114.375,
+                        "y": 58.1
+                    },
+                    "uuid": "f6222b4f-14ee-41a9-9938-9739811dada7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Văn bản dấu chân của U1 (Antenna Area)",
+                    "pos": {
+                        "x": 115.1,
+                        "y": 58.1
+                    },
+                    "uuid": "ae73af52-79bb-47a7-bfdc-07819dcc464c"
+                },
+                {
+                    "description": "Điểm hàn 49 [/GND] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 114.375,
+                        "y": 60.075
+                    },
+                    "uuid": "8aca3dcb-f5fe-439e-b916-a46f8b7ca962"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Văn bản dấu chân của U1 (Antenna Area)",
+                    "pos": {
+                        "x": 115.1,
+                        "y": 58.1
+                    },
+                    "uuid": "ae73af52-79bb-47a7-bfdc-07819dcc464c"
+                },
+                {
+                    "description": "Điểm hàn 49 [/GND] của U1 trên F.Cu",
+                    "pos": {
+                        "x": 114.375,
+                        "y": 56.125
+                    },
+                    "uuid": "fcddc2de-8d05-432b-bb70-fda429d1e840"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Non-Mirrored text on back layer",
+            "items": [
+                {
+                    "description": "Văn bản PCB 'NS-CLIP-MB  REV A  2026-11-06' trên B.Silkscreen",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 85.3
+                    },
+                    "uuid": "b8da4b90-88e3-4b2a-b443-6da7602ce023"
+                }
+            ],
+            "severity": "warning",
+            "type": "nonmirrored_text_on_back_layer"
+        }
+    ]
+}

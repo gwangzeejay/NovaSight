@@ -1,0 +1,53 @@
+﻿Refs,Qty,Value,Footprint,Manufacturer,MPN,LCSC,Library,Assembly,Stock,UnitUSD,Status,Note
+"C1,C2,C3,C6,C10,C13,C14,C15,C17,C18,C19,C21",12,100nF_10V,Capacitor_SMD:C_0402_1005Metric,Samsung,CL05B104KO5NNNC,C1525,Basic,JLCPCB,32030986,0.0031,ok,"16 V X7R, Basic"
+"C4,C11",2,22uF_10V,Capacitor_SMD:C_0805_2012Metric,Samsung,CL21A226MAQNNNE,C45783,Basic,JLCPCB,3856186,0.1056,ok,"25 V X5R thay 10 V để bớt tụt điện dung theo điện áp, Basic"
+"C5,C7,C8,C9,C16",5,10uF_10V,Capacitor_SMD:C_0603_1608Metric,Samsung,CL10A106KP8NNNC,C19702,Basic,JLCPCB,9763708,0.0233,ok,"10 V X5R, Basic"
+C12,1,1uF_10V,Capacitor_SMD:C_0402_1005Metric,Samsung,CL05A105KA5NQNC,C52923,Basic,JLCPCB,11162524,0.0058,ok,"25 V X5R, Basic"
+C20,1,10nF_10V,Capacitor_SMD:C_0402_1005Metric,Samsung,CL05B103KB5NNNC,C15195,Basic,JLCPCB,4705580,0.0038,ok,"50 V X7R, Basic"
+C22,1,2.2nF_50V,Capacitor_SMD:C_0402_1005Metric,YAGEO,CC0402KRX7R9BB222,C106861,Extended,JLCPCB,1247146,0.0023,ok,"Không có dòng Basic, Extended"
+"D1,D2",2,BEACON_RED,LED_THT:LED_D5.0mm,Everlight,333-2SURD/S530-A3,C87271,Extended,Tự hàn/mua rời,16382,0.0385,ok,"LED 5 mm xuyên lỗ, tự hàn"
+D3,1,BEACON_WHITE,LED_THT:LED_D5.0mm,,LED trắng 5 mm,,,Tự hàn/mua rời,,,đã duyệt: mua ngoài,"Mua rời, không tìm được mã LCSC phù hợp"
+D4,1,SS14,Diode_SMD:D_SMA,MDD,SS14,C2480,Basic,JLCPCB,1610783,0.0192,ok,Basic
+"D5,D6",2,B5819W,Diode_SMD:D_SOD-123,GOODWORK,B5819W,C2943878,Extended,JLCPCB,1595714,0.0179,ok,Extended
+D7,1,CHARGE_RED,LED_SMD:LED_0603_1608Metric,KENTO,KT-0603R,C2286,Basic,JLCPCB,6268541,0.0077,ok,Basic
+"D8,D9",2,FULL_GREEN/STATUS_GREEN,LED_SMD:LED_0603_1608Metric,KENTO,KT-0603G,C12624,Extended,JLCPCB,314128,0.0119,ok,Extended
+J1,1,USB-C_USB4105,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,GCT,USB4105-GF-A,C3020560,Extended,JLCPCB,18570,1.0211,ok,Đối chiếu footprint 16P theo datasheet GCT trước khi đặt
+J2,1,BATTERY_1S_WIRE,Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm,,Dây pin hàn trực tiếp,,,—,,,không cần mua,"Pad dây, không có linh kiện"
+J3,1,MOTOR_L_WIRE,Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm,,Dây motor hàn trực tiếp,,,—,,,không cần mua,"Pad dây, không có linh kiện"
+J4,1,MOTOR_R_WIRE,Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm,,Dây motor hàn trực tiếp,,,—,,,không cần mua,"Pad dây, không có linh kiện"
+J5,1,GY521_OPTION_DNP,Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal,JST,SM06B-SRSS-TB(LF)(SN),C160405,,—,,,DNP,DNP
+Q1,1,FS8205A_Fortune,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,HXY,8205A,C5148694,Extended,JLCPCB,64515,0.083,ok,"Bản Fortune C16052 hết hàng. Footprint TSSOP-8 giữ nguyên, kiểm tra pinout theo datasheet HXY"
+Q2,1,AO3401A,Package_TO_SOT_SMD:SOT-23,AOS,AO3401A,C15127,Basic,JLCPCB,1641126,0.0828,ok,Basic
+"Q3,Q4,Q5",3,AO3400A,Package_TO_SOT_SMD:SOT-23,AOS,AO3400A,C20917,Basic,JLCPCB,992458,0.0889,ok,Basic
+"R1,R3,R5,R17",4,100R,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF1000TCE,C25076,Basic,JLCPCB,11454306,0.0012,ok,"1% thick film, Basic"
+"R2,R4,R6,R15,R19,R20",6,100k/100k_1%,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF1003TCE,C25741,Basic,JLCPCB,8286973,0.0012,ok,"1% thick film, Basic"
+"R7,R8",2,100R,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL,0603WAF1000T5E,C22775,Basic,JLCPCB,8859928,0.0021,ok,"1% thick film, Basic"
+R9,1,68R,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL,0603WAF680JT5E,C27592,Preferred,JLCPCB,1694760,0.0013,ok,"1% thick film, Extended"
+"R10,R11",2,5.1k_1%,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF5101TCE,C25905,Basic,JLCPCB,4329426,0.0023,ok,"1% thick film, Basic"
+"R12,R13",2,0R,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF0000TCE,C17168,Basic,JLCPCB,16397079,0.0012,ok,"1% thick film, Basic"
+R14,1,68k_1%,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF6802TCE,C36871,Preferred,JLCPCB,1129732,0.0012,ok,"1% thick film, Extended"
+R16,1,3.0k_1%,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF3001TCE,C25784,Extended,JLCPCB,639262,0.0013,ok,"1% thick film, Extended"
+"R18,R29,R30,R31",4,1k,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF1001TCE,C11702,Basic,JLCPCB,33009667,0.0013,ok,"1% thick film, Basic"
+"R21,R22,R23,R24,R25,R26",6,10k,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF1002TCE,C25744,Basic,JLCPCB,21543185,0.0028,ok,"1% thick film, Basic"
+"R27,R28",2,470k_1%,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF4703TCE,C25790,Preferred,JLCPCB,447675,0.0012,ok,"1% thick film, Extended"
+"R32,R33",2,4.7k,Resistor_SMD:R_0402_1005Metric,UNI-ROYAL,0402WGF4701TCE,C25900,Basic,JLCPCB,15304661,0.0017,ok,"1% thick film, Basic"
+SW1,1,POWER_ON,Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02,SHOU HAN,MSK12C02,C431540,Extended,JLCPCB,177894,0.0544,ok,"Chịu 50 mA, chỉ dùng để điều khiển MOSFET hoặc chân EN"
+"SW2,SW3,SW4",3,MODE/ROUTE/SOS,Button_Switch_SMD:SW_SPST_EVQP2_ShortPushTravel_H2.5mm,Panasonic,EVQP2B02B,C713480,Extended,JLCPCB,3350,0.4026,ok,"2,5 N, chọn lực nhấn lớn cho nút điều khiển"
+TP1,1,VBUS,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP2,1,BAT_PLUS,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP3,1,B_MINUS,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP4,1,VSYS,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP5,1,3V3,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+"TP6,TP7",2,GND,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP8,1,MCU_EN,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP9,1,BOOT,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP10,1,I2C_SDA,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP11,1,I2C_SCL,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP12,1,VBUS_DET,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+TP13,1,BTN_SOS,TestPoint:TestPoint_Pad_D1.0mm,,Pad thử trên PCB,,,—,,,không cần mua,"Test point, không có linh kiện"
+U1,1,ESP32-C3-MINI-1-N4X,Espressif:ESP32-C3-MINI-1,Espressif,ESP32-C3-MINI-1-N4,C2838502,Extended,JLCPCB,13790,3.05,ok,"N4X hết hàng, N4 cùng footprint và flash 4 MB. Cần bạn đồng ý đổi"
+U2,1,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,ST,USBLC6-2SC6,C7519,Extended,JLCPCB,29583,0.1624,ok,Bản ST chính hãng
+U3,1,TP4056-42-ESOP8,Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm,TOPPOWER,TP4056-42-ESOP8,C16581,Preferred,JLCPCB,105377,0.1853,ok,
+U4,1,AP2112K-3.3TRG1,Package_TO_SOT_SMD:SOT-23-5,Diodes Inc,AP2112K-3.3TRG1,C51118,Extended,JLCPCB,10872,0.183,ok,Bản chính hãng
+U5,1,DW01A,Package_TO_SOT_SMD:SOT-23-6,PUOLOP,DW01A,C351410,Extended,JLCPCB,93052,0.0532,ok,
+U6,1,MPU-6050,Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm,TDK InvenSense,MPU-6050,C24112,Preferred,JLCPCB,6273,21.0026,ok,Giá khoảng 21 USD mỗi con

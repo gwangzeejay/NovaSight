@@ -1,0 +1,1296 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T16:02:41",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "NS-CHEST-MB_routed_v2.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Điểm hàn 33 [/JSN_R_ECHO] của U4 trên F.Cu",
+                    "pos": {
+                        "x": 90.75,
+                        "y": 66.38
+                    },
+                    "uuid": "e363582c-84ae-421b-b683-3ab084a6cb33"
+                },
+                {
+                    "description": "Đường mạch [/JSN_R_ECHO] trên F.Cu, chiều dài 0.7106 mm",
+                    "pos": {
+                        "x": 136.79,
+                        "y": 76.3
+                    },
+                    "uuid": "da4e050d-f640-4f74-a71d-a9f03f229213"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 50.0
+                    },
+                    "uuid": "05ace70d-b64c-4796-8567-6f58c88bf76b"
+                },
+                {
+                    "description": "Phân đoạn của U4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 72.8,
+                        "y": 49.85
+                    },
+                    "uuid": "1f9f878d-b8b3-46d6-a14f-566c419220f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Phân đoạn trên Edge.Cuts",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 50.0
+                    },
+                    "uuid": "05ace70d-b64c-4796-8567-6f58c88bf76b"
+                },
+                {
+                    "description": "Phân đoạn của U4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 91.2,
+                        "y": 49.85
+                    },
+                    "uuid": "0448f14a-0659-479f-bfda-273d550a093e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Dấu chân 'ESP32-S3-WROOM-1' không khớp với bản sao trong thư viện 'RF_Module'",
+            "items": [
+                {
+                    "description": "Dấu chân U4",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 62.75
+                    },
+                    "uuid": "9a02fc05-e737-4b7e-a42c-8221b10b65d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q5",
+                    "pos": {
+                        "x": 107.561,
+                        "y": 60.439
+                    },
+                    "uuid": "18ddf371-ce69-4396-bb57-5c8c811b01d8"
+                },
+                {
+                    "description": "Phân đoạn của Q5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 107.26,
+                        "y": 59.94
+                    },
+                    "uuid": "f986a31e-33f8-47ab-bd83-2de48d191d68"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q5",
+                    "pos": {
+                        "x": 107.561,
+                        "y": 60.439
+                    },
+                    "uuid": "18ddf371-ce69-4396-bb57-5c8c811b01d8"
+                },
+                {
+                    "description": "Phân đoạn của Q5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 105.74,
+                        "y": 59.94
+                    },
+                    "uuid": "7fa762c1-500e-4f90-8961-e4427f836f2d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Hình chữ nhật của J8 trên F.Silkscreen",
+                    "pos": {
+                        "x": 111.94,
+                        "y": 50.94
+                    },
+                    "uuid": "193ced86-a2df-44e3-9f44-50b3ac0df68b"
+                },
+                {
+                    "description": "Trường tham chiếu của C41",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 55.75
+                    },
+                    "uuid": "58fcdd49-302f-470e-bdd5-ad93ff2974c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U8 trên F.Silkscreen",
+                    "pos": {
+                        "x": 117.09,
+                        "y": 58.44
+                    },
+                    "uuid": "64908a4b-45e2-461f-a19b-cbb5eb56e448"
+                },
+                {
+                    "description": "Trường tham chiếu của U8",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 58.0
+                    },
+                    "uuid": "73dabaa1-6eb1-4662-9e33-aa3a3cc87c6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J8 trên F.Silkscreen",
+                    "pos": {
+                        "x": 112.55,
+                        "y": 55.05
+                    },
+                    "uuid": "ac3d8677-df61-4dad-b888-86723809b85e"
+                },
+                {
+                    "description": "Trường tham chiếu của J8",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 54.75
+                    },
+                    "uuid": "c42c6493-155d-4dec-a76d-1b0f05b159f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của D3",
+                    "pos": {
+                        "x": 109.8,
+                        "y": 53.3
+                    },
+                    "uuid": "71785c4c-b8f8-4a1e-b7bc-e62f738476d6"
+                },
+                {
+                    "description": "Phân đoạn của D3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 109.3,
+                        "y": 55.66
+                    },
+                    "uuid": "fc6c031e-ad3e-448e-99e9-7decf4da95e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của C38 trên F.Silkscreen",
+                    "pos": {
+                        "x": 112.61,
+                        "y": 75.192164
+                    },
+                    "uuid": "388ea365-2c97-49a3-aa99-98e4d0e8d271"
+                },
+                {
+                    "description": "Trường tham chiếu của C33",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 75.25
+                    },
+                    "uuid": "60b5d928-13cc-4f18-9b51-8027359eb580"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U9 trên F.Silkscreen",
+                    "pos": {
+                        "x": 114.15,
+                        "y": 73.65
+                    },
+                    "uuid": "0cd281e6-721f-4cbb-b96b-7384c5143c1f"
+                },
+                {
+                    "description": "Trường tham chiếu của U9",
+                    "pos": {
+                        "x": 114.475,
+                        "y": 73.975
+                    },
+                    "uuid": "f60594df-11b3-4b8d-a74f-eae75469051c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của J6",
+                    "pos": {
+                        "x": 53.3,
+                        "y": 98.05
+                    },
+                    "uuid": "0784cd60-f11a-413f-b7cd-c0464ab34036"
+                },
+                {
+                    "description": "Phân đoạn của J6 trên F.Silkscreen",
+                    "pos": {
+                        "x": 51.85,
+                        "y": 98.35
+                    },
+                    "uuid": "5baceddf-2880-4cfb-80b3-6b5bf95e8d85"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của SW3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 63.25,
+                        "y": 81.0
+                    },
+                    "uuid": "5d7ef978-763d-4682-b9be-c6e1aa13b7fd"
+                },
+                {
+                    "description": "Trường tham chiếu của R40",
+                    "pos": {
+                        "x": 62.848,
+                        "y": 82.015
+                    },
+                    "uuid": "95c4ba05-21f7-43a7-9e15-32ea16757fd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U6 trên F.Silkscreen",
+                    "pos": {
+                        "x": 64.91,
+                        "y": 77.56
+                    },
+                    "uuid": "425eeea7-db3c-4300-b286-4b7ecf612bbe"
+                },
+                {
+                    "description": "Trường tham chiếu của U6",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 78.0
+                    },
+                    "uuid": "8c076ee9-1da8-4b32-81bb-4c7b54d00160"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C15",
+                    "pos": {
+                        "x": 123.824,
+                        "y": 84.136
+                    },
+                    "uuid": "807010ea-b9f4-44d9-b549-5da229672ecc"
+                },
+                {
+                    "description": "Phân đoạn của U2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 121.94,
+                        "y": 83.94
+                    },
+                    "uuid": "f73906cb-3b1d-47b9-b08d-270fc6ca19dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C13",
+                    "pos": {
+                        "x": 126.25,
+                        "y": 83.5
+                    },
+                    "uuid": "401d9413-c204-4f9d-b0c5-4c1e861fb200"
+                },
+                {
+                    "description": "Phân đoạn của U2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 121.94,
+                        "y": 83.94
+                    },
+                    "uuid": "f73906cb-3b1d-47b9-b08d-270fc6ca19dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C13",
+                    "pos": {
+                        "x": 126.25,
+                        "y": 83.5
+                    },
+                    "uuid": "401d9413-c204-4f9d-b0c5-4c1e861fb200"
+                },
+                {
+                    "description": "Phân đoạn của U2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 126.06,
+                        "y": 83.94
+                    },
+                    "uuid": "b4ec1560-24f6-4464-aeed-511b80d84728"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của Q1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 123.76,
+                        "y": 79.36
+                    },
+                    "uuid": "57374fd1-5804-43bf-abca-56939090c6ef"
+                },
+                {
+                    "description": "Trường tham chiếu của Q1",
+                    "pos": {
+                        "x": 124.061,
+                        "y": 79.861
+                    },
+                    "uuid": "c8819092-c53d-42fa-86ab-ad08eb6e47ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của Q2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 117.26,
+                        "y": 77.24
+                    },
+                    "uuid": "9c33cfec-d0a1-4c93-add8-f911a95e1896"
+                },
+                {
+                    "description": "Trường tham chiếu của Q2",
+                    "pos": {
+                        "x": 117.561,
+                        "y": 77.739
+                    },
+                    "uuid": "eea48bee-eb99-4659-b17f-3270ba48a20b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của Q2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 115.74,
+                        "y": 77.24
+                    },
+                    "uuid": "3c219adf-d8e4-4143-9d41-ce9d65793a18"
+                },
+                {
+                    "description": "Trường tham chiếu của Q2",
+                    "pos": {
+                        "x": 117.561,
+                        "y": 77.739
+                    },
+                    "uuid": "eea48bee-eb99-4659-b17f-3270ba48a20b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R13",
+                    "pos": {
+                        "x": 117.689,
+                        "y": 80.189
+                    },
+                    "uuid": "50323a61-910c-458a-bcb7-a092bab79786"
+                },
+                {
+                    "description": "Phân đoạn của Q2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 117.26,
+                        "y": 79.36
+                    },
+                    "uuid": "7680c227-3009-4f8d-a2f6-fcf40569a973"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R13",
+                    "pos": {
+                        "x": 117.689,
+                        "y": 80.189
+                    },
+                    "uuid": "50323a61-910c-458a-bcb7-a092bab79786"
+                },
+                {
+                    "description": "Phân đoạn của Q2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 117.26,
+                        "y": 80.36
+                    },
+                    "uuid": "b6f3d01b-43bf-444d-9249-09e8da595b89"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q3",
+                    "pos": {
+                        "x": 120.061,
+                        "y": 75.061
+                    },
+                    "uuid": "b7015b68-5b23-4cf2-a810-f5e52c80becc"
+                },
+                {
+                    "description": "Phân đoạn của Q3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 119.76,
+                        "y": 74.56
+                    },
+                    "uuid": "d3959c85-7fd2-472c-8f2e-f38241435ff5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của U3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 111.59,
+                        "y": 81.94
+                    },
+                    "uuid": "9ae7ac98-66c3-4ca5-af85-760065e71de0"
+                },
+                {
+                    "description": "Trường tham chiếu của U3",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 81.5
+                    },
+                    "uuid": "a2732359-3714-45c3-aae5-8e526b977347"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R3",
+                    "pos": {
+                        "x": 112.74,
+                        "y": 91.793
+                    },
+                    "uuid": "63388205-28b1-4af6-ba4d-a654a4e17444"
+                },
+                {
+                    "description": "Trường tham chiếu của L2",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 91.7
+                    },
+                    "uuid": "8e4fec8a-cb94-4717-8105-3eef9053e0c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R1",
+                    "pos": {
+                        "x": 130.5,
+                        "y": 90.25
+                    },
+                    "uuid": "5ab3f86f-c0a2-42b4-b411-4d72dd04adc0"
+                },
+                {
+                    "description": "Phân đoạn của L1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 129.89,
+                        "y": 89.91
+                    },
+                    "uuid": "5f3ef1d7-a11f-4386-8711-080ab4353863"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R1",
+                    "pos": {
+                        "x": 130.5,
+                        "y": 90.25
+                    },
+                    "uuid": "5ab3f86f-c0a2-42b4-b411-4d72dd04adc0"
+                },
+                {
+                    "description": "Phân đoạn của L1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 138.11,
+                        "y": 89.91
+                    },
+                    "uuid": "e32026cc-31ba-4848-b902-efdaabd5b338"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của U2",
+                    "pos": {
+                        "x": 124.0,
+                        "y": 89.0
+                    },
+                    "uuid": "36705030-6c50-46be-8d8d-beb50d5d2063"
+                },
+                {
+                    "description": "Phân đoạn của U2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 126.06,
+                        "y": 89.06
+                    },
+                    "uuid": "d28c5b79-13fd-43d0-8fcb-fbeb4b936153"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của L1 trên F.Silkscreen",
+                    "pos": {
+                        "x": 138.11,
+                        "y": 89.91
+                    },
+                    "uuid": "e32026cc-31ba-4848-b902-efdaabd5b338"
+                },
+                {
+                    "description": "Trường tham chiếu của R2",
+                    "pos": {
+                        "x": 131.974,
+                        "y": 90.539
+                    },
+                    "uuid": "e7b0f2fe-8129-45c2-9f7b-bb108f1966d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C18",
+                    "pos": {
+                        "x": 105.775,
+                        "y": 85.525
+                    },
+                    "uuid": "62511ae9-445e-434d-832f-2672a21249eb"
+                },
+                {
+                    "description": "Phân đoạn của J3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 99.06,
+                        "y": 85.485
+                    },
+                    "uuid": "e58b0080-fd46-4b78-9404-f48d1c320146"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 108.11,
+                        "y": 83.515
+                    },
+                    "uuid": "7c977fad-99b1-468b-8dd8-9ee23049f249"
+                },
+                {
+                    "description": "Trường tham chiếu của R19",
+                    "pos": {
+                        "x": 107.75,
+                        "y": 82.75
+                    },
+                    "uuid": "ea155a6c-18db-450c-ba7a-b531ca0fe923"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C21",
+                    "pos": {
+                        "x": 112.015,
+                        "y": 78.652
+                    },
+                    "uuid": "0fea67a6-1943-4dff-a9cf-63cab59f6240"
+                },
+                {
+                    "description": "Trường tham chiếu của C38",
+                    "pos": {
+                        "x": 112.25,
+                        "y": 77.3
+                    },
+                    "uuid": "3b4de7a3-19e1-4a73-a30a-4c087df1893a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của J5",
+                    "pos": {
+                        "x": 140.7,
+                        "y": 98.05
+                    },
+                    "uuid": "64f08c0e-1261-4cdc-b00e-396229a14284"
+                },
+                {
+                    "description": "Phân đoạn của J5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 139.25,
+                        "y": 98.35
+                    },
+                    "uuid": "7383875e-3a3d-47b0-a61e-df7054ab7ca4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của J4",
+                    "pos": {
+                        "x": 101.0,
+                        "y": 96.95
+                    },
+                    "uuid": "02459a36-cadd-4739-a79b-5748df218a6a"
+                },
+                {
+                    "description": "Phân đoạn của J4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 99.55,
+                        "y": 97.25
+                    },
+                    "uuid": "8e4ab922-f0ae-414c-8861-2f512f5d0808"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 102.5,
+                        "y": 93.75
+                    },
+                    "uuid": "12c2d264-d163-427a-b85f-83e1daafdc2d"
+                },
+                {
+                    "description": "Trường tham chiếu của R34",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 93.25
+                    },
+                    "uuid": "aee81d89-584e-4077-bb54-25acba75c0c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R34",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 93.25
+                    },
+                    "uuid": "aee81d89-584e-4077-bb54-25acba75c0c9"
+                },
+                {
+                    "description": "Hình chữ nhật của J4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 98.94,
+                        "y": 93.14
+                    },
+                    "uuid": "dbeb83be-6008-4a91-ac5c-7d372c36c2e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C17",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 94.0
+                    },
+                    "uuid": "38914f02-4b1a-4c12-9165-8f4377416e37"
+                },
+                {
+                    "description": "Hình chữ nhật của J4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 98.94,
+                        "y": 93.14
+                    },
+                    "uuid": "dbeb83be-6008-4a91-ac5c-7d372c36c2e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của R30",
+                    "pos": {
+                        "x": 101.232,
+                        "y": 85.482
+                    },
+                    "uuid": "2b52af63-59c4-4cc7-966e-9734aebbb805"
+                },
+                {
+                    "description": "Phân đoạn của J3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 99.06,
+                        "y": 85.485
+                    },
+                    "uuid": "e58b0080-fd46-4b78-9404-f48d1c320146"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 101.81,
+                        "y": 74.65
+                    },
+                    "uuid": "7774ccbb-84cf-4fd1-a930-50fac9a50da6"
+                },
+                {
+                    "description": "Trường tham chiếu của C34",
+                    "pos": {
+                        "x": 104.152,
+                        "y": 74.515
+                    },
+                    "uuid": "82f0e77a-5a3e-492d-9d5d-27a231d90de8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 103.55,
+                        "y": 74.65
+                    },
+                    "uuid": "1958d7e8-2b9f-412d-9dd3-200fc577b52d"
+                },
+                {
+                    "description": "Trường tham chiếu của C34",
+                    "pos": {
+                        "x": 104.152,
+                        "y": 74.515
+                    },
+                    "uuid": "82f0e77a-5a3e-492d-9d5d-27a231d90de8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J3 trên F.Silkscreen",
+                    "pos": {
+                        "x": 99.06,
+                        "y": 85.485
+                    },
+                    "uuid": "e58b0080-fd46-4b78-9404-f48d1c320146"
+                },
+                {
+                    "description": "Trường tham chiếu của C16",
+                    "pos": {
+                        "x": 103.525,
+                        "y": 85.525
+                    },
+                    "uuid": "e6c0e13f-64b7-4b3c-8be7-c724bef9a89d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 103.55,
+                        "y": 74.65
+                    },
+                    "uuid": "1958d7e8-2b9f-412d-9dd3-200fc577b52d"
+                },
+                {
+                    "description": "Trường tham chiếu của C37",
+                    "pos": {
+                        "x": 104.189,
+                        "y": 72.561
+                    },
+                    "uuid": "7526d869-fe86-4661-9582-d2fe10263755"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của U5",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 71.0
+                    },
+                    "uuid": "cde794d2-6706-4b0b-9cea-81da67d3ce11"
+                },
+                {
+                    "description": "Phân đoạn của U5 trên F.Silkscreen",
+                    "pos": {
+                        "x": 134.91,
+                        "y": 70.56
+                    },
+                    "uuid": "fa19025b-262d-4004-8198-330de07173b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của SW2",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 55.3
+                    },
+                    "uuid": "aa447305-cc41-47b8-9d7d-163b9d666956"
+                },
+                {
+                    "description": "Phân đoạn của SW2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 132.35,
+                        "y": 55.65
+                    },
+                    "uuid": "b6e67ccb-1b54-4751-9b72-156b370ddfb2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D7 trên F.Silkscreen",
+                    "pos": {
+                        "x": 122.515,
+                        "y": 68.45
+                    },
+                    "uuid": "31d4e281-b531-4004-8ad1-0b030a796b2d"
+                },
+                {
+                    "description": "Trường tham chiếu của D7",
+                    "pos": {
+                        "x": 121.864,
+                        "y": 69.824
+                    },
+                    "uuid": "34b7256b-0dbc-42d6-b7e3-a95f7ab30b23"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D6 trên F.Silkscreen",
+                    "pos": {
+                        "x": 124.765,
+                        "y": 72.235
+                    },
+                    "uuid": "c17270c4-1518-4a23-9d04-4a53c6aa7ce3"
+                },
+                {
+                    "description": "Trường tham chiếu của D4",
+                    "pos": {
+                        "x": 126.25,
+                        "y": 72.75
+                    },
+                    "uuid": "f1d0bf46-710b-456b-8b95-12057198934a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của Q4",
+                    "pos": {
+                        "x": 132.061,
+                        "y": 65.061
+                    },
+                    "uuid": "5cb60e90-0aed-466a-915c-204345bcb23b"
+                },
+                {
+                    "description": "Phân đoạn của Q4 trên F.Silkscreen",
+                    "pos": {
+                        "x": 131.76,
+                        "y": 64.56
+                    },
+                    "uuid": "f564f305-ac35-4706-8699-716ff3fc8741"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của D2",
+                    "pos": {
+                        "x": 137.4,
+                        "y": 61.7
+                    },
+                    "uuid": "4dd39f67-7612-4e80-8002-561260213e4b"
+                },
+                {
+                    "description": "Hình chữ nhật của J7 trên F.Silkscreen",
+                    "pos": {
+                        "x": 133.34,
+                        "y": 56.64
+                    },
+                    "uuid": "84b075f1-d568-4abf-9110-269addaea99e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của J7 trên F.Silkscreen",
+                    "pos": {
+                        "x": 133.95,
+                        "y": 60.75
+                    },
+                    "uuid": "c87f1f09-59ea-4e36-aa2c-f7b37a941558"
+                },
+                {
+                    "description": "Trường tham chiếu của J7",
+                    "pos": {
+                        "x": 135.4,
+                        "y": 60.45
+                    },
+                    "uuid": "eeec54f0-0fc6-4008-949e-d7f137701fc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 135.04,
+                        "y": 62.2
+                    },
+                    "uuid": "2ea64af1-9451-4252-ab9c-4cc734f5a4ba"
+                },
+                {
+                    "description": "Trường tham chiếu của R43",
+                    "pos": {
+                        "x": 133.985,
+                        "y": 63.902
+                    },
+                    "uuid": "ad06cf25-3695-4e81-b772-9098839d4aed"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 135.04,
+                        "y": 64.2
+                    },
+                    "uuid": "57e18b33-2818-46e7-95c1-29a564f7a69d"
+                },
+                {
+                    "description": "Trường tham chiếu của R43",
+                    "pos": {
+                        "x": 133.985,
+                        "y": 63.902
+                    },
+                    "uuid": "ad06cf25-3695-4e81-b772-9098839d4aed"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Phân đoạn của D2 trên F.Silkscreen",
+                    "pos": {
+                        "x": 135.04,
+                        "y": 64.2
+                    },
+                    "uuid": "57e18b33-2818-46e7-95c1-29a564f7a69d"
+                },
+                {
+                    "description": "Trường tham chiếu của C40",
+                    "pos": {
+                        "x": 136.75,
+                        "y": 64.75
+                    },
+                    "uuid": "c36c2b38-d9ab-42ec-b8a1-d29ce6e7455a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C33",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 75.25
+                    },
+                    "uuid": "60b5d928-13cc-4f18-9b51-8027359eb580"
+                },
+                {
+                    "description": "Điểm hàn 1 [/IMU_REGOUT] của C38 trên F.Cu",
+                    "pos": {
+                        "x": 112.25,
+                        "y": 74.82
+                    },
+                    "uuid": "5509ecb5-45fe-4e47-aff8-e2f2b2f58cd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Trường tham chiếu của C33",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 75.25
+                    },
+                    "uuid": "60b5d928-13cc-4f18-9b51-8027359eb580"
+                },
+                {
+                    "description": "Điểm hàn 2 [/GND] của C38 trên F.Cu",
+                    "pos": {
+                        "x": 112.25,
+                        "y": 75.78
+                    },
+                    "uuid": "7365a155-0ca8-4981-a165-434f55424542"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

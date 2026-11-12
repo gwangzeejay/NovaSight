@@ -1,0 +1,5 @@
+﻿Refs,Qty,Manufacturer,MPN,LCSC,Assembly,Status,Note
+"J4,J7,J8",3,JST,B2B-PH-K-S(LF)(SN),C131337,Tự hàn/mua rời,ok,"Xuyên lỗ, tự hàn. Xác nhận cực pin"
+"J5,J6",2,JST,B4B-PH-K-S(LF)(SN),C131334,Tự hàn/mua rời,ok,"Xuyên lỗ, tự hàn. Cần xác nhận pinout JSN-SR04T"
+L1,1,Coilcraft,XAL7020-102,,Tự hàn/mua rời,đã duyệt: mua ngoài,"Không có trên JLCPCB. Mua tại Coilcraft hoặc nhà phân phối (chọn hậu tố theo catalog, thường MEB ±20%), tự hàn"
+U12,1,TI,TPS389015DSER,C702226,"Mua ngoài, gửi JLCPCB hàn","đã duyệt: mua ngoài, gửi JLCPCB hàn","Hết hàng ở JLCPCB, không có biến thể cùng ngưỡng 1,5 V. Mua ngoài và gửi JLCPCB hàn (WSON-6 1,5 × 1,5 mm khó tự hàn)"

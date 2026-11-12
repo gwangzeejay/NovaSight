@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "NovaSight_RevA")(type "KiCad")(uri "${KIPRJMOD}/../NovaSight_RevA.kicad_sym")(options "")(descr "NovaSight Rev A custom symbols"))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Espressif.kicad_sym")(options "")(descr "Espressif ESP32-C3-MINI-1 symbol"))
+)

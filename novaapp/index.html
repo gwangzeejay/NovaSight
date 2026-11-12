@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142e30">
+  <title>NovaApp · NovaSight P1</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="tag">NOVASIGHT · REV A P1</p>
+      <h1>NovaApp</h1>
+      <p>Ứng dụng thử nghiệm cho NovaCane Clip. Chest và Clip vẫn hoạt động độc lập với điện thoại.</p>
+    </header>
+
+    <section aria-labelledby="clip-title">
+      <h2 id="clip-title">Kết nối NovaCane Clip</h2>
+      <div class="controls">
+        <button id="connect">Chọn Clip qua Bluetooth</button>
+        <button id="disconnect" class="secondary" disabled>Ngắt kết nối</button>
+      </div>
+      <p id="connection" role="status">Chưa kết nối.</p>
+      <dl>
+        <div><dt>Chế độ</dt><dd id="mode">—</dd></div>
+        <div><dt>Pin</dt><dd id="battery">—</dd></div>
+        <div><dt>Chuyển động</dt><dd id="movement">—</dd></div>
+        <div><dt>Độ gồ ghề thử nghiệm</dt><dd id="roughness">—</dd></div>
+        <div><dt>Đèn Xin đường</dt><dd id="beacon">—</dd></div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="training-title">
+      <h2 id="training-title">Cài đặt và luyện rung</h2>
+      <p>Giữ nút Mode trên Clip 3 giây để mở quyền điều khiển trong 60 giây. Đặt gậy đứng yên khi luyện.</p>
+      <p id="setup-status" role="status">Cửa sổ thiết lập đang đóng.</p>
+      <label for="level">Mức rung</label>
+      <div class="controls">
+        <select id="level">
+          <option value="1">Mức 1 · nhẹ</option>
+          <option value="2">Mức 2 · vừa</option>
+          <option value="3">Mức 3 · cao</option>
+        </select>
+        <button id="save-level" disabled>Áp dụng</button>
+      </div>
+      <ol>
+        <li>Vật cản phía trước · một nhịp dài.</li>
+        <li>Hụt hoặc gồ dưới chân · ba xung ngắn.</li>
+        <li>Không chắc · một nhịp tăng rồi giảm.</li>
+      </ol>
+      <div class="controls">
+        <button data-pattern="1" class="secondary" disabled>Thử vật cản</button>
+        <button data-pattern="2" class="secondary" disabled>Thử mặt đất</button>
+        <button data-pattern="3" class="secondary" disabled>Thử không chắc</button>
+      </div>
+      <div class="controls">
+        <button id="quiz-start" disabled>Phát mẫu ngẫu nhiên</button>
+        <label for="answer">Mẫu vừa rung</label>
+        <select id="answer">
+          <option value="1">Vật cản</option>
+          <option value="2">Mặt đất</option>
+          <option value="3">Không chắc</option>
+        </select>
+        <button id="quiz-check" class="secondary" disabled>Kiểm tra</button>
+      </div>
+      <p id="training-status" role="status"></p>
+    </section>
+
+    <section aria-labelledby="sos-title">
+      <h2 id="sos-title">Hỗ trợ SOS</h2>
+      <p>Giữ nút SOS trên Clip 3 giây. Khi NovaApp đang mở và kết nối, sự kiện sẽ hiện ở đây. Bạn chọn vị trí và xác nhận gửi trong ứng dụng SMS.</p>
+      <p id="sos-status" role="alert">Chưa nhận SOS.</p>
+      <label for="phone">Số điện thoại người hỗ trợ</label>
+      <input id="phone" type="tel" inputmode="tel" placeholder="Ví dụ +84…" maxlength="20" autocomplete="off">
+      <div class="controls">
+        <button id="sos-location" class="secondary" disabled>Lấy vị trí cho SOS</button>
+        <button id="sos-compose" disabled>Mở tin nhắn SMS</button>
+        <button id="sos-dismiss" class="secondary" disabled>Đóng sự kiện SOS</button>
+      </div>
+      <p id="sos-location-status" role="status"></p>
+    </section>
+
+    <section aria-labelledby="track-title">
+      <h2 id="track-title">Nhật ký mặt đường</h2>
+      <p>Lưu một điểm khi Clip đang quét và điện thoại cho phép lấy GPS. Nhật ký nằm trong trình duyệt này và có thể xuất GeoJSON.</p>
+      <div class="controls">
+        <button id="record" disabled>Lưu điểm tại đây</button>
+        <button id="export" class="secondary" disabled>Tải GeoJSON</button>
+        <button id="clear" class="secondary" disabled>Xóa nhật ký</button>
+      </div>
+      <p id="track-status" role="status"></p>
+      <p id="point-count"></p>
+      <ol id="points" aria-label="Các điểm gần nhất"></ol>
+    </section>
+  </main>
+</body>
+</html>
